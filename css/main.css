@@ -3,15 +3,25 @@ html {
     scroll-behavior: smooth;
 }
 body {
+	font-family: "Montserrat", sans-serif;
     font-family: system-ui, sans-serif;
+
 }
 section {
     padding: 100px 0;
 }
 .navbar {
-background-color: rgb(63 32 61 / 50%);
+    background-color: rgb(63 32 61 / 50%);
     backdrop-filter: blur(10px);
 }
+
+
+.blur-box {
+    background-color: rgb(63 32 61 / 50%);
+    backdrop-filter: blur(10px);
+}
+
+
 .navbar .nav-link {
     color: #ddd;
 }
@@ -25,6 +35,8 @@ body {
     background-image: linear-gradient(-45deg, white, black);
     height: 100vh;
 }
+
+
 body::before {
     animation: anim 30s infinite;
     background-image: linear-gradient(135deg, slateblue, HotPink);
@@ -94,14 +106,10 @@ border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
 
 
 /* Keep hamburger icon white on hover/focus */
-  .navbar-dark .navbar-toggler-icon{
+.navbar-dark .navbar-toggler-icon{color: aliceblue;}
 
 
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' 
-      xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,1%29' 
-      stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' 
-      d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  }
+ 
 
   .navbar-dark .navbar-toggler {
     border-color: rgba(255, 255, 255, 0.5);
@@ -121,12 +129,103 @@ a.nav-link {
 }
 
 a.nav-link.active {
-    color: red !important;
+    color: #0ddb3c !important;
+    padding: 20px;
 }
 
 html { scroll-behavior: smooth; }
       body { font-family: system-ui, sans-serif; }
-      section { padding: 100px 0; }
-      .navbar { background: #333; }
+  
       .navbar .nav-link { color: #ddd; }
       .navbar .nav-link.active, .navbar .nav-link:hover { color: #fff; }
+
+
+
+.blur-box {
+    background-color: rgb(32 38 63 / 12%);
+    backdrop-filter: blur(82px);
+    padding: 60px 48px;
+    padding-bottom: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 90px;
+    border-bottom-left-radius: 80px;
+    border-top-left-radius: 200px;
+    box-shadow: inset 5pc 0px 51px -70px #ffffff0f;
+    border-bottom: none;
+    background: none;
+    background-image: linear-gradient(143deg, #ffffff00, #ffffff00, #ffffff00, #ffffff00, #141414, #141414);
+}
+
+
+h2.about_holder {
+    font-size: 57px;
+    /* font-style: italic; */
+    backdrop-filter: none;
+    background-color: transparent;
+    padding: 30px 18px 0px 20px;
+    line-height: 50px;
+}
+
+
+
+p.blurb {
+    padding: 20px;
+    font-size: 1.2em;
+    line-height: 51px;
+    font-weight: 600;
+    color: #ffffffab;
+}
+
+img.d-block.w-100 {
+    transition: 25s ease-in-out;
+}
+
+
+
+.carousel-inner.rounded {
+    border-radius: 110px, 110px, 110px, 110px!important;
+}
+
+
+  .navbar {
+	      background-color: rgb(63 32 61 / 50%);
+    backdrop-filter: blur(10px);
+   
+}
+
+
+li.nav-item {
+   	padding: 0 60px;
+	font-size: 16px;
+	text-transform: lowercase;
+	font-weight: 700
+}
+
+
+li.nav-item a.nav-link{
+	
+	 padding-left: 30px;
+    padding-right: 30px;
+    /* background: black; */
+  
+    backdrop-filter: blur(15px);
+    border-radius: 50px;
+    margin-left: 8px;
+
+}
+
+
+li.nav-item a.nav-link.active{
+	background: #ffffff14;
+}
+
+#preloader{
+	background: #fff url("../images/preloader2.gif") no-repeat center center;
+	background-size: 20%;
+	height: 100vh;
+	width:100% ;
+	position: fixed;
+	z-index:100;
+}
+
+
