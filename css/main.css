@@ -130,7 +130,6 @@ a.nav-link {
 
 a.nav-link.active {
     color: #0ddb3c !important;
-    padding: 20px;
 }
 
 html { scroll-behavior: smooth; }
@@ -158,22 +157,23 @@ html { scroll-behavior: smooth; }
 
 
 h2.about_holder {
-    font-size: 57px;
+    font-size: 49px;
     /* font-style: italic; */
     backdrop-filter: none;
     background-color: transparent;
     padding: 30px 18px 0px 20px;
     line-height: 50px;
+    color: #ffffffde;
 }
 
 
 
 p.blurb {
     padding: 20px;
-    font-size: 1.2em;
-    line-height: 51px;
+    font-size: 22px;
+    line-height: 26px;
     font-weight: 600;
-    color: #ffffffab;
+    color: #fff;
 }
 
 img.d-block.w-100 {
@@ -196,36 +196,33 @@ img.d-block.w-100 {
 
 li.nav-item {
    	padding: 0 60px;
-	font-size: 16px;
-	text-transform: lowercase;
-	font-weight: 700
+   	font-size: 16px;
+   	text-transform: lowercase;
+   	font-weight: 700;
 }
 
 
 li.nav-item a.nav-link{
-	
-	 padding-left: 30px;
-    padding-right: 30px;
-    /* background: black; */
-  
-    backdrop-filter: blur(15px);
-    border-radius: 50px;
-    margin-left: 8px;
-
+	/* padding-left: 30px; */
+	/* padding-right: 30px; */
+	/* background: black; */
+	/* backdrop-filter: blur(15px); */
+	/* border-radius: 50px; */
+	/* margin-left: 8px; */
 }
 
 
 li.nav-item a.nav-link.active{
-	background: #ffffff14;
+	/* background: #ffffff14; */
 }
 
 #preloader{
 	background: #fff url("../images/preloader2.gif") no-repeat center center;
 	background-size: 20%;
 	height: 100vh;
-	width:100% ;
+	width:100%;
 	position: fixed;
-	z-index:100;
+	z-index: 10000;
 }
 
 
