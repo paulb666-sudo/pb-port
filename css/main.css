@@ -67,7 +67,7 @@ body {
 
 
 body::before {
-    animation: anim 30s infinite;
+    animation: anim 25s infinite;
     background-image: linear-gradient(143deg, #e5e0ff, HotPink);
     border-radius: 30% 70% 53% 47% / 26% 46% 54% 74%;
     box-shadow: 0 -2vmin 3vmin LightPink inset, 0 1vmin 4vmin MediumPurple inset, 0 -2vmin 7vmin purple inset;
@@ -128,12 +128,11 @@ border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
 	}
 	
 	.about_holder{
-		    background: #fff;
-		    padding: 40px;
-		    border-radius: 20px;
-		    backdrop-filter: blur(10px);
+		    /* padding: 40px; */
+		    border-radius: 250px;
+		    backdrop-filter: blur(19px);
 		    color: #fff;
-		    background-color: #392f2f00;
+		    background-color: #ffffff0d;
 	}
 
 
@@ -186,6 +185,7 @@ html { scroll-behavior: smooth; }
     box-shadow: inset 20px 16px 51px 20px #ffffff0f;
     background: none;
     background-image: linear-gradient(143deg, #ffffff8c, #ffffff00, #ffffff24, #ffffff00, #141414a8, #ffffff00);
+    margin: 0;
 }
 
 
@@ -215,9 +215,7 @@ img.d-block.w-100 {
 
 
 
-.carousel-inner.rounded {
-    border-radius: 110px, 110px, 110px, 110px!important;
-}
+
 
 
   .navbar {
@@ -232,12 +230,6 @@ li.nav-item {
    	font-size: 16px;
    	text-transform: lowercase;
    	font-weight: 700;
-}
-
-
-li.nav-item a.nav-link{
-	
-
 }
 
 
@@ -279,5 +271,33 @@ li.nav-item a.nav-link.active{
 
     /* Prevent scrolling while preloader is active */
     .no-scroll { overflow: hidden; }
+.carousel-inner.pround {
+    border-radius: 40px;
+}
 
+@media (max-width: 991px) {
+	div.row.head-row div.col-md-6{
+        flex: 0 0 auto;
+        width: 1000%;
+    }
+	p.blurb{
+		font-size: 16px;
+		font-weight: normal;
+	}
+	h2.about_holder{
+		font-size: 33px;
+		line-height: 30px;
+	}
+	.blur-box{
+		padding: 15px 10px 10px 10px;
+		border-radius: 48px;
+		margin-bottom: 30px;
+	}
+
+	
+	
+	
+	
+
+}
 
