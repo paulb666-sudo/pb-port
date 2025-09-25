@@ -19,7 +19,7 @@ body {
 
 
 ::selection {
-  background-color: #b46dbe;
+background-color: rgb(110, 14, 123); 
 	color:fff;
 }
 
@@ -74,7 +74,7 @@ body {
 
 
 body::before {
-    animation: anim 25s infinite;
+    animation: anim 20s infinite;
     background-image: linear-gradient(143deg, #e5e0ff, HotPink);
     border-radius: 30% 70% 53% 47% / 26% 46% 54% 74%;
     box-shadow: 0 -2vmin 3vmin LightPink inset, 0 1vmin 4vmin MediumPurple inset, 0 -2vmin 7vmin purple inset;
@@ -138,12 +138,22 @@ border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
 		    /* padding: 40px; */
 		    border-radius: 250px;
 		    backdrop-filter: blur(19px);
-		    color: #fff;
-		    background-color: #ffffff0d;
+	
 	}
 
+section#about {
+    margin-top: 78px;
+}
 
 
+
+.about_holder .gradient{
+
+	background: #FFF;
+background: linear-gradient(90deg,rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.04) 100%, rgba(250, 250, 250, 0.1) 91%);
+	border:1px solid red;
+	  backdrop-filter: blur(0px);
+}
 
 /* Keep hamburger icon white on hover/focus */
 .navbar-dark .navbar-toggler-icon{color: aliceblue;}
@@ -164,7 +174,7 @@ border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
 a.nav-link.active {
     color: #ffffff;
 }
-a.nav-link {border-radius: 30px;padding: 20px!important;}
+a.nav-link {border-radius: 30px;padding: 20px!important;text-align: center;}
 
 a.nav-link.active {
     color: #fff!important;
@@ -189,7 +199,7 @@ html { scroll-behavior: smooth; }
     /* border-top-left-radius: 200px; */
     box-shadow: inset 20px 16px 51px 20px #ffffff0f;
     background: none;
-    background-image: linear-gradient(143deg, #ffffff8c, #ffffff00, #ffffff24, #ffffff00, #141414a8, #ffffff00);
+    background-image: linear-gradient(143deg, #ffffff8c, #ffffff00, #ffffff24, #ffffff00, #000000d9, #ffffff00);
     margin: 0;
 }
 
@@ -210,7 +220,6 @@ p.blurb {
     padding: 20px;
     font-size: 22px;
     line-height: 26px;
-    font-weight: 600;
     color: #fff;
 }
 
@@ -224,9 +233,8 @@ img.d-block.w-100 {
 
 
   .navbar {
-	      background-color: rgb(63 32 61 / 50%);
-    backdrop-filter: blur(10px);
-   
+	      background-color: rgb(24 5 23 / 47%);
+	      backdrop-filter: blur(10px);
 }
 
 
@@ -241,8 +249,9 @@ li.nav-item {
 li.nav-item a.nav-link.active{
 	 background: #483263a6;
 	 text-shadow: 0 0 black;
-	 text-shadow: 0px 0px 3px #000000;
+	 /* text-shadow: 0px 0px 3px #000000; */
 	 padding: 20px;
+	 color: #a6a9ff !important;
 }
     #preloader {
       position: fixed;
@@ -283,19 +292,27 @@ li.nav-item a.nav-link.active{
 .animated-highlight {
   background-color: none; /* Initial highlight color */
   animation: pulseHighlight 8s infinite alternate; /* Apply the animation */
+ border-radius: 20px;
 }
 
 @keyframes pulseHighlight {
   0% {
-    background-color: #b46dbe; /* Starting highlight color */
+    background-color: rgb(110, 14, 123, 0.2); /* Starting highlight color */
     color: white;
   }
   50% {
-    background-color: #6E0E7B; /* Mid-animation highlight color */
+    background-color: rgb(110, 14, 123, 0.5); /* Starting highlight color */
     color: white;
   }
+	
+	90% {
+    background-color: rgb(110, 14, 123); /* Starting highlight color */
+    color: white;
+  }
+	
+	
   100% {
-    background-color: #b46dbe; /* Ending highlight color (back to start) */
+     background-color: rgb(110, 14, 123, 0.2); /* Ending highlight color (back to start) */
     color: white;
   }
 }
@@ -323,6 +340,12 @@ li.nav-item a.nav-link.active{
 		border-radius: 48px;
 		margin-bottom: 30px;
 	}
+	
+	section#about {
+  
+    font-size: 50px;
+	}
+	
 
 }
 
