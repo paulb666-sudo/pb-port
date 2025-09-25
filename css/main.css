@@ -13,8 +13,15 @@ body {
 	animation: fadein  0.5s;
 }
 
+*{
+	transition-duration: 0.2s;
+}
 
 
+::selection {
+  background-color: #b46dbe;
+	color:fff;
+}
 
 @keyframes fadein {
  from {
@@ -157,9 +164,7 @@ border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
 a.nav-link.active {
     color: #ffffff;
 }
-a.nav-link {
-    color: red;
-}
+a.nav-link {border-radius: 30px;padding: 20px!important;}
 
 a.nav-link.active {
     color: #fff!important;
@@ -168,7 +173,7 @@ a.nav-link.active {
 html { scroll-behavior: smooth; }
       body { font-family: system-ui, sans-serif; }
   
-      .navbar .nav-link { color: #ddd; }
+      .navbar .nav-link {color: #ddd;padding: 20px;}
       .navbar .nav-link.active, .navbar .nav-link:hover { color: #fff; }
 
 
@@ -234,11 +239,10 @@ li.nav-item {
 
 
 li.nav-item a.nav-link.active{
-	 background: #ffffff;
+	 background: #483263a6;
 	 text-shadow: 0 0 black;
 	 text-shadow: 0px 0px 3px #000000;
-	 border-radius: 30px;
-	 /* padding: 10px; */
+	 padding: 20px;
 }
     #preloader {
       position: fixed;
@@ -275,6 +279,32 @@ li.nav-item a.nav-link.active{
     border-radius: 40px;
 }
 
+
+.animated-highlight {
+  background-color: none; /* Initial highlight color */
+  animation: pulseHighlight 8s infinite alternate; /* Apply the animation */
+}
+
+@keyframes pulseHighlight {
+  0% {
+    background-color: #b46dbe; /* Starting highlight color */
+    color: white;
+  }
+  50% {
+    background-color: #6E0E7B; /* Mid-animation highlight color */
+    color: white;
+  }
+  100% {
+    background-color: #b46dbe; /* Ending highlight color (back to start) */
+    color: white;
+  }
+}
+
+
+
+
+
+
 @media (max-width: 991px) {
 	div.row.head-row div.col-md-6{
         flex: 0 0 auto;
@@ -293,11 +323,6 @@ li.nav-item a.nav-link.active{
 		border-radius: 48px;
 		margin-bottom: 30px;
 	}
-
-	
-	
-	
-	
 
 }
 
