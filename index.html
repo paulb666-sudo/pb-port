@@ -47,7 +47,7 @@ body {
 </nav>
 
 <!-- About -->
-<section id="about"> <a href="#cv"><span></span></a>
+<section id="about"> <a href="#cv_scroll"><span></span></a>
   <div class="about_holder gradient">
     <div class="container">
       <div class="row head-row">
@@ -86,7 +86,9 @@ body {
 </section>
 
 <!-- CV -->
+
 <section id="cv" class="bg-dark text-light">
+	<div id="cv_scroll"></div>	
   <div class="container">
     <h2>CV</h2>
     <div class="row">
@@ -143,9 +145,16 @@ body {
     <h2>Showreel</h2>
     <div class="row">
       <div class="col-md-6">
-        <video class="w-100 rounded" controls poster="https://placehold.co/800x450">
+        <!--<video class="w-100 rounded" controls poster="https://placehold.co/800x450">
           <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          Your browser does not support the video tag. </video>-->
+		  
+		  <video class="w-100 rounded" controls poster="https://placehold.co/800x450">
+          <source src="video/Comp 1_3.mp4" type="video/mp4">
           Your browser does not support the video tag. </video>
+		  
+		  
+		  
       </div>
       <div class="col-md-6">
         <p>Upload my showreel, comming soon</p>
@@ -195,47 +204,11 @@ body {
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-  crossorigin="anonymous"></script> 
-
-<!--Preloader and fade out of preloader background start	--> 
-<script>
-    $(window).on('load', function() {
-      // Enforce a 2s minimum before hiding preloader
-      setTimeout(function() {
-        $('#preloader').fadeOut('slow', function() {
-          $('body').css('overflow', 'auto').fadeIn('slow'); // Enable scroll + show body
-        });
-      }, 1000); // 2000ms = 2 seconds
-    });
-  </script> 
-<!--Preloader and fade out of preloader background start	--> 
-
-<script>
-	  // footer date
-  document.getElementById('year').textContent = new Date().getFullYear();
+  crossorigin="anonymous">
+	</script> 
 	
-  // Enable swipe on ALL Bootstrap carousels
-  document.querySelectorAll('.carousel').forEach((carouselElement) => {
-    const carousel = new bootstrap.Carousel(carouselElement);
-    let startX = 0;
-    let endX = 0;
+	<script src="js/main.js"></script>
 
-    carouselElement.addEventListener('touchstart', (e) => {
-      startX = e.touches[0].clientX;
-    });
 
-    carouselElement.addEventListener('touchmove', (e) => {
-      endX = e.touches[0].clientX;
-    });
-
-    carouselElement.addEventListener('touchend', () => {
-      if (startX - endX > 50) {
-        carousel.next();
-      } else if (endX - startX > 50) {
-        carousel.prev();
-      }
-    });
-  });
-</script>
 </body>
 </html>

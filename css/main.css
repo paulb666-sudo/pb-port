@@ -344,7 +344,7 @@ section {
     -webkit-animation: sdb03 3s infinite;
     animation: sdb03 7s infinite;
     background: none;
-    background-image: linear-gradient(324deg, #ffffff8c, #ffffff00, #ffffff24, #ffffff00, #fbfbfbd9, #ffffff00);
+    background-image: linear-gradient(0deg, #ffffff8c, #ffffff00, #ffffff24, #fbfbfbd9, #ffffff00);
     border-radius: 50%;
 }
 
@@ -451,6 +451,11 @@ opacity: 0;
  }
 
 
+#cv_scroll{
+	height:10px;
+	border:10px solid red;
+
+}
 
 /*media queries start*/
 
