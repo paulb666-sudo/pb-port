@@ -12,8 +12,10 @@
    background-repeat: repeat;
  }
  * {
-   transition-duration: 0.2s;
+   transition-duration: 0.3s ease;
+	 
  }
+
  ::selection {
    background-color: rgb(110, 14, 123);
    color: fff;
@@ -171,7 +173,7 @@
  .navbar .nav-link.active, .navbar .nav-link:hover {
    color: #fff;
    box-sizing: border-box;
-   outline: 115px solid #ffffff0f;
+   outline: 144px solid #ffffff0f;
  }
  .blur-box {
    background-color: rgb(32 38 63 / 12%);
@@ -187,6 +189,7 @@
    background-image: linear-gradient(143deg, #ffffff8c, #ffffff00, #46151524, #ffffff00, #000000d9, #ffffff00);
    margin: 0;
    transition: 1s ease;
+	
 } 
 	 
 		.blur-box:hover {
@@ -314,8 +317,7 @@ section {
     position: absolute;
     left: 50%;
     z-index: 20;
-    bottom: calc(0px + -54px);
-    /* contain-intrinsic-block-size: AUTO 100PX; */
+bottom: calc(0px + 24px);
     display: block;
     background: black;
     border-radius: 50%;
@@ -348,23 +350,91 @@ section {
     box-sizing: border-box;
     /* border-radius: 50%; */
 }
-#about a span::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    content: '';
-    width: 44px;
-    height: 44px;
-    box-shadow: 0 0 0 0 rgba(255,255,255,.1);
-    border-radius: 100%;
-    opacity: 0;
-    -webkit-animation: sdb03 3s infinite;
-    animation: sdb03 7s infinite;
-    background: none;
-    background-image: linear-gradient(0deg, #ffffff24, #ffffff00, #ffffff0f, #fbfbfb54, #ffffff00);
-    border-radius: 50%;
+
+
+
+
+
+
+div.glowBg {
+    position: relative;
+    text-align: left;
+    color: #252B37;
+    box-sizing: border-box;
 }
+
+div.glowBg:after {
+    position: absolute;
+    content: "";
+    top: 5vw;
+    left: -214px;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.75);
+    -webkit-filter: blur(5vw);
+    -moz-filter: blur(5vw);
+    -ms-filter: blur(5vw);
+    filter: blur(5vw);
+    background: linear-gradient(270deg, #0fffc1, #7e0fff);
+    background-size: 300% 100%;
+    animation: animateGlow 5s cubic-bezier(0.58, 0.14, 1, 1) infinite;
+    z-index: 1;
+}
+.zIndex {
+    z-index: 2;
+    position: relative;
+}
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes textColor {
+  0% {
+    color: #7e0fff;
+  }
+  50% {
+    color: #0fffc1;
+  }
+  100% {
+    color: #7e0fff;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -475,6 +545,87 @@ opacity: 0;
 	width: 100%;
 	margin-top: -134px;
 }
+
+
+.navbar-toggler-icon {
+  /* Hide the default hamburger icon */
+  background-image: none;
+  position: relative;
+  width: 1.5em; /* Adjust as needed */
+  height: 1.5em; /* Adjust as needed */
+}
+
+/* Create the "X" icon using pseudo-elements */
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Thickness of the lines */
+  background-color: #333; /* Color of the lines */
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-toggler-icon::before {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.navbar-toggler-icon::after {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+/* When the menu is collapsed, show the hamburger */
+.navbar-toggler[aria-expanded="false"] .navbar-toggler-icon::before {
+  transform: translateY(-8px); /* Adjust for hamburger position */
+}
+
+.navbar-toggler[aria-expanded="false"] .navbar-toggler-icon::after {
+  transform: translateY(6px); /* Adjust for hamburger position */
+}
+
+.navbar-toggler[aria-expanded="false"] .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 fff 15h22M4 23h22'/%3e%3c/svg%3e"); /* Default Bootstrap hamburger SVG */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*media queries start*/
 

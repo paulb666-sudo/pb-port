@@ -34,8 +34,8 @@ body {
 <!-- Navbar -->
 <nav id="siteNav" class="navbar navbar-expand-lg fixed-top navbar-dark">
   <div class="container"> <a class="navbar-brand text-light" href="#about">pb/port</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"> <span class="navbar-toggler-icon"></span> </button>
-    <div class="collapse navbar-collapse" id="navMenu">
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="navbar-collapse collapse" id="navMenu">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
@@ -87,7 +87,7 @@ body {
 
 <!-- CV -->
 
-<section id="cv" class="bg-dark text-light">
+<section id="cv" class="bg-light text-dark">
 	<div id="cv_scroll"></div>	
   <div class="container">
     <h2>CV</h2>
@@ -127,7 +127,15 @@ body {
       <div class="col-md-6">
         <h4>Skills</h4>
         <p>Wireframing, Prototyping, UX Research, Accessibility</p>
-        <img src="https://placehold.co/400x300" class="img-fluid rounded" alt="CV graphic"> </div>
+		  
+		<div class="glowBg">
+	
+        <img src="https://placehold.co/400x300" class="img-fluid rounded zIndex" alt="CV graphic"> 
+		
+		</div>
+		
+		
+		</div>
     </div>
   </div>
 </section>
@@ -190,7 +198,7 @@ body {
   </div>
 </section>
 <footer class="bg-dark text-light py-3 text-center">
-  <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+	<p>&copy; <span id="year"></span>&nbsp;pb.&nbsp; All rights reserved.</p>
 </footer>
 
 <!-- Bootstrap JS --> 
