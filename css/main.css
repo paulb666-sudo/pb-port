@@ -591,9 +591,43 @@ opacity: 0;
 
 
 
+/* Reset Bootstrap's default toggler icon */
+.navbar-toggler-icon {
+  background: none !important;
+}
 
+/* Button breathing animation */
+.navbar-toggler {
+  transition: transform 0.3s ease;
+}
+.navbar-toggler[aria-expanded="true"] {
+  transform: scale(1.1);   /* slight zoom when active */
+}
 
+/* Bold hamburger bars */
+.toggler-icon {
+  display: block;
+  width: 30px;          /* longer */
+  height: 3px;          /* thicker */
+  margin: 6px auto;     /* spacing */
+  background-color: white;
+  border-radius: 2px;   /* rounded edges */
+  transition: all 0.4s ease-in-out;
+  opacity: 1;
+}
 
+/* Animate to "X" when expanded */
+.navbar-toggler[aria-expanded="true"] .top-bar {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.navbar-toggler[aria-expanded="true"] .middle-bar {
+  opacity: 0;   /* fade out middle */
+}
+
+.navbar-toggler[aria-expanded="true"] .bottom-bar {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
 
 
 
