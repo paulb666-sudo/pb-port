@@ -37,3 +37,50 @@
       }
     });
   });
+
+// --- Smooth scroll navigation and active link tracking ---
+// --- Enhanced smooth scroll + instant active nav ---
+$(function () {
+  const navbarHeight = $('.navbar').outerHeight() || 80;
+  const sections = $('section');
+  const navLinks = $('#navMenu .nav-link');
+
+  // --- Smooth scroll on mouseup (instant response) ---
+  navLinks.on('mouseup', function (e) {
+    const target = $(this).attr('href');
+    if (target.startsWith('#')) {
+      e.preventDefault();
+      const $el = $(target);
+      if ($el.length) {
+        const dest = $el.offset().top - navbarHeight + 2;
+        // Stop any current scroll animation and go immediately
+        $('html, body').stop().animate({ scrollTop: dest }, 100, 'swing');
+      }
+
+      // Close mobile nav instantly after click
+      const $collapse = $('#navMenu');
+      if ($collapse.hasClass('show')) $collapse.collapse('hide');
+    }
+  });
+
+  // --- Intersection Observer for active nav tracking ---
+  const observerOptions = {
+    root: null,
+    rootMargin: `-${navbarHeight}px 0px -10% 0px`,
+    threshold: 0.3,
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        navLinks.removeClass('active');
+        $(`#navMenu .nav-link[href="#${id}"]`).addClass('active');
+      }
+    });
+  }, observerOptions);
+
+  sections.each(function () {
+    observer.observe(this);
+  });
+});

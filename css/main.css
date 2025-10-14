@@ -1,6 +1,4 @@
- html {
-   scroll-behavior: smooth;
- }
+
  body {
    font-family: "Montserrat", sans-serif;
    font-family: system-ui, sans-serif;
@@ -53,6 +51,7 @@
  }
  .nav-link.active {
    color: #cd60b5 !important;
+	 
  }
  body {
    background-image: linear-gradient(-45deg, #595a7b, #050506);
@@ -149,9 +148,7 @@
  a.nav-link.active {
    color: #fff !important;
  }
- html {
-   scroll-behavior: smooth;
- }
+
  body {
    font-family: system-ui, sans-serif;
  }
@@ -386,6 +383,35 @@ div.glowBg:after {
     z-index: 2;
     position: relative;
 }
+/* --- Animated highlight for active nav link --- */
+.navbar .nav-link {
+  position: relative;
+  color: #bbb;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  transition: all 0.35s ease;
+  transform: translateX(-50%);
+  opacity: 0.4;
+}
+
+.navbar .nav-link.active {
+  color: #fff;
+}
+
+.navbar .nav-link.active::after {
+  width: 70%;
+  opacity: 1;
+
+}
 @keyframes animateGlow {
   0% {
     background-position: 0% 50%;
@@ -539,13 +565,13 @@ opacity: 0;
  }
 
 
-#cv_scroll{
+/*#cv_scroll{
 
 	position: absolute;
 	width: 100%;
 	margin-top: -134px;
 }
-
+*/
 
 .navbar-toggler-icon {
   /* Hide the default hamburger icon */

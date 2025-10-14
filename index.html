@@ -14,6 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.typekit.net/ycy7dii.css">
+
 <noscript>
 <style>
 #preloader {
@@ -27,7 +28,8 @@ body {
 </noscript>
 
 </head>
-<body data-bs-spy="scroll" data-bs-target="#siteNav" data-bs-offset="100" tabindex="0">
+	
+<body data-bs-target="#navMenu" data-bs-offset="120" tabindex="0">
 <div id="preloader"> 
   <!-- Default: pulse animation --> 
   <img src="images/bouncing-circles.svg" alt="Loading..."/> </div>
@@ -44,17 +46,19 @@ body {
 </button>
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item active "><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
         <li class="nav-item"><a class="nav-link" href="#showreel">Showreel</a></li>
         <li class="nav-item"><a class="nav-link" href="#case-studies">Case Studies</a></li>
+	
+		
       </ul>
     </div>
   </div>
 </nav>
 
 <!-- About -->
-<section id="about"> <a href="#cv_scroll"><span></span></a>
+<section id="about"> 
   <div class="about_holder gradient">
     <div class="container">
       <div class="row head-row">
@@ -95,7 +99,7 @@ body {
 <!-- CV -->
 
 <section id="cv" class="bg-light text-dark">
-	<div id="cv_scroll"></div>	
+
   <div class="container">
     <h2>CV</h2>
     <div class="row">
@@ -204,41 +208,13 @@ body {
     </div>
   </div>
 </section>
-<footer class="bg-dark text-light py-3 text-center">
+<footer id="footer" class="bg-dark text-light py-3 text-center">
 	<p>&copy; <span id="year"></span>&nbsp;pb.&nbsp; All rights reserved.</p>
 </footer>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
-	<script
-  src="https://code.jquery.com/jquery-3.7.1.min.js"
-  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-  crossorigin="anonymous">
-	</script> 
-<!-- Bootstrap JS --> 
-	
-	<script src="js/main.js"></script>
-	
-	<script>
-	
-	$(document).ready(function() {
-  // When an element with the class 'trigger-class' is clicked
-  $('.nav-link').on('click', function() {
-    // Add the class 'added-class' to elements with the class 'element-to-add-to'
-    $('.nav-link').addClass('cunt');
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/main.js"></script>
 
-    // Toggle the class 'toggled-class' on elements with the class 'element-to-toggle'
-    $('.nav-link').toggleClass('cunt');
-  });
-});
-	
-	
-	
-	</script>
-	
-	
-	
-	
-	
-	
 	
 
 </body>
