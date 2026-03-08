@@ -43,7 +43,7 @@
  }
  .blur-box {
    background-color: rgb(63 32 61 / 50%);
-   backdrop-filter: blur(10px);
+  
  }
 
  .navbar .nav-link.active, .navbar .nav-link:hover {
@@ -54,7 +54,8 @@
 	 
  }
  body {
-   background-image: linear-gradient(-45deg, #595a7b, #050506);
+   /*background-image: linear-gradient(-45deg, #595a7b, #050506);*/
+	 background-color: #262635;
    height: 100vh;
  }
  body::before {
@@ -69,7 +70,7 @@
    top: 0;
    width: 50vmin;
    z-index: -1;
-   height: 58vh;
+   /*height: 58vh;*/
    background-repeat: repeat-y;
  }
  /*! CSS Used keyframes */
@@ -116,9 +117,8 @@
  .about_holder {
    /* padding: 40px; */
    border-radius: 250px;
-   backdrop-filter: blur(9px);
    height: 100%;
-   margin-top: 60px;
+
  }
  section#about {
    /* margin-top: 74px; */
@@ -149,6 +149,9 @@
    color: #fff !important;
  }
 
+
+
+
  body {
    font-family: system-ui, sans-serif;
  }
@@ -162,7 +165,7 @@
  }
 
 
-
+asdfasdf
 
 
 
@@ -173,24 +176,23 @@
    outline: 144px solid #ffffff0f;
  }
  .blur-box {
-   background-color: rgb(32 38 63 / 12%);
-   backdrop-filter: blur(82px);
+
    padding: 60px 48px;
    padding-bottom: 20px;
    border-top-right-radius: 0px;
-   border-bottom-right-radius: 90px;
-   border-radius: 180px;
+   border-bottom-right-radius: 0;
+   border-radius: 20px;
    /* border-top-left-radius: 200px; */
-   box-shadow: inset 20px 16px 51px 20px #ffffff0f;
+   
    background: none;
-   background-image: linear-gradient(143deg, #ffffff8c, #ffffff00, #46151524, #ffffff00, #000000d9, #ffffff00);
+  
    margin: 0;
    transition: 1s ease;
 	
 } 
 	 
 		.blur-box:hover {
-  box-shadow: 0 0px 50px rgba(0, 0, 0, 0.2);
+   backdrop-filter: blur(20px);
   transform:translateX(-5px) scale(1.01) translateY(-5px) scale(1.01);
  }
  h2.about_holder {
@@ -763,3 +765,31 @@ h2.about_holder {
   }
 
 }
+
+
+
+
+button.downloadBtn{
+	  transition-duration: 0.4s;
+	padding:10px 15px;
+	font-weight: bold;
+	transition: 0.3s;
+	
+}
+
+
+button.downloadBtn:hover {
+	    background-color: #483263; /* Green */
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
