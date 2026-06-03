@@ -5,12 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paul Bristow-Bovey — Senior UX/UI Designer - surface_flow</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
 <style>
 /* ─── RESET ─── */
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
 html{scroll-behavior:smooth;background:#06070f;}/* prevents white flash on overscroll/repaint */
 body{
   font-family:'Jost',sans-serif;
@@ -30,14 +31,16 @@ body{
   overflow:hidden;
   background:radial-gradient(ellipse at 20% 20%,#0d0e20 0%,#06070f 60%);
   pointer-events:none;
+  contain:layout style;
 }
 .orb{
   position:absolute;
   border-radius:50%;
-  filter:blur(90px);
-  opacity:0.75;
+  filter:blur(70px);
+  opacity:0.72;
   animation:drift linear infinite;
   will-change:transform;
+  contain:layout style;
 }
 .orb1{width:700px;height:700px;background:radial-gradient(circle,#6b2fa0,transparent 70%);top:-200px;left:-150px;animation-duration:28s;animation-delay:0s;}
 .orb2{width:550px;height:550px;background:radial-gradient(circle,#3b20c0,transparent 70%);top:30%;right:-180px;animation-duration:34s;animation-delay:-8s;}
@@ -321,7 +324,7 @@ nav{
   align-items:center;
   gap:8px;
   font-size: 1rem;
-  color: rgb(232 230 240 / 60%);
+  color: rgb(255 255 255);
   padding:0.55rem 0.85rem;
   border-radius:10px;
   background:rgba(255,255,255,0.03);
@@ -470,8 +473,12 @@ nav{
 }
 .cs-card-title{
   font-family:'Cormorant Garamond',serif;
-  font-size:1.3rem;line-height:1.2;letter-spacing:-0.01em;
-  color:#e8e6f0;margin-bottom:0.5rem;
+  font-size:1.3rem;
+  line-height:1.2;
+  letter-spacing:-0.01em;
+  color:#e8e6f0;
+  margin-bottom:0.5rem;
+  text-shadow: rgba(255,255,255,0.90) 0px 0px 5px;
 }
 .cs-card-desc{font-size:0.78rem;color: rgba(232,230,240,1);line-height:1.7;font-weight:300;}
 
@@ -524,12 +531,26 @@ nav{
 }
 .modal-meta-item{font-size:0.75rem;}
 .modal-meta-item span{display:block;color:rgba(200,185,255,0.45);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:3px;}
-.modal-meta-item strong{color:rgba(232,230,240,0.8);font-weight:500;}
+.modal-meta-item strong{color:rgba(232,230,240,0.8);font-weight:500;text-shadow: rgba(255,255,255,0.49) 0px 0px 10px;}
 .modal-body-para{
-  font-size:0.88rem;color:rgba(232,230,240,0.55);line-height:1.9;font-weight:300;
+  font-size: 1rem;
+  color:rgba(232,230,240,0.55);
+  line-height:1.9;
+  font-weight:300;
   margin-bottom:2rem;
 }
-.modal-body-para strong{color:rgba(232,230,240,0.8);font-weight:500;}
+.modal-body-para strong{color: rgba(232,230,240,1);font-weight:500;}
+.modal-link{
+  display:inline-flex;align-items:center;gap:6px;
+  margin:0.75rem 0;
+  font-size:0.75rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;
+  color:rgba(180,160,255,0.8);text-decoration:none;
+  border-bottom:1px solid rgba(160,130,255,0.3);
+  padding-bottom:2px;
+  transition:color 0.2s, border-color 0.2s;
+}
+.modal-link::after{content:' →';opacity:0.6;}
+.modal-link:hover{color:rgba(220,200,255,1);border-color:rgba(200,170,255,0.7);}
 .modal-img{
   border-radius:14px;overflow:hidden;margin-bottom:2rem;
   aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;
@@ -625,7 +646,7 @@ nav{
 }
 .edu-item:hover{background:rgba(160,130,255,0.05);}
 .edu-year{font-size:0.65rem;color:rgba(200,185,255,0.55);letter-spacing:0.1em;text-transform:uppercase;font-weight:500;margin-bottom:0.35rem;}
-.edu-title{font-size:0.88rem;font-weight:500;color:rgba(232,230,240,0.8);line-height:1.3;}
+.edu-title{font-size:0.88rem;font-weight:500;color:rgba(232,230,240,0.8);line-height:1.3;text-shadow: rgba(255,255,255,0.49) 0px 0px 10px;}
 .edu-place{font-size:0.75rem;color:rgba(232,230,240,0.28);margin-top:0.2rem;}
 
 /* ─── CONTACT ─── */
@@ -659,7 +680,7 @@ nav{
   animation: anim 20s infinite;
   border-radius: 30% 70% 53% 47% / 26% 46% 54% 74%;
   box-shadow: 0 -2vmin 3vmin LightPink inset, 0 1vmin 4vmin MediumPurple inset, 0 -2vmin 7vmin purple inset;
-  filter: drop-shadow(0 0 3vmin Thistle) drop-shadow(0 5vmin 4vmin Orchid) drop-shadow(2vmin -2vmin 15vmin #7b68ee) drop-shadow(0 0 7vmin MediumOrchid);
+  filter: drop-shadow(0 0 4vmin Thistle) drop-shadow(2vmin -2vmin 12vmin #7b68ee);
   height: 50vmin;
   width: 60vmin;
   position: fixed;
@@ -844,16 +865,16 @@ footer{
       <p class="about-text">UX strategy across SaaS platforms, financial services, telecoms and e-learning — and working closely with engineers, product owners and senior stakeholders to ensure design intent carries through into working software - is what I do.</p>
       <p class="about-text">Today my focus is on the <strong>convergence of AI-assisted workflows, design systems and scalable interaction design</strong> — exploring how the latest UX tools are reshaping the design-to-development pipeline.</p>
       <div class="skills-grid">
-        <div class="skill-pill"><span class="skill-dot"></span>UX Strategy &amp; Research</div>
-        <div class="skill-pill"><span class="skill-dot"></span>Interaction Design</div>
-        <div class="skill-pill"><span class="skill-dot"></span>Design Systems (Figma, Stitch)</div>
-        <div class="skill-pill"><span class="skill-dot"></span>Prototyping</div>
-        <div class="skill-pill"><span class="skill-dot"></span>Motion / After Effects</div>
-        <div class="skill-pill"><span class="skill-dot"></span>AI-Assisted Workflows</div>
-        <div class="skill-pill"><span class="skill-dot"></span>Front-End Awareness (CSS, Markup and Jquery experienced</div>
-        <div class="skill-pill"><span class="skill-dot"></span>Team Mentorship</div>
-        <div class="skill-pill"><span class="skill-dot"></span>Stakeholder Alignment</div>
-        <div class="skill-pill"><span class="skill-dot"></span>Agile Delivery (Skrum, Kanban, Waterfall) (</div>
+        <div class="skill-pill glow"><span class="skill-dot "></span>UX Strategy &amp; Research</div>
+        <div class="skill-pill glow"><span class="skill-dot "></span>Interaction Design</div>
+        <div class="skill-pill glow"><span class="skill-dot "></span>Design Systems (Figma, Stitch)</div>
+        <div class="skill-pill glow"><span class="skill-dot"></span>Prototyping</div>
+        <div class="skill-pill glow"><span class="skill-dot"></span>Motion / After Effects</div>
+        <div class="skill-pill glow"><span class="skill-dot"></span>AI-Assisted Workflows</div>
+        <div class="skill-pill glow"><span class="skill-dot"></span>Front-End Awareness (CSS, Markup and Jquery experienced</div>
+        <div class="skill-pill glow"><span class="skill-dot"></span>Team Mentorship</div>
+        <div class="skill-pill glow"><span class="skill-dot"></span>Stakeholder Alignment</div>
+        <div class="skill-pill glow"><span class="skill-dot"></span>Agile Delivery (Skrum, Kanban, Waterfall) (</div>
       </div>
     </div>
   </div>
@@ -1120,26 +1141,26 @@ footer{
 
 	
 	
-<!--	scrollto top 
-	-->
+<!-- scroll to top -->
 <script>
-	$(document).ready(function () {
-
-  var scrollThreshold = 200; // px scrolled before div appears
-
+$(document).ready(function () {
+  var scrollThreshold = 300;
+  var rafPending = false;
   $(window).on('scroll', function () {
-    var scrollTop = $(this).scrollTop();
-
-    if (scrollTop >= scrollThreshold) {
-      $('#scroll-reveal').fadeIn(300);
-    } else {
-      $('#scroll-reveal').fadeOut(200);
+    if (!rafPending) {
+      rafPending = true;
+      requestAnimationFrame(function () {
+        if ($(window).scrollTop() >= scrollThreshold) {
+          $('#scroll-reveal').fadeIn(300);
+        } else {
+          $('#scroll-reveal').fadeOut(200);
+        }
+        rafPending = false;
+      });
     }
   });
-
-});	
-	
-	</script>	
+});
+</script>	
 	
 	
 	
@@ -1196,13 +1217,19 @@ const cases = [
       { label: 'Deployed', value: 'Google Cloud Run' }
     ],
     imgClass: ['mi-photo mi-darg-1','mi-photo mi-darg-2','mi-photo mi-darg-3','mi-photo mi-darg-4'],
-    imgSrcs: ['images/Case_Study_main.png','images/Case_Study_main.png','images/Case_Study_main.png','Case_Study_main.png'],
+    imgSrcs: ['images/Case_Study_main.png','images/Case_Study_main.png','images/Case_Study_main2.png','Case_Study_main.png'],
     imgLabels: ['Login & Liability Waiver Flow','Volunteer Dashboard — Dog Grid','Dog Profile Modal — Six Tabs','Schedule Walk Wizard'],
+    links: [
+      { before: { url: 'http://www.google.com', label: 'Link placeholder' }, after: { url: 'http://www.google.com', label: 'Link placeholder' } },
+      { before: { url: 'http://www.google.com', label: 'Link placeholder' }, after: { url: 'http://www.google.com', label: 'Link placeholder' } },
+      { before: { url: 'http://www.google.com', label: 'Link placeholder' }, after: { url: 'http://www.google.com', label: 'Link placeholder' } },
+      { before: { url: 'http://www.google.com', label: 'Link placeholder' }, after: { url: 'http://www.google.com', label: 'Link placeholder' } }
+    ],
     paras: [
       '<strong>The problem.</strong> DARG — the Dog Active Rescue Group — is a Cape Town-based animal shelter running on goodwill and spreadsheets. Volunteer coordinators were spending hours each week manually matching available walkers to dogs in need of exercise, cross-referencing paper rosters, WhatsApp threads, and a shared Google Sheet that was perpetually out of date. Dogs with the most urgent behavioural needs were frequently overlooked, while popular, easy-going dogs received disproportionate attention. The ask was clear: design and build a purpose-built scheduling portal that would bring order to the chaos — one that volunteers could pick up on their phones without any training, and that shelter administrators could use to maintain full visibility and control over the kennel roster.',
       '<strong>Designing for two users.</strong> Early discovery revealed a sharp divide between two user types. Volunteers — often students, retirees, or working professionals giving up a few hours on weekends — needed a system that was frictionless, warm and confidence-inspiring. Shelter administrators, by contrast, needed control: adding dogs, editing medical and behavioural flags, overriding bookings, monitoring activity. Rather than build two separate interfaces, the decision was made to design a single adaptive UI gated behind an explicit role selector at login — the role toggle revealing or hiding administrative affordances as appropriate. A mandatory liability waiver was woven directly into the login flow, and a "Remember Me" option cached credentials locally to eliminate re-entry friction for regular volunteers.',
       '<strong>Designing for urgency.</strong> The central challenge of the dashboard was surfacing priority without creating anxiety. The solution was a multi-layered sorting system anchored in three modes: Urgency (a qualitative status badge set by administrators), Days (time in the shelter), and Fewest Walks (weekly exercise count). Each dog card was a compact but information-dense unit — breed, age, energy level, shelter duration, a circular progress dial showing walks against the weekly goal, and a colour-coded status badge (Urgent in red, On-Site Only in amber, Well Walked in green). A weather widget docked above the grid surfaced real-time safety warnings, alerting volunteers to avoid walking high-energy or flat-faced breeds during peak heat.',
-      '<strong>The scheduling experience.</strong> Walk scheduling needed to be achievable in under thirty seconds on a phone. Two entry points were designed: a "Book Walk" button on each dog card for volunteers who already knew which dog they wanted, and a Schedule Walk wizard in the bottom nav for multi-dog group bookings. Three fixed daily time slots replaced a freeform picker to constrain complexity. A recurrence engine allowed walks to be booked up to twelve weeks ahead. The My Walks section gave each volunteer a personal history — hours volunteered, completed walks, upcoming sessions — serving both as motivation and as an administrative audit trail. The platform was built entirely within Google AI Studio using a Gemini-powered workflow, compressed into days rather than weeks, and deployed to Google Cloud Run as a containerised static build.'
+      '<strong>The scheduling experience.</strong> Walk scheduling needed to be achievable in under thirty seconds on a phone. Two entry points were designed: a "Book Walk" button on each dog card for volunteers who already knew which dog they wanted, and a Schedule Walk wizard in the bottom nav for multi-dog group bookings. Three fixed daily time slots replaced a freeform picker to constrain complexity. A recurrence engine allowed walks to be booked up to twelve weeks ahead. The My Walks section gave each volunteer a personal history — hours volunteered, completed walks, upcoming sessions — serving both as motivation and as an administrative audit trail. The platform was built  within Google AI Studio using a Gemini-powered workflow, compressed into days rather than weeks, and deployed to Google Cloud Run as a containerised static build, or a progressive web app.   '
     ]
   },
   {
@@ -1218,6 +1245,12 @@ const cases = [
     imgClass: ['mi-photo mi-fin-1','mi-photo mi-fin-2','mi-photo mi-fin-3','mi-photo mi-fin-4'],
     imgSrcs: ['https://placehold.co/1200x675/0f1a2e/4a7fa8?text=Research+%26+Personas','https://placehold.co/1200x675/0f1a2e/4a7fa8?text=User+Flow+Architecture','https://placehold.co/1200x675/0f1a2e/4a7fa8?text=Wireframe+Prototypes','https://placehold.co/1200x675/0f1a2e/4a7fa8?text=Final+UI+Policy+Mgmt'],
     imgLabels: ['Research & Persona Development','User Flow Architecture','Wireframe Prototypes','Final UI — Policy Management'],
+    links: [
+      { before: { url: 'http://www.google.com', label: 'Link placeholder' }, after: { url: 'http://www.google.com', label: 'Link placeholder' } },
+      { before: { url: 'http://www.google.com', label: 'Link placeholder' }, after: { url: 'http://www.google.com', label: 'Link placeholder' } },
+      { before: { url: 'http://www.google.com', label: 'Link placeholder' }, after: { url: 'http://www.google.com', label: 'Link placeholder' } },
+      { before: { url: 'http://www.google.com', label: 'Link placeholder' }, after: { url: 'http://www.google.com', label: 'Link placeholder' } }
+    ],
     paras: [
       '<strong>Go Cover</strong> was Sanlam\'s entry into direct-to-consumer insurance via mobile — a first for the brand and a significant UX challenge. Users needed to be able to get a quote, understand their cover and manage their policy in a domain that is typically perceived as complex, intimidating and opaque.',
       'The project required deep stakeholder engagement across Sanlam\'s insurance, compliance and digital teams. I facilitated workshops to align on user goals versus business constraints, built detailed user personas from qualitative research, and mapped end-to-end journeys to identify where the existing quoting and onboarding process created friction and drop-off.',
@@ -1238,6 +1271,12 @@ const cases = [
     imgClass: ['mi-photo mi-el-1','mi-photo mi-el-2','mi-photo mi-el-3','mi-photo mi-el-4'],
     imgSrcs: ['https://placehold.co/1200x675/1a0a2e/7a3fb0?text=Storyboard+%26+Script','https://placehold.co/1200x675/1a0a2e/7a3fb0?text=Vector+Asset+Library','https://placehold.co/1200x675/1a0a2e/7a3fb0?text=Animation+Timing','https://placehold.co/1200x675/1a0a2e/7a3fb0?text=Rendered+Output'],
     imgLabels: ['Storyboard & Script Review','Vector Asset Library','Animation — Timing & Easing','Final Module — Rendered Output'],
+    links: [
+      { before: { url: 'http://www.google.com', label: 'Link placeholder' }, after: { url: 'http://www.google.com', label: 'Link placeholder' } },
+      { before: { url: 'http://www.google.com', label: 'Link placeholder' }, after: { url: 'http://www.google.com', label: 'Link placeholder' } },
+      { before: { url: 'http://www.google.com', label: 'Link placeholder' }, after: { url: 'http://www.google.com', label: 'Link placeholder' } },
+      { before: { url: 'http://www.google.com', label: 'Link placeholder' }, after: { url: 'http://www.google.com', label: 'Link placeholder' } }
+    ],
     paras: [
       'The brief was to translate technically authored scripts and <strong>AI-generated voiceovers</strong> into clear, visually engaging short-form explainer video modules covering a wide variety of subject matter. The challenge was establishing a shared visual language that could be used consistently across a team of four motion designers working in parallel on different modules within the same course.',
       'My process started with storyboarding — translating the written script into a visual narrative structure before any assets were created. This forced decisions about <strong>pacing, visual hierarchy and information chunking</strong> early, avoiding costly animation rework downstream. A shared vector-based asset library in Illustrator was built to ensure consistency and production efficiency across the team.',
@@ -1264,7 +1303,13 @@ function openModal(idx) {
     const inner = src
       ? `<img src="${src}" alt="${label}" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">`
       : `<div class="modal-img-inner"><div class="modal-img-label">${label}</div></div>`;
-    return `<div class="modal-img ${cls}" data-idx="${i}">${inner}</div>`;
+    const linkBefore = c.links && c.links[i] && c.links[i].before
+      ? `<a href="${c.links[i].before.url}" class="modal-link" target="_blank" rel="noopener">${c.links[i].before.label}</a>`
+      : '';
+    const linkAfter = c.links && c.links[i] && c.links[i].after
+      ? `<a href="${c.links[i].after.url}" class="modal-link" target="_blank" rel="noopener">${c.links[i].after.label}</a>`
+      : '';
+    return `${linkBefore}<div class="modal-img ${cls}" data-idx="${i}">${inner}</div>${linkAfter}`;
   }
 
   let bodyHTML = `
@@ -1341,12 +1386,13 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 
 /* ─── SCROLL SPY — active nav highlight ─── */
 const navSections = [
-  { id: '#hero',         selectors: ['a[href="#hero"]'] },
-  { id: '#about',        selectors: ['a[href="#about"]'] },
-  { id: '#experience',   selectors: ['a[href="#experience"]'] },
-  { id: '#case-studies', selectors: ['a[href="#case-studies"]'] },
-  { id: '#showreel',     selectors: ['a[href="#showreel"]'] },
-  { id: '#contact',      selectors: ['a[href="#contact"]'] },
+  { id: '#hero'         },
+  { id: '#about'        },
+  { id: '#cv'           },
+  { id: '#case-studies' },
+  { id: '#showreel'     },
+  { id: '#education'    },
+  { id: '#contact'      },
 ];
 
 function setActiveNav(hash) {
@@ -1360,7 +1406,7 @@ const spyObs = new IntersectionObserver((entries) => {
       setActiveNav('#' + entry.target.id);
     }
   });
-}, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+}, { rootMargin: '-20% 0px -70% 0px', threshold: 0 });
 
 navSections.forEach(({ id }) => {
   const el = document.querySelector(id);
@@ -1371,26 +1417,6 @@ navSections.forEach(({ id }) => {
 setActiveNav('#hero');
 </script>
 
-	<script>
-			/* ─── scroll to top ─── */
-	$(document).ready(function () {
 
-  var scrollThreshold = 200; // px scrolled before div appears
-
-  $(window).on('scroll', function () {
-    var scrollTop = $(this).scrollTop();
-
-    if (scrollTop >= scrollThreshold) {
-      $('#scroll-reveal').fadeIn(300);
-    } else {
-      $('#scroll-reveal').fadeOut(200);
-    }
-  });
-
-});
-/* ─── scroll to top ─── */	
-	
-	
-	</script>
 </body>
 </html>
