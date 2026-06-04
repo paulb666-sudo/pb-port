@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paul Bristow-Bovey — Senior UX/UI Designer - surface_flow</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
@@ -68,10 +68,15 @@ body{
 section{padding:6rem 3rem;max-width:1160px;margin:0 auto;}
 .section-label{
   font-family:'Jost',sans-serif;
-  font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;
-  color:rgba(200,185,255,0.9);font-weight:500;
+  font-size: 0.58rem;
+  letter-spacing:0.16em;
+  text-transform:uppercase;
+  color:rgba(200,185,255,0.9);
+  font-weight:500;
   margin-bottom:3rem;
-  display:inline-flex;align-items:center;gap:10px;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
   background:rgba(160,130,255,0.12);
   border:1px solid rgba(160,130,255,0.22);
   padding:0.35rem 0.9rem 0.35rem 0.75rem;
@@ -132,11 +137,19 @@ section{padding:6rem 3rem;max-width:1160px;margin:0 auto;}
 
 /* ─── NAV ─── */
 nav{
-  position:fixed;top:0;left:0;right:0;z-index:100;
-  padding:0 2.5rem;height:66px;
-  display:flex;align-items:center;justify-content:space-between;
-  background:rgba(6,7,15,0.6);
-  backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:100;
+  padding:0 2.5rem;
+  height:66px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background: rgba(6,7,15,0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-bottom:1px solid rgba(255,255,255,0.07);
 }
 .nav-logo{
@@ -166,7 +179,7 @@ nav{
   transition:transform 0.25s ease;
 }
 .nav-links a:hover{color:rgba(200,185,255,1);}
-.nav-links a.active{color:rgba(200,185,255,1);}
+.nav-links a.active{color:rgba(200,185,255,1);text-shadow: rgba(255,255,255,0.49) 0px 0px 10px;}
 .nav-links a.active::after{transform:scaleX(1);}
 
 /* hamburger */
@@ -242,7 +255,7 @@ nav{
 }
 .hero-name em{font-style:italic;color:rgba(200,185,255,0.55);}
 .hero-desc{
-  max-width:500px;
+  max-width: 500px;
   margin-top:2.5rem;
   font-size: 1.2rem;
   color: rgb(232 230 240 / 90%);
@@ -250,8 +263,10 @@ nav{
   font-weight:300;
   opacity:0;
   animation:fadeUp 0.9s ease 0.5s forwards;
+  padding: 20px;
+  border-radius: 39px;
 }
-.hero-desc strong{color:rgba(232,230,240,0.85);font-weight:500;}
+.hero-desc strong{color:rgba(232,230,240,0.85);font-weight:500;text-shadow: rgba(255,255,255,0.49) 0px 0px 10px;}
 .hero-actions{
   display:flex;gap:1rem;margin-top:2.75rem;flex-wrap:wrap;
   opacity:0;animation:fadeUp 0.9s ease 0.65s forwards;
@@ -324,15 +339,15 @@ nav{
   align-items:center;
   gap:8px;
   font-size: 1rem;
-  color: rgb(255 255 255);
   padding:0.55rem 0.85rem;
   border-radius:10px;
   background:rgba(255,255,255,0.03);
   border:1px solid rgba(255,255,255,0.07);
   transition:all 0.2s;
   cursor:default;
+  color: rgba(232,230,240,0.8);
 }
-.skill-pill:hover{border-color:rgba(200,185,255,0.25);color:rgba(232,230,240,0.8);background:rgba(160,130,255,0.07);}
+.skill-pill:hover{border-color:rgba(200,185,255,0.25);color: rgb(255 255 255);background:rgba(160,130,255,0.07);text-shadow: rgba(255,255,255,0.49) 0px 0px 10px;}
 .skill-dot{width:4px;height:4px;border-radius:50%;background:rgba(200,185,255,0.6);flex-shrink:0;}
 
 /* ─── EXPERIENCE ─── */
@@ -381,7 +396,7 @@ nav{
 .cv-period{font-size:0.68rem;color:rgba(232,230,240,0.25);letter-spacing:0.04em;padding-top:3px;line-height:1.55;}
 .cv-role{font-size:0.95rem;font-weight:500;color:#e8e6f0;letter-spacing:-0.01em;text-shadow: rgba(255,255,255,0.49) 0px 0px 10px;}
 .cv-company{font-size: 0.88rem;color:rgba(200,185,255,0.6);margin-top:2px;font-weight:400;}
-.cv-desc{font-size: 1rem;color: rgb(232 230 240 / 60%);margin-top:0.55rem;line-height:1.75;font-weight:300;}
+.cv-desc{font-size: 1rem;color: rgb(232 230 240 / 0.9);margin-top:0.55rem;line-height:1.75;font-weight:300;}
 .cv-tags{display:flex;flex-wrap:wrap;gap:0.35rem;margin-top:0.65rem;}
 .cv-tag{
   font-size: 0.72rem;
@@ -394,7 +409,7 @@ nav{
 }
 
 /* ─── FOCUS ─── */
-#focus{border-top:1px solid rgba(255,255,255,0.06);}
+#focus{}
 .focus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:3rem;}
 .focus-card{
   border-radius:18px;padding:2rem 1.75rem;
@@ -416,17 +431,13 @@ nav{
 .focus-text{font-size: 1rem;color: rgba(232,230,240,60%);line-height:1.8;font-weight:300;}
 
 /* ─── CASE STUDIES ─── */
-#case-studies{border-top:1px solid rgba(255,255,255,0.06);}
-.cs-intro{
-  display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:end;margin-bottom:3.5rem;
-}
+#case-studies{border-top: 1px solid rgba(255, 255, 255, 0.06);}
 .cs-intro-heading{
   font-family:'Cormorant Garamond',serif;
   font-size:clamp(2.2rem,4vw,4rem);line-height:1.05;letter-spacing:-0.02em;
 }
-.cs-intro-heading em{font-style:italic;color:rgba(200,185,255,0.55);}
-.cs-intro-text{font-size:0.88rem;color:rgba(232,230,240,0.45);line-height:1.8;font-weight:300;align-self:end;}
-.cs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;}
+.cs-intro-headifont-size:0.88rem;color:rgba(232,230,240,0.45);line-height:1.8;font-weight:300;align-self:end;margin-bottom: 3rem;:rgba(232,230,240,0.45);line-height:1.8;font-weight:300;align-self:end;}
+.cs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;!important}
 .cs-card{
   border-radius:18px;overflow:hidden;cursor:pointer;
   transition:transform 0.3s ease,box-shadow 0.3s ease;
@@ -636,13 +647,18 @@ nav{
 /* ─── EDUCATION ─── */
 #education{border-top:1px solid rgba(255,255,255,0.06);}
 .edu-grid{
-  display:grid;grid-template-columns:repeat(2,1fr);gap:1px;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:1px;
   background:rgba(255,255,255,0.05);
-  border:1px solid rgba(255,255,255,0.07);
-  border-radius:18px;overflow:hidden;margin-top:3rem;
+  padding: 3.6rem 0rem;
+  cursor: pointer;
 }
-.edu-item{
-  background:#06070f;padding:1.6rem 2rem;transition:background 0.2s;
+
+.edu-item {
+    background: #06070f;
+    padding: 1.6rem 2rem;
+    transition: background 0.2s;
 }
 .edu-item:hover{background:rgba(160,130,255,0.05);}
 .edu-year{font-size:0.65rem;color:rgba(200,185,255,0.55);letter-spacing:0.1em;text-transform:uppercase;font-weight:500;margin-bottom:0.35rem;}
@@ -657,7 +673,7 @@ nav{
   margin-bottom:1.5rem;
 }
 .contact-heading em{font-style:italic;color:rgba(200,185,255,0.5);}
-.contact-sub{font-size:0.92rem;color:rgba(232,230,240,0.4);font-weight:300;max-width:400px;margin:0 auto 2.5rem;line-height:1.75;}
+.contact-sub{font-size: 1.2rem;color: rgba(232,230,240,0.5);font-weight:300;max-width:400px;margin:0 auto 2.5rem;line-height:1.75;}
 .contact-links{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;}
 .contact-link{
   display:inline-flex;align-items:center;gap:8px;font-size:0.78rem;
@@ -665,7 +681,7 @@ nav{
   padding:0.65rem 1.25rem;border:1px solid rgba(255,255,255,0.08);border-radius:999px;
   transition:all 0.2s;
 }
-.contact-link:hover{color: rgb(255 255 255);border-color:rgba(200,185,255,0.25);background:rgba(160,130,255,0.07);}
+.contact-link:hover{color: rgb(255 255 255);border-color:rgba(200,185,255,0.25);background:rgba(160,130,255,0.07);text-shadow: rgba(255,255,255,0.49) 0px 0px 10px;}
 
 	body{
 		background: radial-gradient(ellipse at 20% 20%, #0d0e20 0%, #06070f 60%);
@@ -681,7 +697,7 @@ nav{
   border-radius: 30% 70% 53% 47% / 26% 46% 54% 74%;
   box-shadow: 0 -2vmin 3vmin LightPink inset, 0 1vmin 4vmin MediumPurple inset, 0 -2vmin 7vmin purple inset;
   filter: drop-shadow(0 0 4vmin Thistle) drop-shadow(2vmin -2vmin 12vmin #7b68ee);
-  height: 50vmin;
+  height: 45vmin;
   width: 60vmin;
   position: fixed;
   top: 0;
@@ -736,6 +752,41 @@ footer{
 @keyframes scrollPulse{0%,100%{opacity:0.3;}50%{opacity:0.8;}}
 
 /* ─── RESPONSIVE ─── */
+/* ─── MOBILE CARD CTA — hidden on desktop, shown on tablet/mobile ─── */
+.cs-card-mobile-btn{
+  display:none; /* hidden by default (desktop) */
+}
+@media(max-width:1100px){
+  .cs-card-mobile-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    margin-top:1rem;
+    align-self:flex-end;
+    font-size:0.72rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    font-weight:500;
+    color:rgba(180,160,255,0.85);
+    border:1px solid rgba(160,130,255,0.35);
+    border-radius:999px;
+    padding:0.45rem 1rem;
+    background:rgba(140,100,255,0.1);
+    transition:background 0.2s, color 0.2s, border-color 0.2s;
+    cursor:pointer;
+  }
+  .cs-card-mobile-btn:hover,
+  .cs-card-mobile-btn:active{
+    background:rgba(160,120,255,0.25);
+    color:#fff;
+    border-color:rgba(200,170,255,0.65);
+  }
+  .cs-card-body{
+    display:flex;
+    flex-direction:column;
+  }
+}
+
 @media(max-width:1100px){
   nav{padding:0 1.5rem;}
   .nav-links{display:none;}
@@ -756,7 +807,10 @@ footer{
 }
 @media(max-width:600px){
   .hero-name{font-size:clamp(3rem,14vw,5rem);}
-  .cs-grid{grid-template-columns:1fr;}
+  .cs-grid{    display: grid
+;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;}
   .modal-backdrop{padding:0;}
   .modal{border-radius:18px 18px 0 0;margin-top:auto;margin-bottom:0;}
 }
@@ -819,13 +873,14 @@ footer{
 
 <!-- HERO -->
 <section id="hero">
-  <div class="hero-eyebrow whiteTxt glow">Cape Town, South Africa</div>
+  <div class="hero-eyebrow whiteTxt glow">Surface flow • Cape Town, South Africa</div>
   <h1 class="hero-name glow">
     Paul<br>
     Bristow<em class="noGlow">-Bovey</em>
   </h1>
   <p class="hero-desc">
-   <strong> An experienced UX/UI, Interaction  &amp; Systems Designer</strong> who designs thoughtful digital experiences across SaaS, fintech, telecom, e-learning, and mobile. I'm assionate about blending AI-assisted workflows, motion design, and scalable platform thinking to create cohesive, future-ready products.
+	  <strong>Surface Flow is built around a simple idea: </strong>digital experiences no longer live on a single surface.<br><br> I design the systems, interaction sand workflows that allow products to flow seamlessly across platforms, combining traditional UX thinking with emerging AI-assisted approaches to product creation.
+
   </p>
   <div class="hero-actions">
     <a href="#cv" class="btn btn-primary">View experience ↓</a>
@@ -835,13 +890,14 @@ footer{
     <span class="tag">UX Research</span>
     <span class="tag">Interaction Design</span>
 
-	  <span class="tag">MCP server</span>
+	  <span class="tag">Generative AI</span>
 	  
     <span class="tag">Motion Design</span>
     <span class="tag">AI Workflows</span>
     <span class="tag">Front-End Collaboration</span>
     <span class="tag">SaaS</span>
-    <span class="tag">XR / Spatial UX</span>
+    <span class="tag">Spatial UX</span>
+	   <span class="tag">User Testing</span>
   </div>
   <div class="hero-scroll">
     <div class="scroll-line"></div>
@@ -857,7 +913,7 @@ footer{
       <h2 class="about-heading">
         <span class="glow">Designing for</span><br>
         <em>clarity, systems</em><br>
-		  &amp; <span class="glow">delight.</span>
+		 <span class="glow">&amp; delight.</span>
       </h2>
     </div>
     <div class="reveal">
@@ -865,16 +921,16 @@ footer{
       <p class="about-text">UX strategy across SaaS platforms, financial services, telecoms and e-learning — and working closely with engineers, product owners and senior stakeholders to ensure design intent carries through into working software - is what I do.</p>
       <p class="about-text">Today my focus is on the <strong>convergence of AI-assisted workflows, design systems and scalable interaction design</strong> — exploring how the latest UX tools are reshaping the design-to-development pipeline.</p>
       <div class="skills-grid">
-        <div class="skill-pill glow"><span class="skill-dot "></span>UX Strategy &amp; Research</div>
-        <div class="skill-pill glow"><span class="skill-dot "></span>Interaction Design</div>
-        <div class="skill-pill glow"><span class="skill-dot "></span>Design Systems (Figma, Stitch)</div>
-        <div class="skill-pill glow"><span class="skill-dot"></span>Prototyping</div>
-        <div class="skill-pill glow"><span class="skill-dot"></span>Motion / After Effects</div>
-        <div class="skill-pill glow"><span class="skill-dot"></span>AI-Assisted Workflows</div>
-        <div class="skill-pill glow"><span class="skill-dot"></span>Front-End Awareness (CSS, Markup and Jquery experienced</div>
-        <div class="skill-pill glow"><span class="skill-dot"></span>Team Mentorship</div>
-        <div class="skill-pill glow"><span class="skill-dot"></span>Stakeholder Alignment</div>
-        <div class="skill-pill glow"><span class="skill-dot"></span>Agile Delivery (Skrum, Kanban, Waterfall) (</div>
+        <div class="skill-pill"><span class="skill-dot "></span>UX Strategy &amp; Research</div>
+        <div class="skill-pill"><span class="skill-dot "></span>Interaction Design</div>
+        <div class="skill-pill"><span class="skill-dot "></span>Design Systems (Figma, Stitch)</div>
+        <div class="skill-pill"><span class="skill-dot"></span>Prototyping</div>
+        <div class="skill-pill"><span class="skill-dot"></span>Motion / After Effects</div>
+        <div class="skill-pill"><span class="skill-dot"></span>AI-Assisted Workflows</div>
+        <div class="skill-pill"><span class="skill-dot"></span>Front-End Awareness (CSS, Markup and Jquery experienced</div>
+        <div class="skill-pill"><span class="skill-dot"></span>Team Mentorship</div>
+        <div class="skill-pill"><span class="skill-dot"></span>Stakeholder Alignment</div>
+        <div class="skill-pill"><span class="skill-dot"></span>Agile Delivery (Skrum, Kanban, Waterfall) (</div>
       </div>
     </div>
   </div>
@@ -891,7 +947,7 @@ footer{
     </div>
     <div class="cv-timeline reveal">
       <div class="cv-item">
-        <div class="cv-period">Apr 2023<br>Present</div>
+        <div class="cv-period">May 2023<br>Present</div>
         <div>
           <div class="cv-role">Freelancer / Contractor</div>
           <div class="cv-company">UX, UI &amp; Motion Design — Cape Town</div>
@@ -900,7 +956,7 @@ footer{
         </div>
       </div>
       <div class="cv-item">
-        <div class="cv-period">Feb 2022<br>Apr 2023</div>
+        <div class="cv-period">Feb 2022<br>May 2023</div>
         <div>
           <div class="cv-role">Lead UX Designer</div>
           <div class="cv-company">Catch &amp; Release Agency (rain.co.za) — Cape Town</div>
@@ -1001,6 +1057,7 @@ footer{
         <div class="cs-card-label">Mobile App · 2026</div>
         <div class="cs-card-title">DARG Shelter Hub</div>
         <p class="cs-card-desc">A mobile-first volunteer scheduling platform that helps animal shelter staff and dog walkers coordinate exercise sessions, prioritising the dogs most in need of attention.</p>
+        <button class="cs-card-mobile-btn" aria-label="View DARG Shelter Hub case study">View case study →</button>
       </div>
     </div>
 
@@ -1013,6 +1070,7 @@ footer{
         <div class="cs-card-label">Fintech · 2014</div>
         <div class="cs-card-title">Insurance App — Go Cover</div>
         <p class="cs-card-desc">Full UX and UI design process for Sanlam's Go Cover insurance app — from discovery and journey mapping through to final UI, testing and handoff.</p>
+        <button class="cs-card-mobile-btn" aria-label="View Go Cover case study">View case study →</button>
       </div>
     </div>
 
@@ -1025,6 +1083,7 @@ footer{
         <div class="cs-card-label">E-Learning · 2026</div>
         <div class="cs-card-title">Web site and Android app — rain</div>
         <p class="cs-card-desc">Designing and animating short-form explainer video content — translating technical scripts into visually clear, motion-paced learning experiences.</p>
+        <button class="cs-card-mobile-btn" aria-label="View rain case study">View case study →</button>
       </div>
     </div>
 
@@ -1058,7 +1117,7 @@ footer{
 <!-- EDUCATION -->
 <section id="education">
   <div class="section-label">Education &amp; Learning</div>
-  <div class="edu-grid reveal">
+  <div class="edu-grid reveal visible">
     <div class="edu-item"><div class="edu-year">2026</div><div class="edu-title">Transitioning to Extended Reality (XR) UX</div><div class="edu-place">Udemy — Spatial interaction design</div></div>
     <div class="edu-item"><div class="edu-year">2014–2016</div><div class="edu-title">UX South Africa Conference</div><div class="edu-place">Annual UX/UI design conference, Cape Town</div></div>
     <div class="edu-item"><div class="edu-year">2012</div><div class="edu-title">UX Design Best Practices</div><div class="edu-place">Flow — Phil Barrett. Journey maps, personas, heuristic evaluations</div></div>
@@ -1070,7 +1129,7 @@ footer{
 
 <!-- CONTACT -->
 <section id="contact">
-  <h2 class="contact-heading reveal">Let's work<br><em>together.</em></h2>
+  <h2 class="contact-heading reveal glow">Let's work<br><em class="noGlow">together.</em></h2>
   <p class="contact-sub reveal">Open to senior UX/UI roles, contractor engagements and product design collaborations. Based in Cape Town, available for remote.</p>
   <div class="contact-links reveal">
     <a href="mailto:pb.surfaceflow@gmail.com" class="contact-link">
