@@ -10,30 +10,24 @@
 <body>
     <div id="lottie-container" style="width: 300px; height: 300px;"></div>
 	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
-	
+    <!-- Bodymovin Lottie test disabled to avoid accidental double-inits -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
 
-	<script>
-    var animation = bodymovin.loadAnimation({
-        container: document.getElementById('lottie-container'), // required
-        path: 'data.json', // required
-        renderer: 'svg', // required
-        loop: false, // optional: set to false so it plays once per hover
-        autoplay: false, // optional: set to false to control manually
-        name: "Hover Animation", // optional
-    });
+    <script>
+    // Disabled: hover test harness
+    // var animation = bodymovin.loadAnimation({
+    //     container: document.getElementById('lottie-container'),
+    //     path: 'data.json',
+    //     renderer: 'svg',
+    //     loop: false,
+    //     autoplay: false,
+    //     name: "Hover Animation",
+    // });
 
-    // Add event listeners to the container
-    const container = document.getElementById('lottie-container');
-
-    container.addEventListener('mouseenter', () => {
-        animation.play(); // Start the animation
-    });
-
-    container.addEventListener('mouseleave', () => {
-        animation.stop(); // Stop/reset the animation on mouse out
-    });
-</script>
+    // const container = document.getElementById('lottie-container');
+    // container.addEventListener('mouseenter', () => { animation.play(); });
+    // container.addEventListener('mouseleave', () => { animation.stop(); });
+    </script> -->
 
 </body>
 </html>

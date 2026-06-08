@@ -154,16 +154,248 @@ nav{
   background: rgba(6,7,15,0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  <script>
-  /* Only keep the Lottie logo init here; other app logic lives in js/main.js */
-  lottie.loadAnimation({
-    container: document.getElementById('lottie-logo'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'https://paulb666-sudo.github.io/pb-port/images/bouncing-circles.svg'
-  });
-  </script>
+  border-bottom:1px solid rgba(255,255,255,0.07);
+}
+.nav-logo{
+  display:flex;align-items:center;gap:10px;
+  text-decoration:none;
+}
+#lottie-logo{width:44px;height:44px;flex-shrink:0;}
+.nav-logo-text{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.1rem;font-weight:500;
+  color:rgba(232,230,240,0.9);
+  letter-spacing:0.02em;
+  line-height:1.2;
+}
+.nav-logo-text span{display:block;font-size:0.65rem;font-family:'Jost',sans-serif;letter-spacing: 0.08em;text-transform:uppercase;color:rgba(200,185,255,0.55);font-weight:400;}
+.nav-links{display:flex;gap:2rem;list-style:none;align-items:center;}
+.nav-links a{
+  color:rgba(232,230,240,0.5);text-decoration:none;
+  font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;
+  transition:color 0.2s;
+  position:relative;padding-bottom:2px;
+}
+.nav-links a::after{
+  content:'';position:absolute;bottom:-2px;left:0;right:0;height:1px;
+  background:rgba(200,185,255,1);
+  transform:scaleX(0);transform-origin:left center;
+  transition:transform 0.25s ease;
+}
+.nav-links a:hover{color:rgba(200,185,255,1);}
+.nav-links a.active{color:rgba(200,185,255,1);}
+.nav-links a.active::after{transform:scaleX(1);}
+
+/* hamburger */
+.hamburger{
+  display:none;flex-direction:column;justify-content:center;gap:5px;
+  width:36px;height:36px;cursor:pointer;padding:4px;
+  background:none;border:none;
+}
+.hamburger span{
+  display:block;
+  height: 2px;
+  width:100%;
+  background:rgba(232,230,240,0.7);
+  transition:all 0.3s ease;
+  transform-origin:center;
+}
+.hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
+.hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0);}
+.hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
+
+.mobile-menu{
+  display:none;position:fixed;top:66px;left:0;right:0;z-index:99;
+  background:rgba(6,7,15,0.92);
+  backdrop-filter:blur(32px);-webkit-backdrop-filter:blur(32px);
+  border-bottom:1px solid rgba(255,255,255,0.08);
+  padding:1.5rem 2.5rem 2rem;
+  flex-direction:column;gap:0;
+  transform:translateY(-10px);opacity:0;
+  transition:opacity 0.25s ease,transform 0.25s ease;
+}
+.mobile-menu.open{display:flex;opacity:1;transform:translateY(0);height: 60vh;}
+.mobile-menu a{
+  color:rgba(232,230,240,0.6);text-decoration:none;
+  font-size:0.82rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;
+  padding:1rem 0;border-bottom:1px solid rgba(255,255,255,0.06);
+  transition:color 0.2s;
+}
+.mobile-menu a:last-child{border-bottom:none;}
+.mobile-menu a:hover{color:rgba(200,185,255,1);}
+.mobile-menu a.active{color:rgba(200,185,255,1);}
+
+/* ─── HERO ─── */
+#hero{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding-top:100px;
+  padding-bottom:5rem;
+  max-width:100%;
+  padding-left:max(3rem,8vw);
+  padding-right:max(3rem,8vw);
+  /* background: black; */
+ 
+ 
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;
+  color:rgba(200,185,255,0.65);font-weight:500;margin-bottom:2rem;
+  opacity:0;animation:fadeUp 0.8s ease 0.2s forwards;
+}
+.hero-eyebrow::before{content:'';display:block;width:28px;height:1px;background:rgba(200,185,255,0.4);}
+.hero-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(3.8rem,9vw,9.5rem);
+  line-height: 0.72;
+  letter-spacing: -0.08em;
+  color:#e8e6f0;
+  opacity:0;
+  animation:fadeUp 0.9s ease 0.35s forwards;
+  /* background-color: rgb(0 0 0 / 50%); */
+}
+.hero-name em{font-style:italic;color:rgba(200,185,255,0.55);}
+.hero-desc{
+  max-width:500px;
+  margin-top:2.5rem;
+  font-size: 1.2rem;
+  color: rgb(232 230 240 / 90%);
+  line-height: 1.6;
+  font-weight:300;
+  opacity:0;
+  animation:fadeUp 0.9s ease 0.5s forwards;
+}
+.hero-desc strong{color:rgba(232,230,240,0.85);font-weight:500;}
+.hero-actions{
+  display:flex;gap:1rem;margin-top:2.75rem;flex-wrap:wrap;
+  opacity:0;animation:fadeUp 0.9s ease 0.65s forwards;
+}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:0.7rem 1.75rem;
+  border-radius:999px;
+  font-family:'Jost',sans-serif;
+  font-size: 0.98rem;
+  font-weight:500;
+  letter-spacing:0.06em;
+  cursor:pointer;
+  text-decoration:none;
+  transition:all 0.25s;
+  border:none;
+}
+.btn-primary{
+  background:rgba(160,130,255,0.18);color:rgba(220,210,255,0.9);
+  border:1px solid rgba(160,130,255,0.35);
+}
+.btn-primary:hover{background:rgba(160,130,255,0.3);border-color:rgba(160,130,255,0.6);}
+.btn-ghost{
+  background:transparent;color:rgba(232,230,240,0.5);
+  border:1px solid rgba(255,255,255,0.1);
+}
+.btn-ghost:hover{border-color:rgba(255,255,255,0.2);color:rgba(232,230,240,0.8);}
+.hero-tags{
+  display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:3rem;
+  opacity:0;animation:fadeUp 0.9s ease 0.8s forwards;
+}
+.tag{
+  font-size:0.68rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color: rgb(232 230 240 / 60%);
+  border:1px solid rgba(200,185,255,0.12);
+  padding:0.3rem 0.85rem;
+  border-radius:999px;
+  font-weight:400;
+}
+.hero-scroll{
+  position:absolute;
+  bottom:3rem;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:8px;
+  color: rgb(200 185 255);
+  font-size:0.65rem;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  opacity:0;
+  animation:fadeIn 1s ease 1.3s forwards;
+}
+.scroll-line{
+  width:1px;
+  height:44px;
+  background: linear-gradient(to bottom, rgb(200 185 255), transparent);
+  animation:scrollPulse 2.5s ease-in-out infinite;
+}
+
+/* ─── ABOUT ─── */
+#about{}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+.about-heading{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2.2rem,4vw,4rem);line-height:1.05;letter-spacing:-0.02em;color:#e8e6f0;
+}
+.about-heading em{font-style:italic;color:rgba(200,185,255,0.55);}
+.about-text{font-size: 1.1rem;color: rgb(232 230 240 / 90%);line-height: 1.65;font-weight:300;}
+.about-text+.about-text{margin-top:1.1rem;}
+.about-text strong{color: rgba(232,230,240,0.8);font-weight:500;}
+.skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.6rem;margin-top:2rem;}
+.skill-pill{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size: 1rem;
+  color: rgb(255 255 255);
+  padding:0.55rem 0.85rem;
+  border-radius:10px;
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.07);
+  transition:all 0.2s;
+  cursor:default;
+}
+.skill-pill:hover{border-color:rgba(200,185,255,0.25);color:rgba(232,230,240,0.8);background:rgba(160,130,255,0.07);}
+.skill-dot{width:4px;height:4px;border-radius:50%;background:rgba(200,185,255,0.6);flex-shrink:0;}
+
+/* ─── EXPERIENCE ─── */
+#cv{}
+.cv-layout{display:grid;grid-template-columns:260px 1fr;gap:4rem;}
+.cv-sidebar-heading{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2.2rem,4vw,4rem);line-height:1.05;letter-spacing:-0.02em;
+  position:sticky;top:80px;
+}
+.cv-sidebar-heading em{font-style:italic;color:rgba(200,185,255,0.5);}
+.cv-sidebar-sub{font-size: 0.92rem;color: rgb(232 230 240);margin-top:0.85rem;line-height:1.65;font-weight:300;}
+.cv-download{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin-top: 1.5rem;
+  font-size:0.75rem;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  font-weight:500;
+  color: rgb(255 255 255 / 95%);
+  text-decoration:none;
+  padding:0.65rem 1.4rem;
+  border-radius:999px;
+  background: rgb(88 52 131);
+  border: 2px solid rgb(239 169 195 / 20%);
+  box-shadow: 0 0 18px rgb(255 100 100 / 20%), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transition:all 0.25s ease;
+}
+.cv-download::before{content:'↓';font-size:1rem;line-height:1;}
+.cv-download:hover{
+  color:#fff;
+  background:rgba(160,120,255,0.32);
+  border-color:rgba(200,170,255,0.75);
   box-shadow:0 0 28px rgba(160,120,255,0.45), inset 0 1px 0 rgba(255,255,255,0.12);
   transform:translateY(-2px);
 }
@@ -1162,7 +1394,43 @@ body.light ::selection{background:rgba(120,80,200,0.2);color:#1a1030;}
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 
 <script src="js/main.js"></script>
 
-<!-- Duplicate inline Lottie include and init removed — handled in js/main.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+<script>
+  $(document).ready(function () {
+    var animation = bodymovin.loadAnimation({
+      container: $('#lottie-container')[0],
+      path: 'data.json',
+      renderer: 'svg',
+      loop: false,
+      autoplay: false,
+      name: "Hover Animation",
+    });
+
+    // Function to trigger the animation
+    function playAnimation() {
+      animation.stop();
+      animation.play();
+    }
+
+    // Auto-play once every 15 seconds
+    playAnimation(); // Play immediately on load
+    setInterval(playAnimation, 18000);
+
+    // Click event
+    $('#lottie-container').on('click', function () {
+      playAnimation();
+    });
+
+    // Hover events
+    $('#lottie-container').on('mouseenter', function () {
+      animation.play();
+		
+    });
+    $('#lottie-container').on('mouseleave', function () {
+    animation.stop();
+    });
+  });
+</script>
 
 	
 	
