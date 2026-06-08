@@ -30,6 +30,16 @@
   const container = document.getElementById('lottie-container');
   if (!container || typeof lottie === 'undefined') return;
 
+  // If an animation was previously attached to this container, clean it up
+  if (container._lottieAnimation && typeof container._lottieAnimation.destroy === 'function') {
+    try { container._lottieAnimation.destroy(); } catch (e) { /* ignore */ }
+    container._lottieAnimation = null;
+  }
+  if (container._lottieInterval) {
+    try { clearInterval(container._lottieInterval); } catch (e) { /* ignore */ }
+    container._lottieInterval = null;
+  }
+
   const animation = lottie.loadAnimation({
     container: container,
     path: 'data.json',
@@ -39,18 +49,21 @@
     name: 'Hover Animation',
   });
 
+  // Attach to container for future cleanup if script runs again
+  container._lottieAnimation = animation;
+
   function playAnimation() {
-    animation.stop();
-    animation.play();
+    try { animation.stop(); } catch (e) { /* ignore */ }
+    try { animation.play(); } catch (e) { /* ignore */ }
   }
 
   // Play immediately and then every 18 seconds
   playAnimation();
-  setInterval(playAnimation, 18000);
+  container._lottieInterval = setInterval(playAnimation, 18000);
 
   container.addEventListener('click', playAnimation);
-  container.addEventListener('mouseenter', () => animation.play());
-  container.addEventListener('mouseleave', () => animation.stop());
+  container.addEventListener('mouseenter', () => { try { animation.play(); } catch (e) {} });
+  container.addEventListener('mouseleave', () => { try { animation.stop(); } catch (e) {} });
 })();
 
 /* ─── SCROLL TO TOP — show when hero name leaves viewport ─── */

@@ -1062,10 +1062,10 @@ body.light ::selection{background:rgba(120,80,200,0.2);color:#1a1030;}
 <nav aria-label="Main navigation">
   <a href="#hero" class="nav-logo" aria-label="Paul Bristow-Bovey — return to top">
     <div id="lottie-container" style="width: 91px; height:44px;"></div>
-    <!--<div class="nav-logo-text">
+    <div class="nav-logo-text">
       Paul Bristow-Bovey
       <span style="letter-spacing: -1px">UX · UI · Surface · Flow </span>
-    </div>-->
+    </div>
   </a>
   <ul class="nav-links" aria-label="Site sections">
     <li><a href="#about">About</a></li>
@@ -1116,7 +1116,7 @@ body.light ::selection{background:rgba(120,80,200,0.2);color:#1a1030;}
     <a href="#cv" class="btn btn-primary">View experience ↓</a>
     <a href="#contact" class="btn btn-ghost">Get in touch</a>
   </div>
- <!-- <div class="hero-tags">
+<div class="hero-tags">
     <span class="tag">UX Research</span>
     <span class="tag">Interaction Design</span>
 
@@ -1129,7 +1129,7 @@ body.light ::selection{background:rgba(120,80,200,0.2);color:#1a1030;}
     <span class="tag">Team Mentorship</span>
 	  <span class="tag">Stakeholder Alignment</span>
 	  <span class="tag">Agile Delivery (Scrum, Kanban, Waterfall)</span>
-  </div>-->
+  </div>
   <div class="hero-scroll" aria-hidden="true">
     <div class="scroll-line"></div>
     <!--<span>Scroll</span>-->
@@ -1320,18 +1320,12 @@ body.light ::selection{background:rgba(120,80,200,0.2);color:#1a1030;}
         <button class="cs-card-mobile-btn" aria-label="View rain case study">View case study →</button>
       </div>
     </article>
-    <article class="cs-card glass reveal" data-case="2" role="button" tabindex="0" aria-label="Open Web site and Android app — rain case study">
-      <div class="cs-card-thumb cs-thumb-photo">
-        <img src="https://placehold.co/800x600/1a0a2e/7a3fb0?text=Motion+Modules" alt="Motion Learning Modules" loading="lazy">
-        <div class="cs-card-overlay" aria-hidden="true"><div class="cs-view-btn">View case study</div></div>
-      </div>
-      <div class="cs-card-body">
-        <div class="cs-card-label">E-Learning · 2026</div>
-        <div class="cs-card-title">Web site and Android app — rain</div>
-        <p class="cs-card-desc">Designing and animating short-form explainer video content — translating technical scripts into visually clear, motion-paced learning experiences.</p>
-        <button class="cs-card-mobile-btn" aria-label="View rain case study">View case study →</button>
-      </div>
-    </article>
+
+
+
+
+    
+
   </div>
 </section>
 
@@ -1402,46 +1396,10 @@ body.light ::selection{background:rgba(120,80,200,0.2);color:#1a1030;}
     <div id="modal-content"></div>
   </div>
 </div>
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 
-<script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
-<script>
-  $(document).ready(function () {
-    var animation = bodymovin.loadAnimation({
-      container: $('#lottie-container')[0],
-      path: 'data.json',
-      renderer: 'svg',
-      loop: false,
-      autoplay: false,
-      name: "Hover Animation",
-    });
-
-    // Function to trigger the animation
-    function playAnimation() {
-      animation.stop();
-      animation.play();
-    }
-
-    // Auto-play once every 15 seconds
-    playAnimation(); // Play immediately on load
-    setInterval(playAnimation, 18000);
-
-    // Click event
-    $('#lottie-container').on('click', function () {
-      playAnimation();
-    });
-
-    // Hover events
-    $('#lottie-container').on('mouseenter', function () {
-      animation.play();
-		
-    });
-    $('#lottie-container').on('mouseleave', function () {
-    animation.stop();
-    });
-  });
-</script>
+  <!-- Duplicate bodymovin include and inline init removed; use `js/main.js` for Lottie nav animation -->
 
 	
 	
@@ -1469,15 +1427,6 @@ $(document).ready(function () {
 	
 
 <script>
-/* ─── LOTTIE LOGO ─── */
-lottie.loadAnimation({
-  container: document.getElementById('lottie-logo'),
-  renderer: 'svg',
-  loop: true,
-  autoplay: true,
-  path: 'https://paulb666-sudo.github.io/pb-port/images/bouncing-circles.svg'
-});
-
 /* ─── HAMBURGER ─── */
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobile-menu');
