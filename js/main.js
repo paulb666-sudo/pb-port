@@ -31,6 +31,61 @@
   if (!container || typeof lottie === 'undefined') return;
 
   const animation = lottie.loadAnimation({
+  ,
+  {
+    tag: 'Web · 2024',
+    title: 'Placeholder Case A',
+    subtitle: 'Example Client — Project A',
+    meta: [
+      { label: 'Role', value: 'Product Designer' },
+      { label: 'Platform', value: 'Web' },
+      { label: 'Scope', value: 'Prototyping' }
+    ],
+    imgClass: ['mi-photo mi-ph-1','mi-photo mi-ph-2'],
+    imgSrcs: ['https://placehold.co/1200x675/222/ddd?text=Case+A+Image+1','https://placehold.co/1200x675/222/ddd?text=Case+A+Image+2'],
+    imgLabels: ['Overview','Prototype Screens'],
+    links: null,
+    paras: [
+      '<strong>Summary.</strong> Short placeholder description for Case A.',
+      'Add your real copy here when ready.'
+    ]
+  },
+  {
+    tag: 'SaaS · 2025',
+    title: 'Placeholder Case B',
+    subtitle: 'Example Client — Project B',
+    meta: [
+      { label: 'Role', value: 'Lead UX' },
+      { label: 'Platform', value: 'SaaS' },
+      { label: 'Scope', value: 'Research · Design' }
+    ],
+    imgClass: ['mi-photo mi-ph-3','mi-photo mi-ph-4'],
+    imgSrcs: ['https://placehold.co/1200x675/112/eee?text=Case+B+Image+1','https://placehold.co/1200x675/112/eee?text=Case+B+Image+2'],
+    imgLabels: ['Discovery','Final UI'],
+    links: null,
+    paras: [
+      '<strong>Summary.</strong> Short placeholder description for Case B.',
+      'Replace this content with real project details later.'
+    ]
+  },
+  {
+    tag: 'Mobile · 2022',
+    title: 'Placeholder Case C',
+    subtitle: 'Example Client — Project C',
+    meta: [
+      { label: 'Role', value: 'Interaction Designer' },
+      { label: 'Platform', value: 'iOS & Android' },
+      { label: 'Scope', value: 'Prototyping' }
+    ],
+    imgClass: ['mi-photo mi-ph-5'],
+    imgSrcs: ['https://placehold.co/1200x675/0f0/fff?text=Case+C+Image'],
+    imgLabels: ['Key Screen'],
+    links: null,
+    paras: [
+      '<strong>Summary.</strong> Short placeholder description for Case C.',
+      'Swap in your real case study text and images when available.'
+    ]
+  }
     container: container,
     path: 'data.json',
     renderer: 'svg',
@@ -171,7 +226,8 @@ const cases = [
       'Animation in After Effects focused on using motion purposefully — not decoratively. Timing and easing were tuned to guide attention rather than distract, with motion used to reveal information progressively and reinforce the spoken narrative. This work deepened my understanding of how motion affects comprehension and where it adds versus subtracts value.',
       'The process also became an exploration of <strong>AI-assisted creative workflows</strong> — using generative tools to accelerate asset creation, voice production and script iteration. This has fed directly into my thinking around how AI tooling will reshape UX and product workflows more broadly, particularly in prototyping and specification generation.'
     ]
-  }
+  },
+  
 ];
 
 /* ─── MODAL LOGIC ─── */
