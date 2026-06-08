@@ -171,8 +171,7 @@ const cases = [
       'Animation in After Effects focused on using motion purposefully — not decoratively. Timing and easing were tuned to guide attention rather than distract, with motion used to reveal information progressively and reinforce the spoken narrative. This work deepened my understanding of how motion affects comprehension and where it adds versus subtracts value.',
       'The process also became an exploration of <strong>AI-assisted creative workflows</strong> — using generative tools to accelerate asset creation, voice production and script iteration. This has fed directly into my thinking around how AI tooling will reshape UX and product workflows more broadly, particularly in prototyping and specification generation.'
     ]
-  },
-  
+  }
 ];
 
 /* ─── MODAL LOGIC ─── */
