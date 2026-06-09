@@ -26,60 +26,6 @@
 })();
 
 /* ─── LOTTIE NAV LOGO ─── */
-(function () {
-  const container = document.getElementById('lottie-container');
-  if (!container || typeof lottie === 'undefined') return;
-
-  // If an animation was previously attached to this container, clean it up
-  if (container._lottieAnimation && typeof container._lottieAnimation.destroy === 'function') {
-    try { container._lottieAnimation.destroy(); } catch (e) { /* ignore */ }
-    container._lottieAnimation = null;
-  }
-  if (container._lottieInterval) {
-    try { clearInterval(container._lottieInterval); } catch (e) { /* ignore */ }
-    container._lottieInterval = null;
-  }
-
-  const animation = lottie.loadAnimation({
-    container: container,
-    path: 'data.json',
-    renderer: 'svg',
-    loop: false,
-    autoplay: false,
-    name: 'Hover Animation',
-  });
-
-  // Attach to container for future cleanup if script runs again
-  container._lottieAnimation = animation;
-
-  function playAnimation() {
-    try { animation.stop(); } catch (e) { /* ignore */ }
-    try { animation.play(); } catch (e) { /* ignore */ }
-  }
-
-  // Play immediately and then every 18 seconds
-  playAnimation();
-  container._lottieInterval = setInterval(playAnimation, 18000);
-
-  container.addEventListener('click', playAnimation);
-  container.addEventListener('mouseenter', () => { try { animation.play(); } catch (e) {} });
-  container.addEventListener('mouseleave', () => { try { animation.stop(); } catch (e) {} });
-})();
-
-/* ─── SCROLL TO TOP — show when hero name leaves viewport ─── */
-(function () {
-  const heroName = document.querySelector('.hero-name');
-  const scrollBtn = document.getElementById('scroll-reveal');
-  if (!heroName || !scrollBtn) return;
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      scrollBtn.style.display = entry.isIntersecting ? 'none' : 'flex';
-    });
-  }, { threshold: 0 });
-
-  observer.observe(heroName);
-})();
 
 /* ─── HAMBURGER MENU ─── */
 (function () {
