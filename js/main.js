@@ -25,7 +25,7 @@
   }
 })();
 
-/* ─── LOTTIE NAV LOGO ─── */
+
 
 /* ─── HAMBURGER MENU ─── */
 (function () {
