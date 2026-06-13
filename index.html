@@ -11,8 +11,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
 <style>
 /* ─── SKIP LINK ─── */
-	div{
-	}
+
 .skip-link{
   position:fixed;top:-100px;left:1rem;z-index:9999;
   padding:0.6rem 1.2rem;border-radius:6px;
@@ -1064,7 +1063,7 @@ body.light ::selection{background:rgba(120,80,200,0.2);color:#1a1030;}
 }
 </style>
 </head>
-<body class="light">
+<body>
 	<div class="ltNotification"><br>
 
 </div>
@@ -1755,11 +1754,8 @@ setActiveNav('#hero');
 /* ─── THEME TOGGLE ─── */
 const themeToggle = document.getElementById('theme-toggle');
 
-// Restore saved preference on load
-if (localStorage.getItem('theme') === 'dark') {
-  document.body.classList.remove('light');
-  document.documentElement.classList.remove('light');
-} else if (!localStorage.getItem('theme')) {
+// Restore saved preference on load (default to dark mode)
+if (localStorage.getItem('theme') === 'light') {
   document.body.classList.add('light');
   document.documentElement.classList.add('light');
 }

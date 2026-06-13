@@ -3,25 +3,17 @@
    Vanilla JS · no jQuery dependency
    ========================================================= */
 
-/* ─── THEME: honour prefers-color-scheme on first visit ─── */
+/* ─── THEME: default to dark mode ─── */
 (function () {
   const saved = localStorage.getItem('theme');
-  if (saved === 'dark') {
-    document.body.classList.remove('light');
-    document.documentElement.classList.remove('light');
-  } else if (saved === 'light') {
+  // Always default to dark mode unless user explicitly chose light
+  if (saved === 'light') {
     document.body.classList.add('light');
     document.documentElement.classList.add('light');
   } else {
-    // No saved preference — respect OS setting
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if (prefersDark) {
-      document.body.classList.remove('light');
-      document.documentElement.classList.remove('light');
-    } else {
-      document.body.classList.add('light');
-      document.documentElement.classList.add('light');
-    }
+    // Default: ensure dark mode (remove any 'light' class)
+    document.body.classList.remove('light');
+    document.documentElement.classList.remove('light');
   }
 })();
 
