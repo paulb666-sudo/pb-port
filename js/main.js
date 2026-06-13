@@ -3,21 +3,29 @@
    Vanilla JS · no jQuery dependency
    ========================================================= */
 
-/* ─── THEME: default to dark mode ─── */
+/* ─── THEME: honour prefers-color-scheme on first visit ─── */
 (function () {
   const saved = localStorage.getItem('theme');
-  // Always default to dark mode unless user explicitly chose light
-  if (saved === 'light') {
+  if (saved === 'dark') {
+    document.body.classList.remove('light');
+    document.documentElement.classList.remove('light');
+  } else if (saved === 'light') {
     document.body.classList.add('light');
     document.documentElement.classList.add('light');
   } else {
-    // Default: ensure dark mode (remove any 'light' class)
-    document.body.classList.remove('light');
-    document.documentElement.classList.remove('light');
+    // No saved preference — respect OS setting
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (prefersDark) {
+      document.body.classList.remove('light');
+      document.documentElement.classList.remove('light');
+    } else {
+      document.body.classList.add('light');
+      document.documentElement.classList.add('light');
+    }
   }
 })();
 
-
+/* ─── LOTTIE NAV LOGO ─── */
 
 /* ─── HAMBURGER MENU ─── */
 (function () {
