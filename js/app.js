@@ -159,8 +159,8 @@ if (localStorage.getItem('theme') === 'dark') {
   document.body.classList.remove('light');
   document.documentElement.classList.remove('light');
 } else if (!localStorage.getItem('theme')) {
-  document.body.classList.add('light');
-  document.documentElement.classList.add('light');
+  document.body.classList.add('dark');
+  document.documentElement.classList.add('dark');
 }
 
 themeToggle.addEventListener('click', () => {
