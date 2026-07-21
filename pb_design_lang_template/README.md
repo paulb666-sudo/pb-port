@@ -1,7 +1,5 @@
 
-  # Design Language Template Document
-
-  This is a code bundle for Design Language Template Document. The original project is available at https://www.figma.com/design/mjiuKZHJQWGNxVZFfCmnkW/Design-Language-Template-Document.
+  # Surface Flow Design Language Template - pb.surfaceflow@gmail.com  
 
   ## Running the code
 
