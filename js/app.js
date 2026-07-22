@@ -155,19 +155,19 @@ setActiveNav('#hero');
 const themeToggle = document.getElementById('theme-toggle');
 
 // Restore saved preference on load
-if (localStorage.getItem('theme') === 'dark') {
-  document.body.classList.remove('light');
-  document.documentElement.classList.remove('light');
-} else if (!localStorage.getItem('theme')) {
-  document.body.classList.add('dark');
-  document.documentElement.classList.add('dark');
-}
+// if (localStorage.getItem('theme') === 'dark') {
+//   document.body.classList.remove('light');
+//   document.documentElement.classList.remove('light');
+// } else if (!localStorage.getItem('theme')) {
+//   document.body.classList.add('dark');
+//   document.documentElement.classList.add('dark');
+// }
 
-themeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('light');
-  document.documentElement.classList.toggle('light');
-  localStorage.setItem('theme', document.body.classList.contains('light') ? 'light' : 'dark');
-});
+// themeToggle.addEventListener('click', () => {
+//   document.body.classList.toggle('light');
+//   document.documentElement.classList.toggle('light');
+//   localStorage.setItem('theme', document.body.classList.contains('light') ? 'light' : 'dark');
+// });
 
 /* ==========================================================
    SURFACE FLOW PORTFOLIO
@@ -185,15 +185,14 @@ const Portfolio = {
         init() {
 
             // Open article buttons
-            $(document).on("click", ".open-article", function (e) {
-
-                e.preventDefault();
-
-                const article = $(this).data("article");
-
-                Portfolio.article.open(article);
-
-            });
+           $(document).on("click", ".cs-card", function (e) {
+    const $card = $(this).closest(".open-article");
+    if (!$card.length) return;
+    
+    e.preventDefault();
+    const article = $card.data("article");
+    Portfolio.article.open(article);
+})
 
             // Close button
             $(document).on("click", ".article-close", function () {
