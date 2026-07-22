@@ -1,0 +1,82 @@
+<article class="rain-article">
+    <div class="modal-tag">Mobile App · 2017</div>
+    <h2 class="modal-title">Sanlam - Go Cover</h2>
+    <div class="modal-subtitle">Android and Website account managment</div>
+    <div class="modal-meta">
+        <div class="modal-meta-item"><span>Role</span><strong>UX Lead Designer</strong></div>
+        <div class="modal-meta-item"><span>Platform</span><strong>Android, Web</strong></div>
+        <div class="modal-meta-item"><span>Client</span><strong>Sanlam</strong></div>
+    </div>
+
+    <div class="article-body modal-body-para">
+
+
+        <p class="modal-body-para"><b>Go Cover</b>twas Sanlam's entry into direct-to-consumer insurance via mobile — a first for the
+            brand and a significant UX challenge. Users needed to be able to get a quote, understand their cover and
+            manage their policy in a domain that is typically perceived as complex, intimidating and opaque.</p>
+
+        <p>The goal of Chip In was to formalise this behaviour by allowing anyone to contribute directly towards
+            another customer's Rain account through a secure, self-service experience.</p>
+
+
+        <p class="">Responsibilities
+        <ul>
+            <li>Product discovery</li>
+            <li>UX strategy</li>
+            <li>User journeys</li>
+            <li>Wireframes</li>
+            <li>High-fidelity UI</li>
+            <li>Interaction design</li>
+            <li>Error state design</li>
+            <li>Payment flow design</li>
+            <li>Developer handoff</li>
+        </ul>
+
+        </p>
+
+        <p class="modal-img mi-photo mi-darg-1 visible">
+            <img src="images/rain_chipIn1.png" alt="rain_chipin" />
+        </p>
+        <p><strong>Designing for two users</strong>. Early discovery revealed a sharp divide between two user types.
+            Volunteers - often
+            students, retirees, or working professionals giving up a few hours on weekends — needed a system that was
+            frictionless, warm and confidence-inspiring. Shelter administrators, by contrast, needed control: adding
+            dogs, editing medical and behavioural flags, overriding bookings, monitoring activity. Rather than build two
+            separate interfaces, the decision was made to design a single adaptive UI gated behind an explicit role
+            selector at login - the role toggle revealing or hiding administrative affordances as appropriate. A
+            mandatory liability waiver was woven directly into the login flow, and a "Remember Me" option cached
+            credentials locally to eliminate re-entry friction for regular volunteers.</p>
+        <p class="modal-img mi-photo mi-darg-1 visible">
+            <img src="images/Case_Study_main2.png" alt="DARG Shelter Hub - Dog Roster" />
+        </p>
+        <p><strong>Designing for urgency.</strong>. The central challenge of the dashboard was surfacing priority
+            without creating anxiety. The
+            solution was a multi-layered sorting system anchored in three modes: Urgency (a qualitative status badge set
+            by
+            administrators), Days (time in the shelter), and Fewest Walks (weekly exercise count). Each dog card was a
+            compact but
+            information-dense unit — breed, age, energy level, shelter duration, a circular progress dial showing walks
+            against the
+            weekly goal, and a colour-coded status badge (Urgent in red, On-Site Only in amber, Well Walked in green). A
+            weather
+            widget docked above the grid surfaced real-time safety warnings, alerting volunteers to avoid walking
+            high-energy or
+            flat-faced breeds during peak heat.</p>
+        <p class="modal-img mi-photo mi-darg-1 visible">
+            <img src="images/Case_Study_main2.png" alt="DARG Shelter Hub - Dog Roster" />
+        </p>
+        <p><strong>The scheduling experience</strong>. Walk scheduling needed to be achievable in under thirty seconds
+            on
+            a phone. Two entry points were designed: a "Book Walk" button on each dog card for volunteers who already
+            knew which dog they wanted, and a Schedule Walk wizard in the bottom nav for multi-dog group bookings. Three
+            fixed daily time slots replaced a freeform picker to constrain complexity. A recurrence engine allowed walks
+            to be booked up to twelve weeks ahead. The My Walks section gave each volunteer a personal history — hours
+            volunteered, completed walks, upcoming sessions — serving both as motivation and as an administrative audit
+            trail. The platform was built within Google AI Studio using a Gemini-powered workflow, compressed into days
+            rather than weeks, and deployed to Google Cloud Run as a containerised static build, or a progressive web
+            app.</p>
+        <p class="modal-img mi-photo mi-darg-1 visible">
+            <img src="images/Case_Study_main2.png" alt="DARG Shelter Hub - Dog Roster" />
+        </p>
+        <a href="https://tinyurl.com/DargWalker" class="modal-link" target="_blank" rel="noopener">Darg Walker</a>
+</article>

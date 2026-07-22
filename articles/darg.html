@@ -1,0 +1,72 @@
+<article class="darg-article">
+    <div class="modal-tag">Mobile App · 2026</div>
+    <h2 class="modal-title">DARG Shelter Hub</h2>
+    <div class="modal-subtitle">Dog Active Rescue Group — Cape Town</div>
+    <div class="modal-meta">
+        <div class="modal-meta-item"><span>Role</span><strong>UX/UI Designer</strong></div>
+        <div class="modal-meta-item"><span>Platform</span><strong>Mobile Web (PWA)</strong></div>
+        <div class="modal-meta-item"><span>Stack</span><strong>React · TypeScript</strong></div>
+        <div class="modal-meta-item"><span>Deployed</span><strong>Google Cloud Run</strong></div>
+    </div>
+
+    <div class="article-body modal-body-para">
+      
+        <p><strong>The problem.</strong> DARG - the Dog Active Rescue Group - is a Cape Town-based animal shelter
+            running
+            on goodwill and spreadsheets. Volunteer coordinators were spending hours each week manually matching
+            available
+            walkers to dogs in need of exercise, cross-referencing paper rosters, WhatsApp threads, and a shared Google
+            Sheet that was perpetually out of date. Dogs with the most urgent behavioural needs were frequently
+            overlooked,
+            while popular, easy-going dogs received disproportionate attention. The ask was clear: design and build a
+            purpose-built scheduling portal that would bring order to the chaos - one that volunteers could pick up on
+            their
+            phones without any training, and that shelter administrators could use to maintain full visibility and
+            control
+            over the kennel roster.</p>
+           
+        <p class="modal-img mi-photo mi-darg-1 visible">
+            <img src="images/darg_wireframe.png" alt="DARG Shelter Hub - Dog Roster" />
+        </p>
+        <p><strong>Designing for two users</strong>. Early discovery revealed a sharp divide between two user types.
+            Volunteers - often
+            students, retirees, or working professionals giving up a few hours on weekends — needed a system that was
+            frictionless, warm and confidence-inspiring. Shelter administrators, by contrast, needed control: adding
+            dogs, editing medical and behavioural flags, overriding bookings, monitoring activity. Rather than build two
+            separate interfaces, the decision was made to design a single adaptive UI gated behind an explicit role
+            selector at login - the role toggle revealing or hiding administrative affordances as appropriate. A
+            mandatory liability waiver was woven directly into the login flow, and a "Remember Me" option cached
+            credentials locally to eliminate re-entry friction for regular volunteers.</p>
+        <p class="modal-img mi-photo mi-darg-1 visible">
+            <img src="images/Case_Study_main2.png" alt="DARG Shelter Hub - Dog Roster" />
+        </p>
+        <p><strong>Designing for urgency.</strong>. The central challenge of the dashboard was surfacing priority
+            without creating anxiety. The
+            solution was a multi-layered sorting system anchored in three modes: Urgency (a qualitative status badge set
+            by
+            administrators), Days (time in the shelter), and Fewest Walks (weekly exercise count). Each dog card was a
+            compact but
+            information-dense unit — breed, age, energy level, shelter duration, a circular progress dial showing walks
+            against the
+            weekly goal, and a colour-coded status badge (Urgent in red, On-Site Only in amber, Well Walked in green). A
+            weather
+            widget docked above the grid surfaced real-time safety warnings, alerting volunteers to avoid walking
+            high-energy or
+            flat-faced breeds during peak heat.</p>
+        <p class="modal-img mi-photo mi-darg-1 visible">
+            <img src="images/Case_Study_main2.png" alt="DARG Shelter Hub - Dog Roster" />
+        </p>
+        <p><strong>The scheduling experience</strong>. Walk scheduling needed to be achievable in under thirty seconds on
+            a phone. Two entry points were designed: a "Book Walk" button on each dog card for volunteers who already
+            knew which dog they wanted, and a Schedule Walk wizard in the bottom nav for multi-dog group bookings. Three
+            fixed daily time slots replaced a freeform picker to constrain complexity. A recurrence engine allowed walks
+            to be booked up to twelve weeks ahead. The My Walks section gave each volunteer a personal history — hours
+            volunteered, completed walks, upcoming sessions — serving both as motivation and as an administrative audit
+            trail. The platform was built within Google AI Studio using a Gemini-powered workflow, compressed into days
+            rather than weeks, and deployed to Google Cloud Run as a containerised static build, or a progressive web
+            app.</p>
+        <p class="modal-img mi-photo mi-darg-1 visible">
+            <img src="images/Case_Study_main2.png" alt="DARG Shelter Hub - Dog Roster" />
+        </p>
+           <a href="https://tinyurl.com/DargWalker" class="modal-link" target="_blank" rel="noopener">Darg Walker</a>
+</article>
