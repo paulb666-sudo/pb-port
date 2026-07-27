@@ -258,6 +258,29 @@ const Portfolio = {
 
 $(function () {
 
+    function setTimelineState($shell) {
+        const $content = $shell.find('.cv-timeline');
+        const isOpen = $shell.hasClass('is-open');
+        const contentHeight = $content[0] ? $content[0].scrollHeight : 0;
+
+        $content.css('max-height', isOpen ? `${contentHeight}px` : '0px');
+        $content.css('opacity', isOpen ? 1 : 0);
+        $content.attr('aria-hidden', String(!isOpen));
+        $shell.find('.cv-timeline-toggle').attr('aria-expanded', String(isOpen));
+        $shell.find('.cv-timeline-toggle span').text(isOpen ? 'Collapse career timeline' : 'Expand career timeline');
+    }
+
+    $('.cv-timeline-toggle').on('click', function (e) {
+        e.preventDefault();
+        const $shell = $(this).closest('.cv-timeline-shell');
+        $shell.toggleClass('is-open');
+        setTimelineState($shell);
+    });
+
+    $('.cv-timeline-shell').each(function () {
+        setTimelineState($(this));
+    });
+
     Portfolio.init();
 
 });
