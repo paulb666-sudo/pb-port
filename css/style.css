@@ -673,10 +673,11 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 40px 40px;
-    transition: transform 0.2s ease;
+    transition: transform 0.9s ease;
 }
+
 .cv-timeline-shell.is-open .cv-timeline-toggle::after {
-  transform: rotate(180deg);
+  transform: rotate(90deg);
 }
 .cv-timeline {
   display: flex;
@@ -1224,7 +1225,7 @@ nav {
   margin-top: 3rem;
 }
 .edu-item {
-  background: #06070f;
+  background: #06070fab;
   padding: 1.6rem 2rem;
   transition: 0.2s;
   cursor: none;
