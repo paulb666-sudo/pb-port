@@ -13,7 +13,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="dark">
+  
   <a href="#hero" id="scroll-reveal" class="scrollToTop" aria-label="Scroll to top">
     <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <path d="M10 15V5M10 5L5 10M10 5L15 10" stroke="white" stroke-width="1.75" stroke-linecap="round"
@@ -28,13 +30,15 @@
     <!-- <div class="orb orb4"></div>
     <div class="orb orb5"></div> -->
   </div>
+  
   <div class="blob"></div>
   <div class="bg-grid"></div>
+ 
   <div class="wrap">
     <!-- NAV -->
     <nav>
       <a href="#hero" class="nav-logo">
-        <div id="lottie-container" style="width: 71px; height:44px;"></div>
+        <div id="lottie-container" style="width: 63px; height:44px;"></div>
         <!--<div class="nav-logo-text">
       Paul Bristow-Bovey
       <span style="letter-spacing: -1px">UX · UI · Surface · Flow </span>
@@ -79,10 +83,11 @@
       <a href="#showreel" class="mobile-nav-link">Showreel</a>
       <a href="#education" class="mobile-nav-link">Education</a>
       <a href="#contact" class="mobile-nav-link">Contact</a>
-    </div>
+    </div><canvas id="c"></canvas>
     <!-- HERO -->
     <section id="hero">
-      <div class="hero-eyebrow whiteTxt glow">Cape Town, South Africa</div>
+    
+      <!-- <div class="hero-eyebrow whiteTxt glow">Cape Town, South Africa</div> -->
       <h1 class="hero-name glow">
         Paul<br>
         Bristow<em class="noGlow">-Bovey</em>
@@ -96,7 +101,7 @@
         <a href="#cv" class="btn btn-primary">View experience ↓</a>
         <a href="#contact" class="btn btn-ghost">Get in touch</a>
       </div>
-      <div class="hero-tags">
+      <!-- <div class="hero-tags">
         <span class="tag">UX Research</span>
         <span class="tag">Interaction Design</span>
         <span class="tag">MCP server</span>
@@ -104,31 +109,32 @@
         <span class="tag">AI Workflows</span>
         <span class="tag">Front-End Collaboration</span>
         <span class="tag">SaaS</span>
-        <span class="tag">XR / Spatial UX</span>
-      </div>
+       
+      </div> -->
       <div class="hero-scroll">
       </div>
     </section>
     <!-- ABOUT -->
     <section id="about">
+       
       <div class="section-label">About</div>
       <div class="about-grid">
         <div class="reveal">
           <h2 class="about-heading">
             <span class="glow">Designing for</span><br>
             <em>clarity, systems</em><br>
-            &amp; <span class="glow">delight.</span>
+            &amp; <span class="glow">delight</span>
           </h2>
         </div>
         <div class="reveal">
           <p class="about-text">My career started in print and evolved through interactive media, front-end development
-            and agency work — arriving at a practice centred on <strong>user-centred product design</strong> for complex
+            and agency work and has arrived at a practice centred on <strong>user-centred product design</strong> for complex
             digital systems.</p>
-          <p class="about-text">UX strategy across SaaS platforms, financial services, telecoms and e-learning — and
+          <p class="about-text">UX strategy across SaaS platforms, financial services, telecoms and e-learning as well as
             working closely with engineers, product owners and senior stakeholders to ensure design intent carries
             through into working software - is what I do.</p>
           <p class="about-text">Today my focus is on the <strong>convergence of AI-assisted workflows, design systems
-              and scalable interaction design</strong> — exploring how the latest UX tools are reshaping the
+              and scalable interaction design</strong> - exploring how the latest UX tools are reshaping the
             design-to-development pipeline.</p>
           <div class="skills-grid">
             <div class="skill-pill glow"><span class="skill-dot "></span>UX Strategy &amp; Research</div>
@@ -170,8 +176,8 @@
             <div class="cv-period">Apr 2023<br>Present</div>
             <div>
               <div class="cv-role">Freelancer / Contractor</div>
-              <div class="cv-company">UX, UI &amp; Motion Design — Cape Town</div>
-              <p class="cv-desc">Producing motion-driven e-learning content for Laragh Courseware — animated modules
+              <div class="cv-company">UX, UI &amp; Motion Design - Cape Town</div>
+              <p class="cv-desc">Producing motion-driven e-learning content for Laragh Courseware - animated modules
                 using shared illustration liraries, AI voice over pipelines and and video output in After Effects.
                 Concurrently exploring AI-assisted UX tooling: functional spec generation, rapid prototyping, user
                 testing, token-driven design systems and design-to-development collaboration (exploring better ways).
@@ -184,7 +190,7 @@
             <div class="cv-period">Feb 2022<br>Apr 2023</div>
             <div>
               <div class="cv-role">Lead UX Designer</div>
-              <div class="cv-company">Catch &amp; Release Agency (rain.co.za) — Cape Town</div>
+              <div class="cv-company">Catch &amp; Release Agency (rain.co.za) - Cape Town</div>
               <p class="cv-desc">Led UX/UI across the rain website and Android app. Created a comprehensive
                 component-based design system in Figma. Introduced Lottie SVG animations for cross-platform interactive
                 motion. Mentored designers and served as bridge between design and front/back-end development.</p>
@@ -197,7 +203,7 @@
             <div class="cv-period">Feb 2012<br>Apr 2017</div>
             <div>
               <div class="cv-role">Head of UX</div>
-              <div class="cv-company">Full Stack Dev House — Cape Town</div>
+              <div class="cv-company">Full Stack Dev House - Cape Town</div>
               <p class="cv-desc">I led and mentored a team across financial services products. Full UX and front-end
                 delivery for Sanlam (Go Cover, Concept Bluestar, Glacier), PSG and ASISA (and many others). I ran
                 stakeholder interviews, wireframing, prototyping, front-end development and user testing.</p>
@@ -209,7 +215,7 @@
             <div class="cv-period">Jun 2015<br>Apr 2016</div>
             <div>
               <div class="cv-role">Head of UX</div>
-              <div class="cv-company">Publicis Machine Agency — Cape Town</div>
+              <div class="cv-company">Publicis Machine Agency - Cape Town</div>
               <p class="cv-desc">Owned UX and UI delivery from discovery to execution across multiple brands. Led
                 persona development, stakeholder interviews, wireframes and clickable prototypes. Embedded within a full
                 Agile lifecycle. Clients: Sanlam, Red Bull, Appletiser, Weet-Bix, SASKO.</p>
@@ -221,7 +227,7 @@
             <div class="cv-period">Apr 2011<br>May 2012</div>
             <div>
               <div class="cv-role">UX/UI Designer (Freelance)</div>
-              <div class="cv-company">Protea Hotels — Cape Town</div>
+              <div class="cv-company">Protea Hotels - Cape Town</div>
               <p class="cv-desc">Heuristic evaluations and analytics reviews. Streamlined the booking journey and
                 designed modular HTML email templates adaptable across hotel locations and email clients.</p>
               <div class="cv-tags"><span class="cv-tag">Heuristic Evaluation</span><span class="cv-tag">Email
@@ -232,9 +238,9 @@
             <div class="cv-period">Sep 2007<br>Apr 2012</div>
             <div>
               <div class="cv-role">Lead Designer &amp; Front-End Developer</div>
-              <div class="cv-company">Global Vision — Cape Town</div>
+              <div class="cv-company">Global Vision - Cape Town</div>
               <p class="cv-desc">Led design and front-end development across intranets, websites, MIS platforms and
-                business applications. Collaborated on an early SaaS CRM platform — a pivotal moment that redirected my
+                business applications. Collaborated on an early SaaS CRM platform - a pivotal moment that redirected my
                 trajectory toward usability-driven, product-focused UX thinking.</p>
               <div class="cv-tags"><span class="cv-tag">SaaS</span><span class="cv-tag">Front-End Dev</span><span
                   class="cv-tag">CRM</span></div>
@@ -244,8 +250,8 @@
             <div class="cv-period">Feb 2003<br>Aug 2007</div>
             <div>
               <div class="cv-role">Graphic Designer</div>
-              <div class="cv-company">Laragh Courseware — Cape Town</div>
-              <p class="cv-desc">Created interactive software simulations in Macromedia Director and Adobe Flash —
+              <div class="cv-company">Laragh Courseware - Cape Town</div>
+              <p class="cv-desc">Created interactive software simulations in Macromedia Director and Adobe Flash -
                 sparking an early interest in UX and how users interact, learn and delight in digital products.</p>
               <div class="cv-tags"><span class="cv-tag">E-Learning</span><span class="cv-tag">Flash</span><span
                   class="cv-tag">Interaction</span></div>
@@ -261,7 +267,7 @@
       <div class="section-label">Current Focus</div>
       <div class="reveal" style="max-width:520px;margin-bottom:0.5rem;">
         <h2 class="about-heading" style="font-size:clamp(1.8rem,3.2vw,3.2rem);"><span class="glow">Where my
-            practice</span><br><em>is heading.</em></h2>
+            practice</span><br><em>is heading</em></h2>
       </div>
       <div class="focus-grid">
         <div class="focus-card glass reveal">
@@ -269,36 +275,36 @@
           <div class="practice_icon"><img src="images/ai_assisted_ux_workflow.png" alt="ai_assisted_ux_workflow"></div>
           <div class="focus-title">AI-Assisted UX Workflows</div>
           <p class="focus-text">Exploring how Claude, Figma MCP and token-driven tools can accelerate prototyping,
-            specification and rapid iteration — while keeping decisions grounded in user-centred principles.</p>
+            specification and rapid iteration - while keeping decisions grounded in user-centred principles.</p>
         </div>
         <div class="focus-card glass reveal">
           <div class="focus-num">02</div>
           <div class="practice_icon"><img src="images/design_systems_at_scale.png" alt="design_systems_at_scale"></div>
           <div class="focus-title">Design Systems at Scale</div>
           <p class="focus-text">Building component libraries and token architectures that maintain consistency across
-            complex multi-platform products — bridging the gap between design intent and production reality.</p>
+            complex multi-platform products - bridging the gap between design intent and production reality.</p>
         </div>
         <div class="focus-card glass reveal">
           <div class="focus-num">03</div>
           <div class="practice_icon"><img src="images/motion_spacial.png" alt="motion_spacial"></div>
           <div class="focus-title">Motion &amp; Spatial Design</div>
-          <p class="focus-text">Expanding into After Effects motion design and XR/spatial UX — understanding how
+          <p class="focus-text">Expanding into After Effects motion design and XR/spatial UX - understanding how
             interaction pacing, motion narrative and spatial context change the way users experience information.</p>
         </div>
       </div>
     </section>
     <!-- CASE STUDIES -->
     <section id="case-studies">
-      <div class="section-label">Selected Work</div>
+      <!-- <div class="section-label">Latest Work</div> -->
       <div class="cs-intro reveal">
         <h2 class="cs-intro-heading"><span class="glow"> Case</span><em> Studies</em></h2>
       </div>
       <div class="cs-grid">
-        <!-- AI generated shadcn design operating system  -->
+       
         <!-- darg -->
         <div class="cs-card glass reveal open-article" data-article="articles/darg.html" data-case="0">
           <div class="cs-card-thumb cs-thumb-photo">
-            <img src="images/Case_Study_main.png" alt="DARG Shelter Hub" loading="lazy">
+            <img src="images/darg/darg_CS_1.png" alt="DARG Shelter Hub" loading="lazy">
             <div class="cs-card-overlay">
               <div class="cs-view-btn open-article" data-article="articles/darg.html">View case study</div>
             </div>
@@ -340,49 +346,64 @@
           <div class="cs-card-body">
             <div class="cs-card-label">Fintech · 2015</div>
             <div class="cs-card-title">Sanlam - Go Cover</div>
-            <p class="cs-card-desc">Full UX and UI design process for Sanlam's Go Cover insurance app — from discovery
+            <p class="cs-card-desc">Full UX and UI design process for Sanlam's Go Cover insurance app - from discovery
               and journey mapping through to final UI, testing and handoff.</p>
-             <button class="cs-card-mobile-btn ">View case study →</button>
+            <button class="cs-card-mobile-btn ">View case study →</button>
           </div>
         </div>
-     <!-- Motion Module, Laragh -->
+        <!-- Go Cover old -->
+        <!-- <div class="cs-card glass reveal" data-article="articles/sanlam-gocover.html" data-case="2">
+          <div class="cs-card-thumb cs-thumb-photo">
+            <img src="https://placehold.co/800x600/0f1a2e/4a7fa8?text=Go+Cover" alt="Go Cover Fintech App"
+              loading="lazy">
+            <div class="cs-card-overlay">
+              <div class="cs-view-btn">View case study</div>
+            </div>
+          </div>
+          <div class="cs-card-body">
+            <div class="cs-card-label">Fintech · 2014</div>
+            <div class="cs-card-title">Insurance App - Go Cover</div>
+            <p class="cs-card-desc">Full UX and UI design process for Sanlam's Go Cover insurance app - from discovery
+              and journey mapping through to final UI, testing and handoff.</p>
+            <button class="cs-card-mobile-btn" aria-label="View Go Cover case study">View case study →</button>
+          </div>
+        </div> -->
+        <!-- E-Learning -->
         <div class="cs-card glass reveal" data-case="3">
           <div class="cs-card-thumb cs-thumb-photo">
             <img src="https://placehold.co/800x600/1a0a2e/7a3fb0?text=Motion+Modules" alt="Motion Learning Modules"
               loading="lazy">
             <div class="cs-card-overlay">
-              <!--<div class="cs-view-btn">View case study</div> -->
+              <div class="cs-view-btn">View case study</div>
             </div>
           </div>
           <div class="cs-card-body">
             <div class="cs-card-label">E-Learning · 2026</div>
-            <div class="cs-card-title">Explainer 2D motion videos </div>
-            <p class="cs-card-desc">Designing and animating short-form explainer video content — translating technical
+            <div class="cs-card-title">Laragh Courseware, motion design fore-learning </div>
+            <p class="cs-card-desc">Designing and animating short-form explainer video content - translating technical
               scripts into visually clear, motion-paced learning experiences.</p>
-             <!--  <button class="cs-card-mobile-btn" aria-label="View">View case study →</button>-->
+            <!-- <button class="cs-card-mobile-btn" aria-label="sdfsdff">View case study →</button> -->
           </div>
         </div>
-		
-		  <!-- OS Module, SurfaceFlow -->
         <div class="cs-card glass reveal" data-case="4">
           <div class="cs-card-thumb cs-thumb-photo">
-            <img src="https://placehold.co/800x600/1a0a2e/7a3fb0?text=Surface+Flow KOS" alt="Design Operating System"
+            <img src="https://placehold.co/800x600/1a0a2e/7a3fb0?text=Motion+Modules" alt="Motion Learning Modules"
               loading="lazy">
             <div class="cs-card-overlay">
-               <!-- <div class="cs-view-btn">View case study</div>-->
+              <div class="cs-view-btn">View case study</div>
             </div>
           </div>
           <div class="cs-card-body">
-            <div class="cs-card-label">E-Learning · 2026</div>
+            <div class="cs-card-label">AI Exploration · 2026</div>
             <div class="cs-card-title"> Design operating system (DOS)</div>
-            <p class="cs-card-desc">Designing and animating short-form explainer video content — translating technical
-              scripts into visually clear, motion-paced learning experiences.</p>
-            <button class="cs-card-mobile-btn" aria-label="View rain case study">View case study →</button>
+            <p class="cs-card-desc">A theoretical exploration of designing a design operating system with AI integration, and telemetry.</p>
+            <!-- <button class="cs-card-mobile-btn" aria-label="View rain case study">View case study →</button> -->
           </div>
         </div>
       </div>
     </section>
     <!-- SHOWREEL -->
+    
     <section id="showreel">
       <div class="section-label">Showreel</div>
       <div class="showreel-header reveal">
@@ -396,12 +417,13 @@
         the meantime, this is just a placeholder.
       </p> -->
       <div class="showreel-video-wrap reveal">
-        <div class="showreel-video-wrap reveal visible"
-          style="background-image: url('images/coming_soon.png'); background-size: cover; background-position: center; color: transparent; text-shadow: 0 0 0 rgba(255,255,255,0.8);">
+        <div class="showreel-video-wrap reveal visible">
+          
         </div>
         <div class="showreel-overlay"></div>
       </div>
     </section>
+    
     <!-- EDUCATION -->
     <section id="education">
       <div class="section-label">Education &amp; Learning</div>
@@ -409,7 +431,7 @@
         <div class="edu-item">
           <div class="edu-year">2026</div>
           <div class="edu-title">Transitioning to Extended Reality (XR) UX</div>
-          <div class="edu-place">Udemy — Spatial interaction design</div>
+          <div class="edu-place">Udemy - Spatial interaction design</div>
         </div>
         <div class="edu-item">
           <div class="edu-year">2014–2016</div>
@@ -419,22 +441,22 @@
         <div class="edu-item">
           <div class="edu-year">2012</div>
           <div class="edu-title">UX Design Best Practices</div>
-          <div class="edu-place">Flow — Phil Barrett. Journey maps, personas, heuristic evaluations</div>
+          <div class="edu-place">Flow - Phil Barrett. Journey maps, personas, heuristic evaluations</div>
         </div>
         <div class="edu-item">
           <div class="edu-year">2002</div>
           <div class="edu-title">Animation &amp; Interactivity</div>
-          <div class="edu-place">Concept Interactive — Flash, Director, ActionScript 3</div>
+          <div class="edu-place">Concept Interactive - Flash, Director, ActionScript 3</div>
         </div>
         <div class="edu-item">
           <div class="edu-year">1999</div>
           <div class="edu-title">Advanced Photoshop</div>
-          <div class="edu-place">Mac KnowHow — Retouching, colour correction, design principles</div>
+          <div class="edu-place">Mac KnowHow - Retouching, colour correction, design principles</div>
         </div>
         <div class="edu-item">
           <div class="edu-year">1995</div>
           <div class="edu-title">Comprehensive DTP &amp; Graphic Design Diploma</div>
-          <div class="edu-place">Hirt &amp; Carter — Photoshop, Freehand, Quark, Design Theory</div>
+          <div class="edu-place">Hirt &amp; Carter - Photoshop, Freehand, Quark, Design Theory</div>
         </div>
       </div>
     </section>
@@ -463,7 +485,7 @@
       </div>
     </section>
     <footer>
-      <span>© 2026 Paul Bristow-Bovey - surface_flow — Cape Town, South Africa</span>
+      <span>© 2026 Paul Bristow-Bovey - surface_flow - Cape Town, South Africa</span>
     
     </footer>
   </div>
@@ -484,5 +506,18 @@ ARTICLE MODAL
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
   <script src="js/app.js"></script>
+
+
+
+<script>
+
+
+
+
+</script>
+
+
+
+
 </body>
 </html>
