@@ -35,8 +35,7 @@ console.log("app.js loaded");
   });
 
 
-	
-	
+
 //scroll to top — show when hero name scrolls out of view -->
 
 $(document).ready(function () {
@@ -55,10 +54,6 @@ $(document).ready(function () {
     observer.observe(heroName);
   }
 });
-
-	
-	
-	
 
 
 // ─── LOTTIE LOGO ─── */
