@@ -760,7 +760,10 @@ nav {
   border-radius: 4px;
 }
 /* ─── FOCUS ─── */
-
+.scroll-container {
+    /* Firefox */
+    scrollbar-width: none;
+}
 .focus-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -769,7 +772,7 @@ nav {
 }
 .focus-card {
   border-radius: 18px;
-  padding: 2rem 1.75rem;
+  padding:0;
   position: relative;
   overflow: hidden;
   cursor: default;
@@ -809,10 +812,10 @@ nav {
   margin-bottom: 0.75rem;
 }
 .focus-text {
-  font-size: 1rem;
-  color: rgba(232, 230, 240, 60%);
-  line-height: 1.8;
-  font-weight: 300;
+    font-size: 1rem;
+    color: rgb(255 255 255 / 71%);
+    line-height: 1.8;
+    font-weight: 300;
 }
 /* ─── CASE STUDIES ─── */
 
@@ -855,14 +858,16 @@ nav {
 .cs-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+   
 }
 .cs-card-thumb {
-  aspect-ratio: 4/3;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    aspect-ratio: 4 / 3;
+    position: relative;
+    overflow: hidden;
+    display: flex
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em;
 }
 .cs-thumb-1 {
   background: linear-gradient(135deg, #1a0f3a 0%, #2d1b69 50%, #1a1060 100%);
@@ -882,6 +887,8 @@ nav {
   object-fit: cover;
   display: block;
   transition: transform 0.45s ease;
+  border-radius: 0.5em;
+
 }
 .cs-card:hover .cs-thumb-photo img {
   transform: scale(1.04);
@@ -1223,10 +1230,12 @@ nav {
     color: transparent;
     text-shadow: rgba(255, 255, 255, 0.8) 0px 0px 0px;
     background-position: center center;
-    z-index: -10;
+    z-index: -1;
 
 }
-
+a .btn .btn-primary{
+  z-index: 3;
+}
 canvas{
     position: fixed;
     top: 0;
@@ -1234,6 +1243,7 @@ canvas{
     bottom: 0;
     left: 0;
     margin: auto;
+   
    
 }
  
@@ -1296,9 +1306,10 @@ canvas{
   line-height: 0.9;
   letter-spacing: -0.04em;  margin-bottom: 1.5rem;
 }
-.contact-heading em {
-  font-style: italic;
-  color: rgba(200, 185, 255, 0.5);
+.article-body.modal-body-para p {
+    line-height: normal;
+    padding-bottom: 0.5em;
+    color: #e5e5e5;
 }
 .contact-sub {
   font-size: 0.92rem;
@@ -1357,7 +1368,9 @@ blockquote {
   background: #000000b5;
 }
 div.article-body.modal-body-para ul {
-  margin-left: 3em;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    color: #e5e5e5;
 }
 .article-modal {
   max-width: 800px;
@@ -1372,21 +1385,21 @@ div.article-body.modal-body-para ul {
   background: rgb(12 10 28 / 81%);
 }
 .article-close {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.75rem;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: rgba(232, 230, 240, 0.6);
-  font-size: 1rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.75rem;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgb(232 230 240);
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
 }
 .article-close:hover {
   background: #fafafa;
