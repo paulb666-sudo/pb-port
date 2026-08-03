@@ -1,5 +1,5 @@
 
-// Logo animate using lottie and bodymovin, with hover and click events to trigger the animation. The animation auto-plays every 18 seconds and stops on mouse leave. Additionally, a scroll-to-top button appears when the hero name scrolls out of view, and smooth navigation is implemented for internal links. The theme toggle allows switching between light and dark modes, with preferences saved in local storage.
+// Logo animate using lottie and bodymovin, 
 //   $(document).ready(function () {
     var animation = bodymovin.loadAnimation({
       container: $('#lottie-container')[0],
@@ -26,13 +26,13 @@
     });
 
     // Hover events
-    $('#lottie-container').on('mouseenter', function () {
-      animation.play();
+    // $('#lottie-container').on('mouseenter', function () {
+    //   animation.play();
 		
-    });
+    // });
     $('#lottie-container').on('mouseleave', function () {
-    animation.stop();
-    });
+    animation.play();
+   
   });
 
 
@@ -143,22 +143,22 @@ navSections.forEach(({ id }) => {
 setActiveNav('#hero');
 
 /* ─── THEME TOGGLE ─── */
-const themeToggle = document.getElementById('theme-toggle');
+// const themeToggle = document.getElementById('theme-toggle');
 
-// Restore saved preference on load
-if (localStorage.getItem('theme') === 'dark') {
-  document.body.classList.remove('light');
-  document.documentElement.classList.remove('light');
-} else if (!localStorage.getItem('theme')) {
-  document.body.classList.add('light');
-  document.documentElement.classList.add('light');
-}
+// // Restore saved preference on load
+// if (localStorage.getItem('theme') === 'dark') {
+//   document.body.classList.remove('light');
+//   document.documentElement.classList.remove('light');
+// } else if (!localStorage.getItem('theme')) {
+//   document.body.classList.add('light');
+//   document.documentElement.classList.add('light');
+// }
 
-themeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('light');
-  document.documentElement.classList.toggle('light');
-  localStorage.setItem('theme', document.body.classList.contains('light') ? 'light' : 'dark');
-});
+// themeToggle.addEventListener('click', () => {
+//   document.body.classList.toggle('light');
+//   document.documentElement.classList.toggle('light');
+//   localStorage.setItem('theme', document.body.classList.contains('light') ? 'light' : 'dark');
+// });
 
 
 

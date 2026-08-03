@@ -312,7 +312,7 @@ $(function () {
 
     var num_cols = canvas_width / resolution; //This value is the number of columns in the grid.
     var num_rows = canvas_height / resolution; //This is number of rows.
-    var speck_count = 7000; //This determines how many particles will be made.
+    var speck_count = 9000; //This determines how many particles will be made.
     
     var vec_cells = []; //The array that will contain the grid cells
     var particles = []; //The array that will contain the particles
@@ -628,7 +628,7 @@ $(function () {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         
         //This sets the color to draw with.
-        ctx.strokeStyle = "#a766a6";
+        ctx.strokeStyle = "#c0d8f76e";
 
         //This calls the function to update the particle positions.
         update_particle();
