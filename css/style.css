@@ -847,11 +847,9 @@ button.cv-timeline-toggle:hover {
     font-weight: 300;
 }
 
-
-.focus-card.glass.reveal.practice-card.visible{
-
-  padding: 1.5em;
- 
+.focus-card.glass.reveal.practice-card.visible {
+    padding: 1.5em;
+    backdrop-filter: blur(1px);
 }
 
 :focus-visible {
