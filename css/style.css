@@ -414,7 +414,7 @@ nav {
     color: #e8e6f0;
     opacity: 0;
     animation: fadeUp 0.9s ease 0.35s forwards;
-    font-size: clamp(3.8rem, 15vw, 7.5rem);
+    font-size: clamp(3.8rem, 15vw, 6rem);
 }
 .hero-name em {
   font-style: italic;
