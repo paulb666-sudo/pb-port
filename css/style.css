@@ -13,12 +13,13 @@ html {
 }
 /* prevents white flash on overscroll/repaint */
 body {
-  font-family: 'Jost', sans-serif;
+ 
   font-size: 17px;
   line-height: 1.75;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   color: #e8e6f0;
+  font-family: 'Montserrat', sans-serif;
 }
 ::selection {
   background: rgba(160, 140, 255, 0.35);
@@ -127,12 +128,10 @@ section {
     padding: 4rem 3rem;
     max-width: 1160px;
     margin: 0 auto;
-    border: 2px dotted rgb(255 255 255 / 7%);
+    border: 1px dotted rgb(82 105 237 / 21%);
     border-top: 0;
     transition: all 1s ease;
 }
-
-
 
 .section-label {
     font-size: 0.68rem;
@@ -143,13 +142,17 @@ section {
     margin-bottom: 2em;
     display: inline-flex;
     align-items: center;
-    gap: 12em;
-    border: 1px solid rgb(220 219 223 / 9%);
+    gap: 76%;
+    border: 1px dotted rgb(220 219 223 / 9%);
     border-bottom: none;
     padding: 0.35rem 0.9rem 0.35rem 0.75rem;
     border-radius: 4px;
     margin-top: 0.8em;
-    margin-bottom:0;
+    margin-bottom: 30px;
+    border-right: none;
+    display: block;
+    background: linear-gradient(130deg, rgb(250 250 250 / 8%) 0%, rgba(245, 241, 241, 0) 17%);
+    border-top-left-radius: 13px;
 }
 .section-label::after {
   content: '';
@@ -176,10 +179,10 @@ section {
     text-decoration: none;
 }
 .scrollToTop:hover {
-  background: rgba(140, 90, 210, 0.75);
-  border-color: rgba(200, 170, 255, 0.7);
-  transform: translateY(-3px);
-  backdrop-filter: blur(20px);
+    background: rgb(82 105 237);
+    border-color: rgb(115 134 241);
+    transform: translateY(-3px);
+    backdrop-filter: blur(20px);
 }
 .scrollToTop svg {
   position: absolute;
@@ -406,14 +409,12 @@ nav {
   
 }
 .hero-name {
-    font-family: 'Afacad Flux', sans-serif;
-    line-height: 0.72;
+    line-height: 0.86;
     letter-spacing: -0.05em;
     color: #e8e6f0;
     opacity: 0;
     animation: fadeUp 0.9s ease 0.35s forwards;
- 
-    font-size: clamp(3.8rem, 15vw, 7.5rem);
+    font-size: clamp(3.8rem, 15vw, 6rem);
 }
 .hero-name em {
   font-style: italic;
@@ -458,13 +459,14 @@ nav {
   border: none;
 }
 .btn-primary {
-    background: rgb(82 105 237 / 30%);
-    color: rgba(220, 210, 255, 0.9);
+    background: rgb(220 219 223);
+    color: rgb(82 105 237);
     border: 1px solid rgba(160, 130, 255, 0.35);
 }
 .btn-primary:hover {
     background: rgb(82 105 237 / 62%);
     border-color: rgb(21 25 57);
+    color: #ffffff;
 }
 .btn-ghost {
   background: transparent;
@@ -473,7 +475,7 @@ nav {
 }
 .btn-ghost:hover {
     border-color: rgb(82 105 237);
-    color: rgb(82 105 237);
+    color: #fff;
 }
 
 .hero-tags {
@@ -525,7 +527,7 @@ div#lottie-container {
     /* border: 1px solid red; */
     border-radius: 60px;
     padding: 3px;
-    background: #16162d99;
+    background: #5269ed00;
     position: fixed;
 }
 .about-grid {
@@ -535,9 +537,8 @@ div#lottie-container {
   align-items: start;
 }
 .about-heading {
-    font-family: 'Afacad Flux', sans-serif;
-    font-size: clamp(2.2rem, 4vw, 4rem);
-    line-height: 0.9;
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    line-height: 1.1;
     letter-spacing: -0.02em;
     color: #dcdbdf;
 }
@@ -627,23 +628,23 @@ h2.about-heading.heading {
   font-weight: 300;
 }
 .cv-download {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 1.5rem;
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: rgb(255 255 255 / 95%);
-  text-decoration: none;
-  padding: 0.65rem 1.4rem;
-  border-radius: 999px;
-  background: rgb(82 105 237 / 58%);
-  border: 2px solid rgb(239 169 195 / 20%);
-  box-shadow: 0 0 18px rgb(255 100 100 / 20%), inset 0 1px 0 rgba(255, 255, 255, 0.08);
-  transition: all 0.25s ease;
-  max-width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 1.5rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgb(255 255 255 / 95%);
+    text-decoration: none;
+    padding: 0.65rem 1.4rem;
+    border-radius: 999px;
+    background: rgb(82 105 237);
+    border: 2px solid rgb(239 169 195 / 20%);
+    box-shadow: 0 0 18px rgb(255 100 100 / 20%), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    transition: all 0.25s ease;
+    max-width: fit-content;
 }
 .cv-download::before {
   content: '↓';
@@ -666,6 +667,7 @@ h2.about-heading.heading {
     overflow: hidden;
     transition: border-color 0.25s ease;
 }
+
 .cv-timeline-toggle {
     appearance: none;
     border: 0;
@@ -680,16 +682,20 @@ h2.about-heading.heading {
     font-size: 0.78rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: rgb(82 105 237);;
-    margin-bottom: 0.85rem;
+    color: #fff;
+    margin-bottom: 1em;
     text-align: left;
-    padding-left: 0.5em;
     transition: transform 0.25s ease, border-color 0.25s ease;
-    text-decoration: underline;
-   
-    
+    background: linear-gradient(270deg, rgb(250 250 250 / 5%) 0%, rgba(245, 241, 241, 0) 118%);
+    border-radius: 12px;
+    padding-right: 1em;
+    text-underline-offset: 0.55em;
 }
 
+button.cv-timeline-toggle:hover {
+    text-shadow: rgb(255 255 255 / 46%) 0px 0px 10px;
+    text-decoration: underline;
+}
 .cv-timeline-toggle::after {
     content: '';
     display: inline-block;
@@ -737,11 +743,11 @@ h2.about-heading.heading {
   border-bottom: none;
 }
 .cv-period {
-  font-size: 0.68rem;
-  color: rgba(232, 230, 240, 0.25);
-  letter-spacing: 0.04em;
-  padding-top: 3px;
-  line-height: 1.55;
+    font-size: 0.68rem;
+    color: rgb(232 230 240 / 18%);
+    letter-spacing: 0.04em;
+    padding-top: 3px;
+    line-height: 1.55;
 }
 .cv-role {
   font-size: 0.95rem;
@@ -754,7 +760,7 @@ h2.about-heading.heading {
     font-size: 0.88rem;
     color: rgb(82 105 237);
     margin-top: 2px;
-    font-weight: 400;
+    font-weight: 600;
 }
 .cv-desc {
     font-size: 1rem;
@@ -828,7 +834,7 @@ button.cv-timeline-toggle:hover {
 .focus-num {
   font-size: 0.65rem;
   letter-spacing: 0.12em;
-  color: rgba(200, 185, 255, 0.5);
+  color: rgb(255 255 255 / 50%);
   font-weight: 500;
   margin-bottom: 1.25rem;
 }
@@ -845,13 +851,17 @@ button.cv-timeline-toggle:hover {
     color: rgb(255 255 255 / 71%);
     line-height: 1.8;
     font-weight: 300;
+    font-size: 0.78rem;
+    color: rgba(232, 230, 240, 1);
+    line-height: 1.7;
+    font-weight: 300;
 }
-
-
-.focus-card.glass.reveal.practice-card.visible{
-
-  padding: 1.5em;
- 
+p {
+    margin-bottom: 5px;
+}
+.focus-card.glass.reveal.practice-card.visible {
+    padding: 1.5em;
+    backdrop-filter: blur(1px);
 }
 
 :focus-visible {
@@ -860,7 +870,11 @@ button.cv-timeline-toggle:hover {
 }
 
 
-
+video {
+  width: 100%;
+  height: auto;
+  display: block; /* Removes unwanted bottom whitespace */
+}
 
 /* ─── CASE STUDIES ─── */
 
@@ -1291,9 +1305,7 @@ justify-content: center;
     z-index: -1;
 
 }
-a .btn .btn-primary{
-  z-index: 3;
-}
+
 canvas{
     position: fixed;
     top: 0;
@@ -1301,6 +1313,7 @@ canvas{
     bottom: 0;
     left: 0;
     margin: auto;
+    
    
    
 }
@@ -1327,13 +1340,12 @@ canvas{
   background: rgba(160, 130, 255, 0.05);
 }
 .edu-year {
-  font-size: 0.65rem;
-  color: rgba(200, 185, 255, 0.55);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin-bottom: 0.35rem;
-
+    font-size: 0.65rem;
+    color: rgb(82 105 237);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 0.35rem;
 }
 
 .edu-title {
@@ -1341,7 +1353,7 @@ canvas{
   font-weight: 500;
   color: rgba(232, 230, 240, 0.8);
   line-height: 1.3;
-  text-shadow: rgba(255, 255, 255, 0.49) 0px 0px 10px;
+  text-shadow: rgb(255 255 255 / 19%) 0px 0px 10px;
  
  
 }
@@ -1369,6 +1381,7 @@ canvas{
     line-height: 1.6;
     padding-bottom: 0.5em;
     color: #ffffffd9;
+    font-size: 0.98rem;
 }
 .contact-sub {
     font-size: 0.92rem;
@@ -1409,22 +1422,22 @@ p.modal-img.mi-photo.mi-darg-1.visible img {
   border: 1px dashed #ffffff8a;
 }
 blockquote {
-  margin: 1.5rem 0;
-  padding: 1rem 1.5rem;
-  background-color: #07060e;
-  border-left: 5px solid #9d5b9d;
-  font-style: italic;
-  color: #9f9f9f;
-  margin-bottom: 0;
+    margin: 1.5rem 0;
+    padding: 1rem 1.5rem;
+    background-color: #07060e;
+    border-left: 5px solid #5369ed;
+    font-style: italic;
+    color: #9f9f9f;
+    margin-bottom: 0;
 }
 .article-overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  z-index: 99999;
-  overflow-y: auto;
-  backdrop-filter: blur(30px);
-  background: #000000b5;
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    overflow-y: auto;
+    backdrop-filter: blur(30px);
+    background: #00000078;
 }
 div.article-body.modal-body-para ul {
     margin-left: 2em;
@@ -1437,11 +1450,11 @@ div.article-body.modal-body-para ul {
     padding: 40px;
     position: relative;
     border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 5px solid rgba(255, 255, 255, 0.1);
     border-radius: 24px;
     color: #fff;
-    background: transparent;
 }
+
 .article-close {
     position: absolute;
     top: 1.5rem;
@@ -1474,12 +1487,12 @@ button.article-close.bottom {
 h2.contact-heading.reveal.visible em {
     color: rgb(82 105 237);
 }
-/* ─── HOT PINK BLOB ─── */
+/* ─── HOT blue PINK BLOB ─── */
 .blob {
     animation: anim 20s infinite;
     border-radius: 30% 70% 53% 47% / 26% 46% 54% 74%;
-    box-shadow: 0 -2vmin 3vmin LightPink inset, 0 1vmin 4vmin MediumPurple inset, 0 -2vmin 7vmin purple inset;
-    filter: drop-shadow(0 0 4vmin Thistle) drop-shadow(2vmin -2vmin 12vmin #7b68ee);
+    box-shadow: 0 -2vmin 3vmin LightPink inset, 0 1vmin 4vmin MediumPurple inset, 0 -2vmin 7vmin #5066ed inset;
+    filter: drop-shadow(0 0 4vmin #5269ed) drop-shadow(2vmin -2vmin 12vmin #5269ed);
     height: 40vmin;
     width: 60vmin;
     position: absolute;
@@ -1531,18 +1544,21 @@ h2.contact-heading.reveal.visible em {
 .whiteTxt {
   color: #fff;
 }
+div.article-body.modal-body-para>h2>strong {
+    color: rgb(83 105 237);
+}
 /* scrollToTop styles now defined above in main CSS */
 /* ─── FOOTER ─── */
 footer {
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  padding: 2rem 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.72rem;
-  color: rgba(232, 230, 240, 0.2);
-  position: relative;
-  z-index: 2;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.72rem;
+    color: rgb(232 230 240);
+    position: relative;
+    z-index: 2;
 }
 /* ─── NAV RIGHT GROUP (toggle + hamburger) ─── */
 .nav-right {
@@ -1550,28 +1566,7 @@ footer {
   align-items: center;
   gap: 0.75rem;
 }
-/* ─── THEME TOGGLE ─── */
-.theme-toggle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: rgba(232, 230, 240, 0.6);
-  cursor: pointer;
-  transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.2s;
-  flex-shrink: 0;
-}
-.theme-toggle:hover {
-  background: rgba(200, 185, 255, 0.15);
-  border-color: rgba(200, 185, 255, 0.4);
-  color: rgba(200, 185, 255, 1);
-  transform: rotate(20deg);
-}
-
+/
 /* ─── fix to remove blue highlight on tap on mobile ─── */
 html,
 body,
@@ -1668,8 +1663,9 @@ select {
     display: flex;
   }
   section {
-    padding: 4rem 1.5rem;
-  }
+        padding: 1.1em 1.1em;
+    }
+
   #hero {
     padding-left: 1.5rem;
     padding-right: 1.5rem;

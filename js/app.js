@@ -1,4 +1,4 @@
-console.log("app.js loaded");
+
   $(document).ready(function () {
     var animation = bodymovin.loadAnimation({
       container: $('#lottie-container')[0],
@@ -15,9 +15,9 @@ console.log("app.js loaded");
       animation.play();
     }
 
-    // Auto-play once every 15 seconds
+    // Auto-play once every 25 seconds
     playAnimation(); // Play immediately on load
-    setInterval(playAnimation, 18000);
+    setInterval(playAnimation, 25000);
 
     // Click event
     $('#lottie-container').on('click', function () {
