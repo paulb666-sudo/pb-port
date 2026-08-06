@@ -11,6 +11,10 @@ html {
   scroll-behavior: smooth;
   background: #06070f;
 }
+  div{
+  outline:1px solid red;
+}
+
 /* prevents white flash on overscroll/repaint */
 body {
  
@@ -128,7 +132,7 @@ section {
     padding: 4rem 3rem;
     max-width: 1160px;
     margin: 0 auto;
-    border: 2px dotted rgb(255 255 255 / 7%);
+    border: 1px dotted rgb(82 105 237 / 21%);
     border-top: 0;
     transition: all 1s ease;
 }
@@ -459,13 +463,14 @@ nav {
   border: none;
 }
 .btn-primary {
-    background: rgb(82 105 237 / 30%);
-    color: rgba(220, 210, 255, 0.9);
+    background: rgb(220 219 223);
+    color: rgb(82 105 237);
     border: 1px solid rgba(160, 130, 255, 0.35);
 }
 .btn-primary:hover {
     background: rgb(82 105 237 / 62%);
     border-color: rgb(21 25 57);
+    color: #ffffff;
 }
 .btn-ghost {
   background: transparent;
@@ -666,6 +671,7 @@ h2.about-heading.heading {
     overflow: hidden;
     transition: border-color 0.25s ease;
 }
+
 .cv-timeline-toggle {
     appearance: none;
     border: 0;
@@ -681,12 +687,13 @@ h2.about-heading.heading {
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: #fff;
-    margin-bottom: 0.85rem;
+    margin-bottom: 1em;
     text-align: left;
     transition: transform 0.25s ease, border-color 0.25s ease;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 5%, rgb(255 255 255 / 4%) 139%);
+    background: linear-gradient(270deg, rgb(250 250 250 / 5%) 0%, rgba(245, 241, 241, 0) 118%);
     border-radius: 12px;
     padding-right: 1em;
+    text-underline-offset: 0.55em;
 }
 
 button.cv-timeline-toggle:hover {
@@ -741,7 +748,7 @@ button.cv-timeline-toggle:hover {
 }
 .cv-period {
     font-size: 0.68rem;
-    color: rgb(232 230 240);
+    color: rgb(232 230 240 / 18%);
     letter-spacing: 0.04em;
     padding-top: 3px;
     line-height: 1.55;
@@ -1337,13 +1344,12 @@ canvas{
   background: rgba(160, 130, 255, 0.05);
 }
 .edu-year {
-  font-size: 0.65rem;
-  color: rgba(200, 185, 255, 0.55);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin-bottom: 0.35rem;
-
+    font-size: 0.65rem;
+    color: rgb(82 105 237);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 0.35rem;
 }
 
 .edu-title {
@@ -1564,28 +1570,7 @@ footer {
   align-items: center;
   gap: 0.75rem;
 }
-/* ─── THEME TOGGLE ─── */
-.theme-toggle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: rgba(232, 230, 240, 0.6);
-  cursor: pointer;
-  transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.2s;
-  flex-shrink: 0;
-}
-.theme-toggle:hover {
-  background: rgba(200, 185, 255, 0.15);
-  border-color: rgba(200, 185, 255, 0.4);
-  color: rgba(200, 185, 255, 1);
-  transform: rotate(20deg);
-}
-
+/
 /* ─── fix to remove blue highlight on tap on mobile ─── */
 html,
 body,
