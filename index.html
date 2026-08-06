@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,7 @@
 </head>
 
 <body class="dark">
-  
+
   <a href="#hero" id="scroll-reveal" class="scrollToTop" aria-label="Scroll to top">
     <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <path d="M10 15V5M10 5L5 10M10 5L15 10" stroke="white" stroke-width="1.75" stroke-linecap="round"
@@ -22,19 +23,15 @@
   </a>
 
   </div>
-  
+
   <div class="blob"></div>
   <div class="bg-grid"></div>
- 
+
   <div class="wrap">
     <!-- NAV -->
     <nav>
       <a href="#hero" class="nav-logo">
-        <div id="lottie-container" style="width: 63px; height:44px;"></div>
-        <!--<div class="nav-logo-text">
-      Paul Bristow-Bovey
-      <span style="letter-spacing: -1px">UX · UI · Surface · Flow </span>
-    </div>-->
+        <div id="lottie-container"></div>
       </a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
@@ -45,7 +42,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="nav-right">
-    
+
         <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -61,7 +58,7 @@
     </div><canvas id="c"></canvas>
     <!-- HERO -->
     <section id="hero">
-    
+
       <!-- <div class="hero-eyebrow whiteTxt glow">Cape Town, South Africa</div> -->
       <h1 class="hero-name glow">
         Paul<br>
@@ -69,50 +66,43 @@
       </h1>
       <div class="hero-desc">
         <p>
-        <strong>Senior multidisciplinary digital designer</strong> who has led UX, UI, interaction, visual design,
-         front-end implementation and design teams across agency, consultancy and product environments.
-         </p>
-         
+          <strong>Senior multidisciplinary digital designer</strong> who has led UX, UI, interaction, visual design,
+          front-end implementation and design teams across agency, consultancy and product environments.
+        </p>
+
       </div>
       <div class="hero-actions">
-        <a href="#cv" class="btn btn-primary" styl="z-index:100">View experience ↓</a>
+        <a href="#cv" class="btn btn-primary" style="z-index:10">View experience ↓</a>
         <a href="#contact" class="btn btn-ghost">Get in touch</a>
       </div>
-      
-      <!-- <div class="hero-tags">
-        <span class="tag">UX Research</span>
-        <span class="tag">Interaction Design</span>
-        <span class="tag">MCP server</span>
-        <span class="tag">Motion Design</span>
-        <span class="tag">AI Workflows</span>
-        <span class="tag">Front-End Collaboration</span>
-        <span class="tag">SaaS</span>
-      </div> -->
+
       <div class="hero-scroll">
       </div>
     </section>
     <!-- ABOUT -->
     <section id="about">
-       
+
       <div class="section-label">About</div>
       <div class="about-grid">
         <div class="reveal">
           <h2 class="about-heading">
-            <span class="glow"><em>Designing for</span>
-           clarity,</em> systems
-            &amp; <span class="glow">delight</span>
+            <em>Designing for
+            clarity,</em> systems
+            &amp; delight
           </h2>
         </div>
         <div class="reveal">
-          <p class="about-text">My career started in print and moved through interactive media, front-end development 
-          and agency work before I settled into product design.</p>
-          <p class="about-text">That mix still influences how I work. I'm comfortable moving between UX, UI, interaction, 
-            systems and the realities of getting a design built.</p>
-            
+          <p class="about-text">My career started in print and moved through interactive media, front-end development
+            and agency work before I settled into product design.</p>
+          <p class="about-text">That mix still influences how I work. I'm comfortable moving between UX, UI,
+            interaction,
+            systems and the realities of getting a design built.
+          </p>
           <p class="about-text">Lately I've been experimenting with AI-assisted workflows, design systems and
-             tools that shorten the distance between a Figma file and working software.</p>
-
-<p class="about-text">I'm particularly interested in the intersection of UX, CRO and AI-assisted design workflows, where research, experimentation and rapid iteration can shorten the path between insight and measurable business outcomes</p>
+            tools that shorten the distance between a Figma file and working software.</p>
+          <p class="about-text">I'm particularly interested in the intersection of UX, CRO and AI-assisted design
+            workflows, where research, experimentation and rapid iteration can shorten the path between insight and
+            measurable business outcomes</p>
 
           <div class="skills-grid">
             <div class="skill-pill"><span class="skill-dot "></span>UX Strategy &amp; Research</div>
@@ -124,14 +114,14 @@
             <div class="skill-pill"><span class="skill-dot"></span>Front-End: HTML, CSS & jQuery</div>
             <div class="skill-pill"><span class="skill-dot"></span>Team Mentorship</div>
             <div class="skill-pill"><span class="skill-dot"></span>Stakeholder Alignment</div>
-          <div class="skill-pill"><span class="skill-dot"></span>Agile Delivery (Scrum, Kanban, Waterfall) 
+            <div class="skill-pill"><span class="skill-dot"></span>Agile Delivery (Scrum, Kanban, Waterfall)
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- EXPERIENCE -->
-    <section id="cv">
+    <section id="cv" style="outline: 1px solid red;">
       <div class="section-label">Experience</div>
       <div class="cv-layout">
         <div>
@@ -139,107 +129,112 @@
           <p class="cv-sidebar-sub reveal">From early work on interactive e-learning and SaaS platforms to UX leadership
             in Software development and digital agencies, now a freelance Senior UX/UI &amp; Motion Designer focused on
             AI-enhanced workflows, scalable design systems, and motion-driven experiences.</p>
-        
+
         </div>
-        <div class="cv-timeline-shell reveal ">
+        <div class="cv-timeline-shell reveal visible is-open">
           <button class="cv-timeline-toggle" type="button" aria-expanded="true" aria-controls="cv-timeline-content">
             <span>Collapse career timeline</span>
           </button>
           <div id="cv-timeline-content" class="cv-timeline" aria-hidden="false">
-<div class="download-btn-holder">
-                 <a href="https://paulb666-sudo.github.io/pb-port/cv/P_BB_CV_2026.pdf" class="cv-download reveal"
-            target="_blank">Download CV</a>
-</div>
+            <div class="download-btn-holder">
+              <a href="https://paulb666-sudo.github.io/pb-port/cv/P_BB_CV_2026.pdf" class="cv-download reveal"
+                target="_blank">Download CV</a>
+            </div>
 
 
             <div class="cv-item">
-            <div class="cv-period">Apr 2023<br>Present</div>
-            <div>
-              <div class="cv-role">Freelancer / Contractor</div>
-              <div class="cv-company">UX, UI &amp; Motion Design - Cape Town</div>
-              <p class="cv-desc">Producing motion-driven e-learning content for Laragh Courseware - animated modules
-                using shared illustration libraries, AI voice over pipelines and video output in After Effects.
-                Alongside client work, I've been experimenting with AI-assisted UX workflows.
+              <div class="cv-period">Apr 2023<br>Present</div>
+              <div>
+                <div class="cv-role">Freelancer / Contractor</div>
+                <div class="cv-company">UX, UI &amp; Motion Design - Cape Town</div>
+                <p class="cv-desc">Producing motion-driven e-learning content for Laragh Courseware - animated modules
+                  using shared illustration libraries, AI voice over pipelines and video output in After Effects.
+                  Alongside client work, I've been experimenting with AI-assisted UX workflows.
 
-That includes generating functional specifications, prototyping, testing ideas, working with tokens and design systems, and using MCP to connect design tools more closely with development.
-              </p>
-              <div class="cv-tags"><span class="cv-tag">After Effects</span><span class="cv-tag">Motion
-                  Design</span><span class="cv-tag">AI Workflows</span></div>
+                  That includes generating functional specifications, prototyping, testing ideas, working with tokens
+                  and design systems, and using MCP to connect design tools more closely with development.
+                </p>
+                <div class="cv-tags"><span class="cv-tag">After Effects</span><span class="cv-tag">Motion
+                    Design</span><span class="cv-tag">AI Workflows</span></div>
+              </div>
             </div>
-          </div>
-          <div class="cv-item">
-            <div class="cv-period">Feb 2022<br>Apr 2023</div>
-            <div>
-              <div class="cv-role">Lead UX Designer</div>
-              <div class="cv-company">Catch &amp; Release Agency (rain.co.za) - Cape Town</div>
-              <p class="cv-desc">Led UX/UI across the rain website and Android app. Created a comprehensive
-                component-based design system in Figma. Introduced Lottie SVG animations for cross-platform interactive
-                motion. Mentored designers and served as bridge between design and front/back-end development.</p>
-              <div class="cv-tags"><span class="cv-tag">Design Systems</span><span class="cv-tag">Figma</span><span
-                  class="cv-tag">Lottie</span><span class="cv-tag">Android</span><span class="cv-tag">Mentorship</span>
+            <div class="cv-item">
+              <div class="cv-period">Feb 2022<br>Apr 2023</div>
+              <div>
+                <div class="cv-role">Lead UX Designer</div>
+                <div class="cv-company">Catch &amp; Release Agency (rain.co.za) - Cape Town</div>
+                <p class="cv-desc">Led UX/UI across the rain website and Android app. Created a comprehensive
+                  component-based design system in Figma. Introduced Lottie SVG animations for cross-platform
+                  interactive
+                  motion. Mentored designers and served as bridge between design and front/back-end development.</p>
+                <div class="cv-tags"><span class="cv-tag">Design Systems</span><span class="cv-tag">Figma</span><span
+                    class="cv-tag">Lottie</span><span class="cv-tag">Android</span><span
+                    class="cv-tag">Mentorship</span>
+                </div>
+              </div>
+            </div>
+            <div class="cv-item">
+              <div class="cv-period">Feb 2012<br>Apr 2017</div>
+              <div>
+                <div class="cv-role">Head of UX</div>
+                <div class="cv-company">Full Stack Dev House - Cape Town</div>
+                <p class="cv-desc">I led and mentored a team across financial services products. Full UX and front-end
+                  delivery for Sanlam (Go Cover, Concept Bluestar, Glacier), PSG and ASISA (and many others). I ran
+                  stakeholder interviews, wireframing, prototyping, front-end development and user testing.</p>
+                <div class="cv-tags"><span class="cv-tag">Fintech</span><span class="cv-tag">UX Research</span><span
+                    class="cv-tag">HTML/CSS/Jquery</span><span class="cv-tag">Leadership</span></div>
+              </div>
+            </div>
+            <div class="cv-item">
+              <div class="cv-period">Jun 2015<br>Apr 2016</div>
+              <div>
+                <div class="cv-role">Head of UX</div>
+                <div class="cv-company">Publicis Machine Agency - Cape Town</div>
+                <p class="cv-desc">Owned UX and UI delivery from discovery to execution across multiple brands. Led
+                  persona development, stakeholder interviews, wireframes and clickable prototypes. Embedded within a
+                  full
+                  Agile lifecycle. Clients: Sanlam, Red Bull, Appletiser, Weet-Bix, SASKO.</p>
+                <div class="cv-tags"><span class="cv-tag">Agile</span><span class="cv-tag">Prototyping</span><span
+                    class="cv-tag">Front-End</span></div>
+              </div>
+            </div>
+            <div class="cv-item">
+              <div class="cv-period">Apr 2011<br>May 2012</div>
+              <div>
+                <div class="cv-role">UX/UI Designer (Freelance)</div>
+                <div class="cv-company">Protea Hotels - Cape Town</div>
+                <p class="cv-desc">Heuristic evaluations and analytics reviews. Streamlined the booking journey and
+                  designed modular HTML email templates adaptable across hotel locations and email clients.</p>
+                <div class="cv-tags"><span class="cv-tag">Heuristic Evaluation</span><span class="cv-tag">Email
+                    Templates</span></div>
+              </div>
+            </div>
+            <div class="cv-item">
+              <div class="cv-period">Sep 2007<br>Apr 2012</div>
+              <div>
+                <div class="cv-role">Lead Designer &amp; Front-End Developer</div>
+                <div class="cv-company">Global Vision - Cape Town</div>
+                <p class="cv-desc">Led design and front-end development across intranets, websites, MIS platforms and
+                  business applications. CWorked on an early SaaS CRM platform. It was one of the projects that pushed
+                  me towards usability and product-focused UX.</p>
+                <div class="cv-tags"><span class="cv-tag">SaaS</span><span class="cv-tag">Front-End Dev</span><span
+                    class="cv-tag">CRM</span></div>
+              </div>
+            </div>
+            <div class="cv-item">
+              <div class="cv-period">Feb 2003<br>Aug 2007</div>
+              <div>
+                <div class="cv-role">Graphic Designer</div>
+                <div class="cv-company">Laragh Courseware - Cape Town</div>
+                <p class="cv-desc">Created interactive software simulations in Macromedia Director and Adobe Flash -
+                  sparking an early interest in UX and how users interact, learn and delight in digital products.</p>
+                <div class="cv-tags"><span class="cv-tag">E-Learning</span><span class="cv-tag">Flash</span><span
+                    class="cv-tag">Interaction</span></div>
               </div>
             </div>
           </div>
-          <div class="cv-item">
-            <div class="cv-period">Feb 2012<br>Apr 2017</div>
-            <div>
-              <div class="cv-role">Head of UX</div>
-              <div class="cv-company">Full Stack Dev House - Cape Town</div>
-              <p class="cv-desc">I led and mentored a team across financial services products. Full UX and front-end
-                delivery for Sanlam (Go Cover, Concept Bluestar, Glacier), PSG and ASISA (and many others). I ran
-                stakeholder interviews, wireframing, prototyping, front-end development and user testing.</p>
-              <div class="cv-tags"><span class="cv-tag">Fintech</span><span class="cv-tag">UX Research</span><span
-                  class="cv-tag">HTML/CSS/Jquery</span><span class="cv-tag">Leadership</span></div>
-            </div>
-          </div>
-          <div class="cv-item">
-            <div class="cv-period">Jun 2015<br>Apr 2016</div>
-            <div>
-              <div class="cv-role">Head of UX</div>
-              <div class="cv-company">Publicis Machine Agency - Cape Town</div>
-              <p class="cv-desc">Owned UX and UI delivery from discovery to execution across multiple brands. Led
-                persona development, stakeholder interviews, wireframes and clickable prototypes. Embedded within a full
-                Agile lifecycle. Clients: Sanlam, Red Bull, Appletiser, Weet-Bix, SASKO.</p>
-              <div class="cv-tags"><span class="cv-tag">Agile</span><span class="cv-tag">Prototyping</span><span
-                  class="cv-tag">Front-End</span></div>
-            </div>
-          </div>
-          <div class="cv-item">
-            <div class="cv-period">Apr 2011<br>May 2012</div>
-            <div>
-              <div class="cv-role">UX/UI Designer (Freelance)</div>
-              <div class="cv-company">Protea Hotels - Cape Town</div>
-              <p class="cv-desc">Heuristic evaluations and analytics reviews. Streamlined the booking journey and
-                designed modular HTML email templates adaptable across hotel locations and email clients.</p>
-              <div class="cv-tags"><span class="cv-tag">Heuristic Evaluation</span><span class="cv-tag">Email
-                  Templates</span></div>
-            </div>
-          </div>
-          <div class="cv-item">
-            <div class="cv-period">Sep 2007<br>Apr 2012</div>
-            <div>
-              <div class="cv-role">Lead Designer &amp; Front-End Developer</div>
-              <div class="cv-company">Global Vision - Cape Town</div>
-              <p class="cv-desc">Led design and front-end development across intranets, websites, MIS platforms and
-                business applications. CWorked on an early SaaS CRM platform. It was one of the projects that pushed me towards usability and product-focused UX.</p>
-              <div class="cv-tags"><span class="cv-tag">SaaS</span><span class="cv-tag">Front-End Dev</span><span
-                  class="cv-tag">CRM</span></div>
-            </div>
-          </div>
-          <div class="cv-item">
-            <div class="cv-period">Feb 2003<br>Aug 2007</div>
-            <div>
-              <div class="cv-role">Graphic Designer</div>
-              <div class="cv-company">Laragh Courseware - Cape Town</div>
-              <p class="cv-desc">Created interactive software simulations in Macromedia Director and Adobe Flash -
-                sparking an early interest in UX and how users interact, learn and delight in digital products.</p>
-              <div class="cv-tags"><span class="cv-tag">E-Learning</span><span class="cv-tag">Flash</span><span
-                  class="cv-tag">Interaction</span></div>
-            </div>
-          </div>
-          </div>
-       </div>
-         
+        </div>
+
       </div>
     </section>
     <!-- FOCUS AREAS -->
@@ -254,21 +249,25 @@ That includes generating functional specifications, prototyping, testing ideas, 
           <div class="focus-num">01</div>
           <div class="practice_icon"><img src="images/ai_assisted_ux_workflow.png" alt="ai_assisted_ux_workflow"></div>
           <div class="focus-title">AI-Assisted UX Workflows</div>
-          <p class="focus-text">I'm exploring how LLM's, Figma MCP and token-driven tooling can reduce the gap between specification,
-             design and working prototypes.</p>
+          <p class="focus-text">I'm exploring how LLM's, Figma MCP and token-driven tooling can reduce the gap between
+            specification,
+            design and working prototypes.</p>
         </div>
         <div class="focus-card glass reveal practice-card">
           <div class="focus-num">02</div>
           <div class="practice_icon"><img src="images/design_systems_at_scale.png" alt="design_systems_at_scale"></div>
           <div class="focus-title">Design Systems at Scale</div>
-          <p class="focus-text">Building component libraries and token systems that keep products consistent across platforms 
-            and make designs easier for developers to build accurately. Redefining where the traditional design "source of truth" lies.</p>
+          <p class="focus-text">Building component libraries and token systems that keep products consistent across
+            platforms
+            and make designs easier for developers to build accurately. Redefining where the traditional design "source
+            of truth" lies.</p>
         </div>
         <div class="focus-card glass reveal practice-card">
           <div class="focus-num">03</div>
           <div class="practice_icon"><img src="images/motion_spacial.png" alt="motion_spacial"></div>
           <div class="focus-title">Motion &amp; Spatial Design</div>
-          <p class="focus-text">Exploring how motion, timing and spatial interaction change the way people understand and navigate information.</p>
+          <p class="focus-text">Exploring how motion, timing and spatial interaction change the way people understand
+            and navigate information.</p>
         </div>
       </div>
     </section>
@@ -281,24 +280,26 @@ That includes generating functional specifications, prototyping, testing ideas, 
       <div class="cs-grid">
         <!-- Design Operating System (DOS) - AI Exploration -->
         <div class="cs-card glass reveal open-article focus-card glass visible" data-case="0">
-          
+
           <div class="cs-card-thumb cs-thumb-photo">
-            <img src="https://placehold.co/800x600/5369ED/fff?text=Design+Operating+System" alt="Motion Learning Modules"
-              loading="lazy">
-              
+            <img src="https://placehold.co/800x600/5369ED/fff?text=Design+Operating+System"
+              alt="Motion Learning Modules" loading="lazy">
+
             <div class="cs-card-overlay">
-               <div class="cs-view-btn">uploading on Friday 7th August...</div> 
+              <div class="cs-view-btn">uploading on Friday 7th August...</div>
             </div>
           </div>
           <div class="cs-card-body">
             <div class="cs-card-label">AI Exploration · 2026</div>
             <div class="cs-card-title"> Design operating system (DOS)</div>
-            <p class="cs-card-desc">A theoretical exploration of designing a design operating system with AI integration, and telemetry.</p>
+            <p class="cs-card-desc">A theoretical exploration of designing a design operating system with AI
+              integration, and telemetry.</p>
             <!-- <button class="cs-card-mobile-btn" aria-label="View rain case study">View case study →</button> -->
           </div>
         </div>
         <!-- darg -->
-        <div class="cs-card glass reveal open-article focus-card glass visible" data-article="articles/darg.html" data-case="1">
+        <div class="cs-card glass reveal open-article focus-card glass visible" data-article="articles/darg.html"
+          data-case="1">
           <div class="cs-card-thumb cs-thumb-photo">
             <img src="images/darg_article_img.png" alt="DARG Shelter Hub" loading="lazy">
             <div class="cs-card-overlay">
@@ -314,7 +315,8 @@ That includes generating functional specifications, prototyping, testing ideas, 
           </div>
         </div>
         <!-- Rain chip in -->
-        <div class="cs-card glass reveal open-article focus-card glass visible" data-article="articles/rain-chipin.html" data-case="2">
+        <div class="cs-card glass reveal open-article focus-card glass visible" data-article="articles/rain-chipin.html"
+          data-case="2">
           <div class="cs-card-thumb cs-thumb-photo">
             <img src="images/rain.svg" alt="rain Chip In campaign" loading="lazy">
             <div class="cs-card-overlay">
@@ -331,7 +333,8 @@ That includes generating functional specifications, prototyping, testing ideas, 
           </div>
         </div>
         <!-- Go Cover -->
-        <div class="cs-card glass reveal open-article focus-card glass visible" data-article="articles/sanlam-gocover.html" data-case="3">
+        <div class="cs-card glass reveal open-article focus-card glass visible"
+          data-article="articles/sanlam-gocover.html" data-case="3">
           <div class="cs-card-thumb cs-thumb-photo">
             <img src="https://placehold.co/800x600/0f1a2e/4a7fa8?text=Go+Cover" alt="Go Cover Fintech App"
               loading="lazy">
@@ -342,12 +345,13 @@ That includes generating functional specifications, prototyping, testing ideas, 
           <div class="cs-card-body">
             <div class="cs-card-label">Fintech · 2015</div>
             <div class="cs-card-title">Sanlam - Go Cover</div>
-            <p class="cs-card-desc">Designed the UX and UI for Sanlam's Go Cover insurance app, taking the product from early journeys 
+            <p class="cs-card-desc">Designed the UX and UI for Sanlam's Go Cover insurance app, taking the product from
+              early journeys
               and wireframes through to testing, final UI and developer handoff.</p>
             <button class="cs-card-mobile-btn ">View case study →</button>
           </div>
         </div>
-    
+
         <!-- E-Learning -->
         <div class="cs-card glass reveal open-article focus-card glass visible" data-case="4">
           <div class="cs-card-thumb cs-thumb-photo">
@@ -365,11 +369,11 @@ That includes generating functional specifications, prototyping, testing ideas, 
             <!-- <button class="cs-card-mobile-btn" aria-label="sdfsdff">View case study →</button> -->
           </div>
         </div>
-       
+
       </div>
     </section>
     <!-- SHOWREEL -->
-    
+
     <section id="showreel">
       <div class="section-label">Showreel</div>
       <div class="showreel-header reveal">
@@ -384,12 +388,12 @@ That includes generating functional specifications, prototyping, testing ideas, 
       </p> -->
       <div class="showreel-video-wrap reveal">
         <div class="showreel-video-wrap reveal visible">
-          
+
         </div>
         <div class="showreel-overlay"></div>
       </div>
     </section>
-    
+
     <!-- EDUCATION -->
     <section id="education">
       <div class="section-label">Education &amp; Learning</div>
@@ -452,7 +456,7 @@ That includes generating functional specifications, prototyping, testing ideas, 
     </section>
     <footer>
       <span>© 2026 Paul Bristow-Bovey - surface_flow - Cape Town, South Africa</span>
-    
+
     </footer>
   </div>
   <!-- ==========================================================
@@ -475,15 +479,16 @@ ARTICLE MODAL
 
 
 
-<script>
+  <script>
 
 
 
 
-</script>
+  </script>
 
 
 
 
 </body>
+
 </html>
