@@ -146,23 +146,7 @@ navSections.forEach(({ id }) => {
 // Set initial active state so nav id is set when the page loads
 setActiveNav('#hero');
 
-/* ─── THEME TOGGLE ─── */
-const themeToggle = document.getElementById('theme-toggle');
 
-// Restore saved preference on load
-// if (localStorage.getItem('theme') === 'dark') {
-//   document.body.classList.remove('light');
-//   document.documentElement.classList.remove('light');
-// } else if (!localStorage.getItem('theme')) {
-//   document.body.classList.add('dark');
-//   document.documentElement.classList.add('dark');
-// }
-
-// themeToggle.addEventListener('click', () => {
-//   document.body.classList.toggle('light');
-//   document.documentElement.classList.toggle('light');
-//   localStorage.setItem('theme', document.body.classList.contains('light') ? 'light' : 'dark');
-// });
 
 /* ==========================================================
    SURFACE FLOW PORTFOLIO
@@ -193,18 +177,13 @@ const Portfolio = {
             $(document).on("click", ".article-close", function () {
 
                 Portfolio.article.close();
-
             });
 
             // Click outside modal
             $(document).on("click", "#article-overlay", function (e) {
-
                 if (e.target === this) {
-
                     Portfolio.article.close();
-
                 }
-
             });
 
             // Escape key
@@ -213,7 +192,6 @@ const Portfolio = {
                 if (e.key === "Escape") {
 
                     Portfolio.article.close();
-
                 }
 
             });
@@ -221,28 +199,20 @@ const Portfolio = {
         },
 
         open(article) {
-
             console.log("Opening:", article);
-
             $("#article-content").load(article, function (response, status, xhr) {
 
                 console.log("Status:", status);
                 console.log("HTTP:", xhr.status);
-
             });
 
             $("#article-overlay").fadeIn(250);
 
             $("body").css("overflow", "hidden");
-
         },
-
         close() {
-
             $("#article-overlay").fadeOut(250);
-
             $("body").css("overflow", "");
-
             $("#article-content").empty();
 
         }
@@ -262,7 +232,7 @@ $(function () {
         $content.css('opacity', isOpen ? 1 : 0);
         $content.attr('aria-hidden', String(!isOpen));
         $shell.find('.cv-timeline-toggle').attr('aria-expanded', String(isOpen));
-        $shell.find('.cv-timeline-toggle span').text(isOpen ? 'Collapse career timeline' : 'Expand career timeline');
+        $shell.find('.cv-timeline-toggle span').text(isOpen ? 'Collapse timeline' : 'Expand timeline');
     }
 
     $('.cv-timeline-toggle').on('click', function (e) {

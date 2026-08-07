@@ -11,13 +11,10 @@ html {
   scroll-behavior: smooth;
   background: #06070f;
 }
-  div{
-  outline:1px solid red;
-}
+
 
 /* prevents white flash on overscroll/repaint */
 body {
- 
   font-size: 17px;
   line-height: 1.75;
   overflow-x: hidden;
@@ -51,7 +48,7 @@ body {
 .orb1 {
   width: 700px;
   height: 700px;
-  background: radial-gradient(circle, #6b2fa0, transparent 70%);
+  background: radial-gradient(circle, #372fa0, transparent 70%);
   top: -200px;
   left: -150px;
   animation-duration: 28s;
@@ -155,7 +152,8 @@ section {
     margin-bottom: 30px;
     border-right: none;
     display: block;
-    background: linear-gradient(130deg, rgb(250 250 250 / 8%) 0%, rgba(245, 241, 241, 0) 17%);
+    background: linear-gradient(130deg, rgb(250 250 250 / 5%)
+     0%, rgba(245, 241, 241, 0) 2%);
     border-top-left-radius: 13px;
 }
 .section-label::after {
@@ -285,19 +283,20 @@ nav {
   padding-bottom: 2px;
 }
 .nav-links a::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: rgba(200, 185, 255, 1);
-  transform: scaleX(0);
-  transform-origin: left center;
-  transition: transform 0.25s ease;
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgb(255 255 255);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.25s ease;
 }
 .nav-links a:hover {
-    color: #5369ed;
+    color: #9aaf71;
+    font-variation-settings: "wdth" 120, "wght" 650;
 }
 .nav-links a.active {
     color: rgb(255 255 255);
@@ -465,10 +464,11 @@ nav {
 .btn-primary {
     background: rgb(220 219 223);
     color: rgb(82 105 237);
-    border: 1px solid rgba(160, 130, 255, 0.35);
+    border: 1px solid rgb(144 175 99);
+    font-weight: 600;
 }
 .btn-primary:hover {
-    background: rgb(82 105 237 / 62%);
+    background: #9AAF71;
     border-color: rgb(21 25 57);
     color: #ffffff;
 }
@@ -528,11 +528,15 @@ div.hero-desc p {
 }
 /* ─── ABOUT ─── */
 div#lottie-container {
-    /* border: 1px solid red; */
     border-radius: 60px;
     padding: 3px;
     background: #5269ed00;
     position: fixed;
+    width: 79px;
+    padding-top: 16px;
+}
+shell.reveal.visible.is-open {
+    z-index: -1;
 }
 .about-grid {
   display: grid;
@@ -639,7 +643,7 @@ h2.about-heading.heading {
     font-size: 0.75rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
     color: rgb(255 255 255 / 95%);
     text-decoration: none;
     padding: 0.65rem 1.4rem;
@@ -697,8 +701,8 @@ h2.about-heading.heading {
 }
 
 button.cv-timeline-toggle:hover {
-    text-shadow: rgb(255 255 255 / 46%) 0px 0px 10px;
-    text-decoration: underline;
+    text-shadow: rgb(255 255 255 /20%) 0px 0px 10px;
+   
 }
 .cv-timeline-toggle::after {
     content: '';
@@ -748,10 +752,10 @@ button.cv-timeline-toggle:hover {
 }
 .cv-period {
     font-size: 0.68rem;
-    color: rgb(232 230 240 / 18%);
+    color: rgb(223 221 231 / 37%);
     letter-spacing: 0.04em;
     padding-top: 3px;
-    line-height: 1.55;
+    line-height: 1.4;
 }
 .cv-role {
   font-size: 0.95rem;
@@ -840,7 +844,7 @@ button.cv-timeline-toggle:hover {
   letter-spacing: 0.12em;
   color: rgb(255 255 255 / 50%);
   font-weight: 500;
-  margin-bottom: 1.25rem;
+
 }
 .focus-title {
   font-family: 'Afacad Flux', sans-serif;
@@ -1009,8 +1013,19 @@ video {
      border: 1px solid #3a4690;
     text-align: center;
 }
+.practice_icon {
+    display: flex;
+    align-items: center;
+    align-content: baseline;
+    text-align: center;
+}
+
 .practice_icon img {
-    width: 100%;
+    width: auto;
+    max-height: 135px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1.1em;
 }
 .cs-card:hover .cs-view-btn {
   opacity: 1;
@@ -1027,7 +1042,16 @@ video {
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
-
+.bovey {
+    background-image: linear-gradient(128deg, #a9ed52ab, #ed52c8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: block;
+    height: 1em;
+    width: auto;
+}
 
 .cs-card-title {
     font-family: 'Afacad Flux', sans-serif;
@@ -1036,7 +1060,7 @@ video {
     letter-spacing: -0.01em;
     color: #e8e6f0;
     margin-bottom: 0.5rem;
-    text-shadow: rgb(255 255 255 / 30%) 0px 0px 5px;
+    /* text-shadow: rgb(255 255 255 / 30%) 0px 0px 5px; */
 }
 .cs-card-desc {
   font-size: 0.78rem;
@@ -1570,7 +1594,7 @@ footer {
   align-items: center;
   gap: 0.75rem;
 }
-/
+
 /* ─── fix to remove blue highlight on tap on mobile ─── */
 html,
 body,
@@ -1713,11 +1737,11 @@ select {
     gap: 0.75rem;
     text-align: center;
   }
-  .practice_icon img {
-    min-height: 10px;
-    width: 300px;
-    margin: 0 auto;
-  }
+     .practice_icon img {
+        width: auto;
+        margin: 0 auto;
+        max-height: 170px;
+    }
 }
 @media(max-width:600px) {
   .blob {
