@@ -26,6 +26,26 @@ body {
   background: rgba(160, 140, 255, 0.35);
   color: #fff;
 }
+/* Width of the scroll bar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Background track */
+::-webkit-scrollbar-track {
+  background: #010203;
+}
+
+/* Draggable thumb */
+::-webkit-scrollbar-thumb {
+  background: #5269ED;
+  border-radius: 6px;
+}
+
+/* Thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 /* ─── CSS ANIMATED BACKGROUND ─── */
 .bg-canvas {
   position: fixed;
@@ -272,15 +292,18 @@ nav {
   align-items: center;
 }
 .nav-links a {
-  color: rgba(232, 230, 240, 0.5);
-  text-decoration: none;
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-weight: 500;
-  transition: color 0.2s;
-  position: relative;
-  padding-bottom: 2px;
+    color: rgba(232, 230, 240, 0.5);
+    text-decoration: none;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: color 0.2s;
+    position: relative;
+    padding: 20px;
+    transition: all 0.25s ease;
+    border-top-left-radius: 0.6em;
+    border-top-right-radius: 0.6em;
 }
 .nav-links a::after {
     content: '';
@@ -295,8 +318,10 @@ nav {
     transition: transform 0.25s ease;
 }
 .nav-links a:hover {
-    color: #9aaf71;
+    color: #5269ed;
     font-variation-settings: "wdth" 120, "wght" 650;
+    background: #5269ed;
+    color: rgba(232, 230, 240, 0.5);
 }
 .nav-links a.active {
     color: rgb(255 255 255);
@@ -318,12 +343,12 @@ nav {
   border: none;
 }
 .hamburger span {
-  display: block;
-  height: 2px;
-  width: 100%;
-  background: rgba(232, 230, 240, 0.7);
-  transition: all 0.3s ease;
-  transform-origin: center;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: rgb(255 255 255);
+    transition: all 0.3s ease;
+    transform-origin: center;
 }
 .hamburger.open span:nth-child(1) {
   transform: translateY(6.5px) rotate(45deg);
@@ -342,7 +367,7 @@ nav {
     left: 0;
     right: 0;
     z-index: 99;
-    background: rgb(6 7 15 / 21%);
+    background: rgb(6 7 15 / 43%);
     backdrop-filter: blur(32px);
     -webkit-backdrop-filter: blur(32px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -354,9 +379,10 @@ nav {
     transition: opacity 0.25s ease, transform 0.25s ease;
 }
 .mobile-menu.open {
-  display: flex;
-  opacity: 1;
-  transform: translateY(0);
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    border-bottom: 7px solid #efefef21;
 }
 .mobile-menu a {
     color: rgb(232 230 240);
@@ -376,7 +402,9 @@ nav {
   color: rgba(200, 185, 255, 1);
 }
 .mobile-menu a.active {
-  color: rgba(200, 185, 255, 1);
+    color: rgb(83 105 237);
+    font-weight: 900;
+    border-bottom: 5px solid rgb(83 105 237);
 }
 /* ─── HERO ─── */
 #hero {
@@ -560,10 +588,9 @@ h2.about-heading.heading {
 }
 .about-text {
     font-size: 1.1rem;
-    color: rgb(232 230 240 / 90%);
+    color: rgb(206 204 215);
     line-height: 1.35;
     font-weight: 300;
-
 }
 .about-text+.about-text {
   margin-top: 1.1rem;
@@ -693,10 +720,12 @@ h2.about-heading.heading {
     margin-bottom: 1em;
     text-align: left;
     transition: transform 0.25s ease, border-color 0.25s ease;
-    background: linear-gradient(270deg, rgb(250 250 250 / 5%) 0%, rgba(245, 241, 241, 0) 118%);
+    background: linear-gradient(270deg, rgb(250 250 250 / 3%) 0%, rgba(245, 241, 241, 0) 118%);
     border-radius: 12px;
     padding-right: 1em;
     text-underline-offset: 0.55em;
+    color: #5269ed;
+    font-weight: 800;
 }
 
 button.cv-timeline-toggle:hover {
@@ -1235,21 +1264,22 @@ video {
   gap: 2rem;
   margin-bottom: 2.5rem;
 }
+
 .showreel-coming-soon {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.65rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgb(200 185 255);
-  font-weight: 500;
-  border: 1px solid rgba(200, 185, 255, 0.2);
-  padding: 0.4rem 1rem;
-  border-radius: 999px;
-  background: rgba(160, 130, 255, 0.06);
-  white-space: nowrap;
-  align-self: center;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.65rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgb(200 185 255);
+    font-weight: 500;
+    border: 1px solid rgba(200, 185, 255, 0.2);
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    background: rgba(160, 130, 255, 0.06);
+    white-space: wrap;
+    align-self: center;
 }
 .showreel-coming-soon::before {
   content: '';
@@ -1405,7 +1435,7 @@ canvas{
     margin-bottom: 1.5rem;
 }
 .article-body.modal-body-para p {
-    line-height: 1.6;
+    line-height: 1.3;
     padding-bottom: 0.5em;
     color: #ffffffd9;
     font-size: 0.98rem;
@@ -1464,7 +1494,7 @@ blockquote {
     z-index: 99999;
     overflow-y: auto;
     backdrop-filter: blur(30px);
-    background: #00000078;
+    background: #0c151ec2;
 }
 div.article-body.modal-body-para ul {
     margin-left: 2em;
@@ -1477,7 +1507,7 @@ div.article-body.modal-body-para ul {
     padding: 40px;
     position: relative;
     border-radius: 8px;
-    border: 5px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 24px;
     color: #fff;
 }
@@ -1715,10 +1745,11 @@ select {
   .focus-grid {
     grid-template-columns: 1fr;
   }
-  .cs-intro {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
+    .cs-intro {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-bottom: 1em;
+    }
   .cs-grid {
     grid-template-columns: 1fr;
   }
