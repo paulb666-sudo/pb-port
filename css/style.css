@@ -28,7 +28,7 @@ body {
 }
 /* Width of the scroll bar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 10px;
 }
 
 /* Background track */
@@ -847,7 +847,7 @@ button.cv-timeline-toggle{
   z-index: 100;
 }
 button.cv-timeline-toggle:hover {
-    text-shadow: rgb(255 255 255 / 29%) 0px 0px 11px;
+    text-shadow: rgb(255 255 255 / 6%) 0px 0px 11px;
 }
 .focus-card:hover {
   transform: translateY(-4px);
