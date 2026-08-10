@@ -9,17 +9,23 @@
     </div>
 
     <div class="article-body modal-body-para">
+ <blockquote class="text-xl italic font-semibold tracking-tight text-heading">
+            <p>Designing Contextual Insurance for Mobile-First Customers</p>
+        </blockquote>
 
+        <p class="modal-body-para"><b>Go Cover</b>Go Cover is a mobile-first insurance platform designed to simplify the purchase and management of accidental injury and death cover. Built around a contextual user journey, the platform enables customers to 
+            understand, purchase and manage insurance products through an experience that feels approachable rather than intimidating.</p>
+            <p>As part of the UX/UI team, I contributed to refining the customer experience, improving usability across key journeys, and ensuring the interface aligned with 
+                Sanlam's broader digital ecosystem while remaining accessible to first-time insurance users.</p>
 
-        <p class="modal-body-para"><b>Go Cover</b>twas Sanlam's entry into direct-to-consumer insurance via mobile — a first for the
-            brand and a significant UX challenge. Users needed to be able to get a quote, understand their cover and
-            manage their policy in a domain that is typically perceived as complex, intimidating and opaque.</p>
+           <h2><strong>The Challenge</strong><br> </h2> 
+           <p>Traditional insurance products often overwhelm customers with industry terminology, lengthy forms and complex decision-making. The challenge was to transform these 
+            processes into an experience that felt simple, trustworthy and easy to complete on a mobile device.</p>
 
-        <p>The goal of Chip In was to formalise this behaviour by allowing anyone to contribute directly towards
-            another customer's Rain account through a secure, self-service experience.</p>
+            <p>The platform also needed to support evolving business requirements while maintaining consistency across multiple releases,
+                 ensuring that new functionality could be introduced without increasing user friction.</p>
 
-
-        <p class="">Responsibilities
+           <h2><strong>My Role</strong><br> </h2> 
         <ul>
             <li>Product discovery</li>
             <li>UX strategy</li>
@@ -29,59 +35,45 @@
             <li>Interaction design</li>
             <li>Error state design</li>
             <li>Payment flow design</li>
-            <li>Developer handoff</li>
+            <li>Developer collaboration</li>
         </ul>
-
-        </p>
+<h2><strong>Process</strong><br> </h2>
+       <p>The design process focused on reducing complexity and guiding users through critical insurance decisions with confidence.</p>
+       <p>Key activities included:</p>
+        <ul>
+            <li>Reviewing existing customer journeys</li>
+            <li>Simplifying information architecture</li>
+            <li>Designing responsive mobile-first interfaces</li>
+            <li>Improving form completion and validation</li>
+            <li>Creating reusable interface components</li>
+            <li>Iterating designs through stakeholder feedback</li>
+        </ul>
+        <p>Every design decision aimed to remove unnecessary cognitive load while maintaining 
+            transparency around insurance products and policy information.</p>
 
         <p class="modal-img mi-photo mi-darg-1 visible">
-            <img src="images/rain_chipIn1.png" alt="rain_chipin" />
+            <!-- <img src="images/rain_chipIn1.png" alt="rain_chipin" /> -->
         </p>
  <p class="modal-img mi-photo mi-darg-1 visible">
-            <img src="images/chipin_2.png" alt="rain_chipin" />
+            <!-- <img src="images/chipin_2.png" alt="rain_chipin" /> -->
         </p>
+<h2><strong>Design Approach</strong><br> </h2>
+<p>The interface was intentionally clean and focused, using progressive disclosure to reveal 
+    information only when users needed it. Complex insurance concepts were broken into manageable 
+    steps, allowing customers to remain confident throughout the purchasing journey.</p>
+    <p>Special attention was given to hierarchy, accessibility and readability, ensuring important information 
+        was easy to understand while supporting quick decision-making on smaller screens.</p>
+        <p>Consistency across components also helped reduce learning time and strengthened the overall product experience.</p>
+<h2><strong>Outcome</strong><br> </h2>
+<p>The resulting platform delivered a streamlined digital insurance experience that balanced business requirements with customer needs. By simplifying key journeys and improving usability,
+     the platform helped create a more approachable insurance product for mobile users.</p>
+     <p>The project also strengthened the underlying design patterns and reusable UI components, providing a scalable
+         foundation for future platform enhancements and additional product releases.</p>
+
+<h2><strong>Skills & Tools</strong><br> </h2>
+<p><strong>UX Design</strong> • User Journey Mapping • Information Architecture • Wireframing • UI Design • 
+    Responsive Design • Design Systems • Component Libraries • Prototyping • Design QA • Cross-functional Collaboration • Figma</p>
 
 
-        <!-- <p><strong>Designing for two users</strong>. Early discovery revealed a sharp divide between two user types.
-            Volunteers - often
-            students, retirees, or working professionals giving up a few hours on weekends — needed a system that was
-            frictionless, warm and confidence-inspiring. Shelter administrators, by contrast, needed control: adding
-            dogs, editing medical and behavioural flags, overriding bookings, monitoring activity. Rather than build two
-            separate interfaces, the decision was made to design a single adaptive UI gated behind an explicit role
-            selector at login - the role toggle revealing or hiding administrative affordances as appropriate. A
-            mandatory liability waiver was woven directly into the login flow, and a "Remember Me" option cached
-            credentials locally to eliminate re-entry friction for regular volunteers.</p>
-        <p class="modal-img mi-photo mi-darg-1 visible">
-            <img src="images/Case_Study_main2.png" alt="DARG Shelter Hub - Dog Roster" />
-        </p>
-        <p><strong>Designing for urgency.</strong>. The central challenge of the dashboard was surfacing priority
-            without creating anxiety. The
-            solution was a multi-layered sorting system anchored in three modes: Urgency (a qualitative status badge set
-            by
-            administrators), Days (time in the shelter), and Fewest Walks (weekly exercise count). Each dog card was a
-            compact but
-            information-dense unit — breed, age, energy level, shelter duration, a circular progress dial showing walks
-            against the
-            weekly goal, and a colour-coded status badge (Urgent in red, On-Site Only in amber, Well Walked in green). A
-            weather
-            widget docked above the grid surfaced real-time safety warnings, alerting volunteers to avoid walking
-            high-energy or
-            flat-faced breeds during peak heat.</p>
-        <p class="modal-img mi-photo mi-darg-1 visible">
-            <img src="images/Case_Study_main2.png" alt="DARG Shelter Hub - Dog Roster" />
-        </p>
-        <p><strong>The scheduling experience</strong>. Walk scheduling needed to be achievable in under thirty seconds
-            on
-            a phone. Two entry points were designed: a "Book Walk" button on each dog card for volunteers who already
-            knew which dog they wanted, and a Schedule Walk wizard in the bottom nav for multi-dog group bookings. Three
-            fixed daily time slots replaced a freeform picker to constrain complexity. A recurrence engine allowed walks
-            to be booked up to twelve weeks ahead. The My Walks section gave each volunteer a personal history — hours
-            volunteered, completed walks, upcoming sessions — serving both as motivation and as an administrative audit
-            trail. The platform was built within Google AI Studio using a Gemini-powered workflow, compressed into days
-            rather than weeks, and deployed to Google Cloud Run as a containerised static build, or a progressive web
-            app.</p>
-        <p class="modal-img mi-photo mi-darg-1 visible">
-            <img src="images/Case_Study_main2.png" alt="DARG Shelter Hub - Dog Roster" />
-        </p>
-        <a href="https://tinyurl.com/DargWalker" class="modal-link" target="_blank" rel="noopener">Darg Walker</a> -->
+
 </article>

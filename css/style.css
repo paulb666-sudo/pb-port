@@ -28,7 +28,7 @@ body {
 }
 /* Width of the scroll bar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 10px;
 }
 
 /* Background track */
@@ -192,7 +192,7 @@ section {
     z-index: 200;
     border-radius: 50%;
     background: #5369ed26;
-    border: 1px solid rgba(160, 130, 255, 0.45);
+    border: 8px solid rgb(255 255 255 / 2%);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     display: none;
@@ -308,11 +308,11 @@ nav {
 .nav-links a::after {
     content: '';
     position: absolute;
-    bottom: -2px;
+    bottom: -5px;
     left: 0;
     right: 0;
-    height: 1px;
-    background: rgb(255 255 255);
+    height: 2px;
+    background: rgb(82 105 237);
     transform: scaleX(0);
     transform-origin: left center;
     transition: transform 0.25s ease;
@@ -766,11 +766,11 @@ button.cv-timeline-toggle:hover {
   opacity: 1;
 }
 .cv-item {
-  display: grid;
-  grid-template-columns: 95px 1fr;
-  gap: 1.75rem;
-  padding: 1.75rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    display: grid;
+    grid-template-columns: 95px 1fr;
+    gap: 1.75rem;
+    padding: 1.75rem 0;
+    border-bottom: 1px dotted rgb(82 105 237 / 46%);
 }
 .cv-item:first-child {
   padding-top: 0;
@@ -847,7 +847,7 @@ button.cv-timeline-toggle{
   z-index: 100;
 }
 button.cv-timeline-toggle:hover {
-    text-shadow: rgb(82 105 237 / 46%) 0px 0px 10px;
+    text-shadow: rgb(255 255 255 / 6%) 0px 0px 11px;
 }
 .focus-card:hover {
   transform: translateY(-4px);
