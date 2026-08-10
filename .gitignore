@@ -2,3 +2,4 @@ git rm -r --cached node_modules
 vintage_binocular_4k.blend.zip
 docs/
 *.pdf
+images/darg/darg_CS_1.psd
