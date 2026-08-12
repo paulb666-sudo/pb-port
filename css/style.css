@@ -65,6 +65,8 @@ body {
   will-change: transform;
   contain: layout style;
 }
+
+
 .orb1 {
   width: 700px;
   height: 700px;
@@ -1066,7 +1068,7 @@ video {
     font-size: 0.62rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: rgb(193 197 255 / 54%);
+    color: rgb(255 255 255 / 43%);
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
@@ -1154,7 +1156,7 @@ video {
 .modal-body-para {
   font-size: 1rem;
   color: rgb(173 173 173);
-  line-height: 1.4;
+
   font-weight: 300;
   margin-bottom: 2rem;
 }
