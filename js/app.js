@@ -223,6 +223,17 @@ const Portfolio = {
 
 $(function () {
 
+  $('.practice-card').on('click keydown', function (e) {
+    if (e.type === 'keydown' && e.key !== 'Enter' && e.key !== ' ') return;
+    if (e.type === 'keydown') e.preventDefault();
+
+    const $card = $(this);
+    const isFlipped = $card.toggleClass('is-flipped').hasClass('is-flipped');
+    $card.attr('aria-expanded', String(isFlipped));
+    $card.find('.focus-card-back').attr('aria-hidden', String(!isFlipped));
+    $card.find('.focus-card-front').attr('aria-hidden', String(isFlipped));
+  });
+
     function setTimelineState($shell) {
         const $content = $shell.find('.cv-timeline');
         const isOpen = $shell.hasClass('is-open');
