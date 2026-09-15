@@ -886,10 +886,11 @@ dialog.sf-media-dialog>p {
 }
 
 .sf-component .tree-label-title {
-   font-size: var(--label-title-size, 14px);
-   font-weight: 600;
-   text-shadow: 0 1px 3px #000, 0 0 7px #020610;
-   white-space: normal
+    font-size: var(--label-title-size, 14px);
+    font-weight: 600;
+    text-shadow: 0 1px 3px #000, 0 0 7px #020610;
+    white-space: normal;
+    font-size: 16px;
 }
 
 .sf-component .tree-label-number {
@@ -917,7 +918,8 @@ dialog.sf-media-dialog>p {
 }
 
 .sf-component .tree-label-parent .tree-label-title {
-   font-size: var(--label-title-size, 14px)
+    font-size: var(--label-title-size, 14px);
+    font-size: 16px;
 }
 
 .sf-component .tree-label:hover .tree-label-title,
