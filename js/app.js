@@ -200,17 +200,26 @@ const Portfolio = {
 
         open(article) {
             console.log("Opening:", article);
+            document.dispatchEvent(new CustomEvent('portfolio:article-close'));
             $("#article-content").load(article, function (response, status, xhr) {
 
                 console.log("Status:", status);
                 console.log("HTTP:", xhr.status);
+                if (status !== 'error') {
+                    document.dispatchEvent(new CustomEvent('portfolio:article-loaded', {
+                        detail: { container: this, article }
+                    }));
+                }
             });
 
-            $("#article-overlay").fadeIn(250);
+            $("#article-overlay").fadeIn(250, function () {
+                document.dispatchEvent(new CustomEvent('portfolio:article-shown'));
+            });
 
             $("body").css("overflow", "hidden");
         },
         close() {
+            document.dispatchEvent(new CustomEvent('portfolio:article-close'));
             $("#article-overlay").fadeOut(250);
             $("body").css("overflow", "");
             $("#article-content").empty();

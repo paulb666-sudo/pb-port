@@ -31,12 +31,12 @@ body {
 
 /* Width of the scroll bar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 /* Background track */
 ::-webkit-scrollbar-track {
-  background: #010203;
+  background: #0102031c;
 }
 
 /* Draggable thumb */
@@ -823,12 +823,15 @@ h2.about-heading.heading {
   text-underline-offset: 0.55em;
   color: #5269ed;
   font-weight: 800;
+  transition: all 0.25s ease;
+}
+.cv-timeline-shell.reveal.visible:hover {
+    color: rgb(255 255 255 / 80%);
+    background: rgba(160, 130, 255, 0.07);
+    text-shadow: rgb(255 255 255 / 27%) 0px 0px 10px;
+    border-color: #5269ed79;
 }
 
-button.cv-timeline-toggle:hover {
-  text-shadow: rgb(255 255 255 /20%) 0px 0px 10px;
-
-}
 
 .cv-timeline-toggle::after {
   content: '';
@@ -2072,9 +2075,6 @@ select {
     filter: drop-shadow(0 0 4vmin Thistle) drop-shadow(2vmin -2vmin 12vmin #7b68ee);
     height: 40vmin;
     width: 60vmin;
-    position: fixed;
-    top: 85px;
-    left: 31vw;
     z-index: 1;
   }
 
