@@ -375,6 +375,7 @@ nav {
 
 .nav-links a.active {
   color: rgb(255 255 255);
+  background: #5269ed;
 }
 
 .nav-links a.active::after {
@@ -1162,7 +1163,7 @@ video {
   font-weight: 300;
   color: rgba(255, 255, 255, 0.12);
   letter-spacing: -0.05em;
-  user-select: none;
+
 }
 
 .cs-card-overlay {
@@ -1734,9 +1735,12 @@ blockquote {
 }
 
 div.article-body.modal-body-para ul {
-  margin-left: 2em;
-  margin-bottom: 1em;
-  color: #e5e5e5;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    line-height: 1.3;
+    padding-bottom: 0.5em;
+    color: #ffffffd9;
+    font-size: 0.98rem;
 }
 
 .article-modal {
