@@ -882,7 +882,7 @@ dialog.sf-media-dialog>p {
    z-index: -1;
    pointer-events: none;
    border-radius: 50%;
-   background: radial-gradient(ellipse, #050c1bd9 10%, #050c1b80 45%, #050c1b00 72%)
+   background: radial-gradient(ellipse, #0c061bd9 10%, #0c061b80 45%, #0c061b00 72%)
 }
 
 .sf-component .tree-label-title {
@@ -990,8 +990,8 @@ dialog.sf-media-dialog>p {
 }
 
 .sf-component .tuft-growth use {
-   fill: #0c1d39;
-   stroke: #708aca
+   fill: #180e35;
+   stroke: #8970ca
 }
 
 .sf-component #bonsai-detail article {
@@ -1287,18 +1287,18 @@ dialog.sf-media-dialog>p {
 }
 
 .sf-bonsai #bonsai-detail {
-   height: 170px
+    height: 258px;
 }
 
-
 .sf-bonsai #sf-motion-toggle {
-   background: transparent;
-   border: 1px solid #34445d;
-   padding: 7px 11px;
-   min-height: 36px;
-   font-size: 14px;
-   white-space: nowrap;
-   color: #b8c7e2
+    background: transparent;
+    border: 1px solid #34445d;
+    padding: 7px 11px;
+    min-height: 36px;
+    font-size: 14px;
+    white-space: nowrap;
+    color: #b8c7e2;
+    display: none;
 }
 
 .sf-bonsai #sf-motion-toggle:hover {
@@ -1359,7 +1359,16 @@ dialog.sf-media-dialog>p {
       flex-direction: column;
       align-items: stretch
    }
-
+   .sf-bonsai #bonsai-detail {
+    height: 170px;
+}
+.sf-component .bonsai-viewport {
+    position: relative;
+    touch-action: none;
+    isolation: isolate;
+    outline-offset: 4px;
+    display: none;
+}
    .sf-component.sf-knowledge .layer-list {
       padding: 12px
    }
@@ -1504,4 +1513,21 @@ body:has(.sf-bonsai-story) {
       position: relative;
       top: auto
    }
+}
+/* Keep inactive canopy labels quiet; selection restores full white. */
+.sf-component .tree-label:not(.tree-label-parent) > span {
+   color: #fff;
+   opacity: .5;
+   transition: opacity .2s ease;
+}
+.sf-component .tree-label:not(.tree-label-parent)[aria-pressed="true"] > span {
+   opacity: 1;
+}
+.sf-component .tuft text {
+   fill: #fff;
+   opacity: .5;
+   transition: opacity .2s ease;
+}
+.sf-component .tuft.is-current text {
+   opacity: 1;
 }

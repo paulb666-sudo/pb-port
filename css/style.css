@@ -1995,7 +1995,12 @@ select {
   nav {
     padding: 0 1.5rem;
   }
-
+h2 {
+    /* outline: 1px solid red; */
+    line-height: normal;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
   .nav-links {
     display: none;
   }

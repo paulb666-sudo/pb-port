@@ -30,7 +30,7 @@ window.createBonsai3D = function createBonsai3D(viewport, {onSelect}) {
   const fill = new THREE.DirectionalLight(0x829fb1,1.5);
   fill.position.set(-350,-100,100);scene.add(fill);
   const bark = new THREE.MeshStandardMaterial({color:0x8094a2,roughness:.65,metalness:.15});
-  const leafMaterial = new THREE.MeshPhysicalMaterial({color:0x071329,roughness:.62,metalness:.16,clearcoat:.24,clearcoatRoughness:.58});
+  const leafMaterial = new THREE.MeshPhysicalMaterial({color:0x130b2b,roughness:.62,metalness:.16,clearcoat:.24,clearcoatRoughness:.58});
   const outlineMaterial = new THREE.LineBasicMaterial({color:0x758ba2,transparent:true,opacity:.24});
 
   function extrude(shape,depth,bevel) {
@@ -72,14 +72,14 @@ window.createBonsai3D = function createBonsai3D(viewport, {onSelect}) {
     const trace=new THREE.Line(new THREE.BufferGeometry().setFromPoints(samples),outlineMaterial);model.add(trace);
     const state={selection:0,hover:0,reveal:1,baseY:270-y};cloudStates.push(state);
     const material=leafMaterial.clone();
-    // Light the silhouette, leaving the central label area in deep navy.
+    // Light the silhouette, leaving the central label area in deep violet.
     material.onBeforeCompile=shader=>{
       shader.uniforms.cloudSelection={get value(){return state.selection;}};
       shader.uniforms.cloudHover={get value(){return state.hover;}};
       shader.fragmentShader='uniform float cloudSelection; uniform float cloudHover;\n'+shader.fragmentShader;
       shader.fragmentShader=shader.fragmentShader.replace('#include <opaque_fragment>',
         'float cloudRim=pow(1.0-max(dot(normal,geometryViewDir),0.0),3.0);\n'+
-        'outgoingLight+=vec3(0.045,0.11,0.30)*cloudRim*(0.5+cloudSelection*1.4+cloudHover*0.7);\n#include <opaque_fragment>');
+        'outgoingLight+=vec3(0.13,0.045,0.30)*cloudRim*(0.5+cloudSelection*1.4+cloudHover*0.7);\n#include <opaque_fragment>');
     };
     const leaf=new THREE.Mesh(leafGeometry,material);leaf.position.set(x-350,270-y,z);
     leaf.rotation.y=(index%2===0?-1:1)*.1;model.add(leaf);leaves.push(leaf);
