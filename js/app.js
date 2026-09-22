@@ -165,6 +165,7 @@ const Portfolio = {
 
             // Open article buttons
            $(document).on("click", ".cs-card", function (e) {
+    if ($(e.target).closest("a[href]").length) return;
     const $card = $(this).closest(".open-article");
     if (!$card.length) return;
     
