@@ -1,0 +1,76 @@
+# Surface Flow Portfolio
+
+## Project summary
+This repository contains the personal portfolio and knowledge surface for Paul Bristow-Bovey, a senior multidisciplinary digital designer. The site is a static HTML/CSS/JavaScript project focused on portfolio work, case studies, articles, experience/cv content, and motion-heavy design presentations.
+
+## Project purpose
+The site is intentionally structured as a living knowledge surface rather than a traditional portfolio. It documents:
+- product design work
+- UX thinking
+- AI-assisted workflows
+- design systems
+- motion and spatial interaction
+- research and product ideas
+
+## Core architecture rules
+These conventions are important and should be preserved when editing the project:
+
+1. HTML owns content.
+- Content should live in individual HTML files.
+- Do not generate long blocks of HTML with JavaScript.
+- Articles, case studies, and content pages should remain as standalone HTML documents.
+
+2. CSS owns appearance.
+- Styling should live in CSS files and reusable classes.
+- Avoid inline styling when possible.
+- Keep typography, spacing, color, animation, cards, buttons, and layout rules in CSS.
+
+3. JavaScript owns behavior only.
+- Use JavaScript for modal behavior, navigation, animation triggers, and utility helpers.
+- Do not use JavaScript to store or generate business content.
+- Keep scripts focused on interaction and runtime behavior.
+
+4. Each project and article is independent.
+- Case studies and knowledge articles should live in their own HTML files.
+- Keep content modular and easy to edit without affecting the rest of the site.
+
+## Main folders
+- index.html — main landing page
+- css/ — stylesheets
+- js/ — JavaScript behavior and vendor scripts
+- case-studies/ — project case study pages
+- articles/ — article-style content pages
+- images/ — imagery and project assets
+- cv/ — CV-related files
+- pdfs/ — downloadable PDFs
+- videos/ — motion or media assets
+
+## Local development
+Use the project scripts from the repo root:
+
+- npm install
+- npm start
+
+The local server runs on:
+- http://localhost:3000
+
+## Important implementation notes
+- The site is a static website; there is no complex build pipeline.
+- It relies on lightweight local scripts and browser-based behavior.
+- Existing project conventions favor content-first authoring over JS-heavy rendering.
+- When working in this repo, prefer editing real content files rather than introducing data-driven JavaScript templates.
+
+## Suggested approach for future changes
+- Add new portfolio entries as standalone HTML files in the relevant content folder.
+- Keep reusable design patterns in CSS instead of hardcoded inline styles.
+- Add interactivity only in JavaScript and keep it small and targeted.
+- Preserve the visual language of the portfolio: dark theme, editorial typography, layered motion, and minimal but expressive UI.
+
+## Files to reference when editing
+- index.html
+- css/style.css
+- js/app.js
+- ARCHITECTURE.md
+
+## Summary for AI agents
+Treat this project as a content-first static portfolio site with a strong editorial design system. The output should remain accessible, modular, and simple, with HTML as the source of truth for content, CSS for design, and JavaScript for behavior only.
