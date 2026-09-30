@@ -672,10 +672,11 @@ h2.about-heading.heading {
 }
 
 .about-text {
-  font-size: 1.1rem;
-  color: rgb(206 204 215);
-  line-height: 1.35;
-  font-weight: 300;
+    font-size: 1.1rem;
+    color: rgb(206 204 215);
+    line-height: 1.35;
+    line-height: 1.4;
+    font-weight: 300;
 }
 
 .about-text+.about-text {
@@ -1933,6 +1934,7 @@ select {
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+  transition: 0.4s;
 }
 
 .nopadding {
@@ -1980,6 +1982,20 @@ select {
 }
 
 @media(max-width:1100px) {
+
+.bonsai-view-controls{
+  display:none;
+}
+
+.sf-component .bonsai-viewport {
+  
+    display: none;
+}
+.sf-bonsai .bonsai-view-controls {
+    display: none;
+}
+
+
   .cs-card-mobile-btn {
     display: inline-flex;
     align-items: center;

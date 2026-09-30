@@ -280,11 +280,14 @@
 }
 
 .sf-component .reel-content p:not(.eyebrow) {
-   max-width: 410px;
-   color: #b8c1dd;
-   margin-top: 28px;
-   font-size: 18px
+    max-width: 410px;
+    color: #b8c1dd;
+    margin-top: 28px;
+    font-size: 18px;
+    line-height: normal;
+    margin-bottom: 29px;
 }
+
 
 .sf-component .reel-label {
    position: absolute;
@@ -1032,7 +1035,8 @@ dialog.sf-media-dialog>p {
    font-size: 14px;
    min-height: 42px;
    gap: 3px;
-   padding: 6px
+   padding: 6px;
+   border-radius:0.6em;
 }
 
 .sf-component .bonsai-stages button span {
