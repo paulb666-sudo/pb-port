@@ -1,0 +1,1001 @@
+# DESIGN A SINGLE-PAGE RESPONSIVE WEBSITE: FARMER MIKE'S PRODUCE
+
+Design a high-fidelity, polished, responsive single-page website for a small-scale local farming business in Noordhoek, Cape Town, South Africa.
+
+The business is called:
+
+**Farmer Mike's Produce**farmers markets
+
+Core tagline:
+
+**Grown in Noordhoek. Picked when it's ready. Packed for your kitchen.**
+
+The site should feel like a real small local farm business run by a real person, not a corporate agriculture company, generic organic supermarket, or stock “farmhouse” template.
+
+The design should combine:
+
+* contemporary Cape Town design
+* Noordhoek's natural landscape
+* small-scale local farming
+* organic/natural growing practices
+* seasonal eating
+* warm human personality
+* clean modern UX
+* simple WhatsApp/email ordering
+* a strong sense of place
+
+The overall experience should feel **fresh, authentic, optimistic, tactile, local and slightly characterful**.
+
+Do not make it overly rustic, overly luxurious, overly minimalist, or overly “Instagram organic.”
+
+---
+
+## 1. PRIMARY BUSINESS OBJECTIVE
+
+The primary purpose of the site is to get local customers to order Mike's weekly seasonal vegetable boxes.
+
+The core product is:
+
+### THE SEASONAL BOX
+
+**R200**
+
+A box containing whatever vegetables Mike has harvested and has available that week.
+
+The concept should be communicated clearly:
+
+> **What's in the box changes with the seasons.**
+>
+> Mike packs each box with what's looking good in the garden and ready to harvest that week.
+
+The website should make it immediately obvious that customers are not choosing from a supermarket-style fixed list.
+
+The appeal is:
+
+**fresh + local + seasonal + naturally grown + convenient + supporting a local farmer.**
+
+Primary CTA:
+
+**ORDER A BOX**
+
+Secondary CTA:
+
+**SEE WHAT'S GROWING**
+
+Ordering is initially handled through **WhatsApp or email**, not a complex ecommerce checkout.
+
+Do NOT design a fake payment system.
+
+The website should feel ready for ordering while keeping the actual process simple and human.
+
+Use placeholder contact details such as:
+
+**[WHATSAPP NUMBER]**
+
+**[EMAIL ADDRESS]**
+
+Never invent a phone number, email address, delivery area, payment details or farm address.
+
+---
+
+# 2. SINGLE-PAGE INFORMATION ARCHITECTURE
+
+Create one continuous scrolling page with clear anchored sections.
+
+Recommended structure:
+
+1. Navigation
+2. Hero
+3. Seasonal Box / primary conversion section
+4. Available This Week
+5. What Mike Grows
+6. Growing the Natural Way
+7. Meet Mike
+8. Catnip
+9. How Ordering Works
+10. Final CTA
+11. Footer
+
+The page should have strong visual rhythm and variation between sections.
+
+Do not make every section look like the same generic row of cards.
+
+---
+
+# 3. HEADER / NAVIGATION
+
+Create a clean, slightly distinctive header.
+
+Logo/wordmark:
+
+**Farmer Mike's**
+**Produce**
+
+Create a simple original visual identity around the name.
+
+Possible logo concept:
+
+A hand-drawn or lightly illustrated combination of:
+
+* leaf
+* vegetable
+* small sun
+* mountain line
+* subtle Noordhoek landscape reference
+
+The logo should feel contemporary and handcrafted rather than cartoonish.
+
+Navigation links:
+
+**Home**
+**This Week**
+**What We Grow**
+**Our Approach**
+**Meet Mike**
+
+Primary navigation CTA:
+
+**ORDER A BOX — R200**
+
+On mobile, convert the navigation into a compact menu and keep the ordering CTA highly accessible.
+
+Consider a persistent mobile bottom CTA for:
+
+**ORDER A BOX — R200**
+
+---
+
+# 4. HERO SECTION
+
+The hero should immediately communicate the location, personality and product.
+
+Headline:
+
+**Grown in Noordhoek.**
+**Picked when it's ready.**
+
+Supporting text:
+
+**Fresh seasonal vegetables grown on a small local farm in Noordhoek using organic farming practices.**
+
+CTA:
+
+**ORDER THIS WEEK'S BOX**
+
+Secondary CTA:
+
+**SEE WHAT'S GROWING**
+
+Include a large, beautiful editorial-style hero image.
+
+Because there are currently no photographs of Mike or his farm, use **high-quality free-to-use stock photography**, preferably from sources such as Unsplash or Pexels.
+
+The imagery should depict:
+
+* real Cape Town / South African agricultural environments where possible
+* vegetable beds
+* hands harvesting vegetables
+* freshly harvested produce
+* soil
+* leafy vegetables
+* market boxes
+* morning light
+* natural textures
+
+Avoid generic American farm imagery.
+
+Avoid red barns, tractors in wheat fields, generic European countryside and artificially staged supermarket produce.
+
+The hero imagery should feel plausibly connected to **Noordhoek, Cape Town**.
+
+Use a subtle reference to the Cape landscape — for example distant mountain forms, coastal light, fynbos-like vegetation or an understated mountain silhouette.
+
+Do not make Table Mountain a giant tourist attraction in the design.
+
+The location should be felt rather than shouted.
+
+---
+
+# 5. THE SEASONAL BOX — MAIN PRODUCT
+
+This is the most important section on the site.
+
+Headline:
+
+**This week's box**
+
+Subheading:
+
+**Fresh from the garden. Packed for your kitchen.**
+
+Price:
+
+**R200**
+
+Body copy:
+
+> Every box is a little different because every week in the garden is different. Mike fills each box with whatever is fresh, seasonal and ready to harvest.
+
+Create a visually compelling produce-box composition containing several vegetables.
+
+The box should feel abundant but believable.
+
+Show examples such as:
+
+* spinach
+* carrots
+* tomatoes
+* beetroot
+* potatoes
+* lettuce
+* onions
+* garlic
+* cauliflower
+* peppers
+* radishes
+* chilli
+* cucumbers
+
+Do not imply that every vegetable is included every week.
+
+Include a visual note:
+
+**What's included changes with the season and harvest.**
+
+Include a prominent CTA:
+
+**ORDER A R200 BOX**
+
+Below it, add a small reassurance:
+
+**WhatsApp or email Mike to order.**
+
+Potential microcopy:
+
+**Local • Seasonal • Naturally grown**
+
+---
+
+# 6. "AVAILABLE THIS WEEK" SECTION
+
+Create a dynamic-looking section called:
+
+**Available this week**
+
+This should feel more like a farm harvest board than an ecommerce inventory system.
+
+Show a selection of vegetable cards with beautiful photography.
+
+Each card should include:
+
+* photograph
+* vegetable name
+* small seasonal/status label
+
+Use example statuses such as:
+
+**Fresh today**
+**In season**
+**Available**
+**Coming into season**
+
+Do not imply real-time inventory.
+
+Design the cards so they can easily be updated later by Mike.
+
+Vegetables to represent across the site:
+
+* Spinach
+* Carrots
+* Tomatoes
+* Beetroot
+* Potatoes
+* Lettuce
+* Onion
+* Garlic
+* Cauliflower
+* Peppers
+* Radishes
+* Chilli
+* Cucumbers
+
+Use realistic stock photography.
+
+Photography should look cohesive even though the individual images come from stock libraries.
+
+Prefer photographs with:
+
+* natural light
+* soil still visible
+* imperfect vegetables
+* leaves and stems
+* close-up detail
+* shallow depth of field
+* tactile textures
+
+Avoid glossy commercial grocery-store photography.
+
+---
+
+# 7. "WHAT MIKE GROWS" SECTION
+
+Create a separate section titled:
+
+**What Mike grows**
+
+Intro:
+
+> From leafy greens to roots, fruiting vegetables and a little something for the cats — Mike grows a changing mix of seasonal produce throughout the year.
+
+Create a visually interesting vegetable gallery/grid.
+
+Do not make it feel like a boring catalogue.
+
+Use different image crops, subtle variation in card size, and natural spacing while maintaining a coherent grid system.
+
+Each vegetable should have:
+
+* image
+* name
+* subtle category or seasonal indicator where appropriate
+
+Categories could include:
+
+**Leafy**
+**Roots**
+**Fruiting**
+**Alliums**
+**Seasonal**
+
+Do not overcomplicate the interface with filters.
+
+---
+
+# 8. ORGANIC / NATURAL GROWING SECTION
+
+Create an editorial section that explains Mike's approach.
+
+Heading:
+
+**Grow with the seasons. Work with the soil.**
+
+Supporting copy:
+
+> Mike's approach is simple: grow naturally, look after the soil and harvest when the vegetables are ready.
+>
+> His growing methods are based on organic farming practices, with an emphasis on healthy soil, seasonal growing and producing good food for local people.
+
+Important:
+
+Do NOT describe the farm as officially "certified organic."
+
+Do NOT imply formal organic certification.
+
+Use wording such as:
+
+**Grown using organic practices**
+**Soil-first growing**
+**Seasonal growing**
+**Natural growing practices**
+
+Visually, make this section feel calm, earthy and editorial.
+
+Possible supporting visual elements:
+
+* soil texture
+* leaves
+* hands planting
+* seedlings
+* watering
+* compost/soil
+* root vegetables being harvested
+
+Create a small set of principles:
+
+### SOIL FIRST
+
+Healthy soil is the beginning of good food.
+
+### IN SEASON
+
+Mike grows according to what the seasons allow.
+
+### HARVEST FRESH
+
+Vegetables are picked when they're ready.
+
+### LOCAL
+
+Grown in Noordhoek for local households.
+
+Use simple line icons or understated botanical illustrations rather than generic corporate icons.
+
+---
+
+# 9. MEET MIKE
+
+This should be one of the most important emotional sections.
+
+Heading:
+
+**Meet Mike**
+
+Make the site feel like it belongs to a real person.
+
+Because no photograph of Mike is currently available, temporarily use an appropriate **stock image of a South African/Cape farmer or gardener**, or a natural lifestyle image suggesting a small-scale grower.
+
+Make it obvious in the visual treatment that this is a temporary representation rather than creating a false photographic claim.
+
+Do not create a hyper-realistic AI portrait pretending to be Mike.
+
+Copy:
+
+> **Hi, I'm Mike.**
+>
+> I grow seasonal vegetables here in Noordhoek and sell them directly to people in the local community.
+>
+> I'm interested in keeping things simple: healthy soil, good growing practices, fresh vegetables and food that doesn't have to travel halfway around the world to reach your kitchen.
+>
+> What's ready in the garden determines what's in the box — so every week is a little different.
+
+End with:
+
+**GROWN HERE. EATEN HERE.**
+
+This section should feel warm, personal and authentic.
+
+Avoid corporate "Our Story" language.
+
+---
+
+# 10. CATNIP SECTION
+
+Give catnip its own playful but tasteful section.
+
+Heading:
+
+**Something for the other members of the household. 🐈**
+
+Copy:
+
+> Fresh local catnip, grown right here alongside the vegetables.
+
+Introduce several potential formats:
+
+**Fresh bunches**
+**Dried catnip**
+**Catnip bags**
+**Catnip plants**
+
+Use beautiful photographs of catnip and/or a tasteful cat interacting with fresh catnip.
+
+The cat imagery should be charming rather than childish.
+
+This section should provide a slight tonal shift — more playful — while remaining part of the overall visual system.
+
+Potential CTA:
+
+**ASK ABOUT CATNIP**
+
+Ordering still happens through WhatsApp or email.
+
+---
+
+# 11. HOW TO ORDER
+
+Make the ordering process extremely simple.
+
+Heading:
+
+**Getting your box is easy.**
+
+Create a three-step visual flow:
+
+### 01 — SEE WHAT'S FRESH
+
+Check what's available this week.
+
+### 02 — MESSAGE MIKE
+
+Send Mike a WhatsApp or email.
+
+### 03 — COLLECT OR ARRANGE DELIVERY
+
+Delivery or farm pickup options will be confirmed directly with Mike.
+
+Because delivery arrangements have not yet been finalised, do not invent prices, schedules or delivery zones.
+
+Use neutral wording such as:
+
+**Delivery may be available locally — ask Mike.**
+
+**Pickup options available — ask Mike.**
+
+Primary CTA:
+
+**ORDER ON WHATSAPP**
+
+Secondary CTA:
+
+**EMAIL MIKE**
+
+---
+
+# 12. FINAL CALL TO ACTION
+
+Near the bottom of the page, create a strong full-width CTA section.
+
+Headline:
+
+**Bring a little Noordhoek home.**
+
+Supporting copy:
+
+> Seasonal vegetables, grown locally and packed up for your kitchen.
+
+Large CTA:
+
+**ORDER THIS WEEK'S BOX — R200**
+
+Secondary:
+
+**WHAT'S GROWING?**
+
+Use a strong natural background image or subtle botanical/produce composition.
+
+---
+
+# 13. FOOTER
+
+Footer should contain:
+
+**Farmer Mike's Produce**
+
+**Grown in Noordhoek, Cape Town**
+
+Links:
+
+**This Week**
+**What We Grow**
+**Our Approach**
+**Meet Mike**
+**Order**
+
+Contact placeholders:
+
+**WhatsApp: [WHATSAPP NUMBER]**
+**Email: [EMAIL ADDRESS]**
+
+Optional small line:
+
+**Seasonal produce. Local growing. Good food.**
+
+Do not fabricate social media accounts.
+
+---
+
+# 14. VISUAL IDENTITY
+
+Develop a distinctive visual identity from scratch.
+
+The design direction is:
+
+### "MODERN CAPE FARM"
+
+Combine:
+
+* Cape Town natural landscape
+* Noordhoek farmland
+* fynbos-inspired textures
+* contemporary editorial design
+* small-scale farming
+* tactile natural materials
+* warm human personality
+
+This should feel like something a sophisticated independent Cape Town food brand might create.
+
+Avoid:
+
+* generic farm website aesthetics
+* American farmhouse styling
+* excessive wood textures
+* hay bales
+* red barns
+* cow illustrations
+* gingham
+* overly cute vegetables
+* generic sustainability iconography
+* cliché African patterns
+* safari aesthetics
+* excessive "eco" green gradients
+* corporate green branding
+
+The Cape Town influence should be subtle and sophisticated.
+
+Think:
+
+**mountain + ocean light + fynbos + soil + vegetables + local market + contemporary Cape design.**
+
+---
+
+# 15. COLOUR PALETTE
+
+Create an earthy, sophisticated palette.
+
+Primary background:
+
+**warm natural off-white / parchment**
+
+Primary green:
+
+**deep fynbos green**
+
+Secondary greens:
+
+**sage / eucalyptus / muted olive**
+
+Earth:
+
+**warm soil brown**
+
+Accent colours should come from the vegetables themselves:
+
+* tomato red
+* beetroot burgundy
+* carrot orange
+* chilli red
+* cucumber green
+
+Use accent colours sparingly.
+
+The site should predominantly feel green, earthy and light.
+
+Avoid bright neon green.
+
+---
+
+# 16. TYPOGRAPHY
+
+Use a sophisticated pairing of:
+
+### Display type
+
+A warm editorial serif with personality.
+
+### Body/UI type
+
+A highly legible contemporary sans-serif.
+
+The serif should feel:
+
+**agricultural + editorial + Cape Town lifestyle**
+
+rather than:
+
+**old-fashioned country farmhouse.**
+
+Typography should create a clear hierarchy.
+
+Large confident headlines.
+
+Short readable paragraphs.
+
+Generous whitespace.
+
+Avoid excessive uppercase text.
+
+---
+
+# 17. PHOTOGRAPHY DIRECTION
+
+Because original farm photography is not available yet, use cohesive free stock imagery.
+
+Preferred sources:
+
+**Unsplash**
+**Pexels**
+
+Use free-to-use imagery where possible.
+
+Photography should feel:
+
+* natural
+* documentary
+* tactile
+* imperfect
+* sunny but not overexposed
+* distinctly Southern African/Cape where possible
+* close to the soil
+* human
+* seasonal
+
+Photographs should show real produce rather than flawless supermarket vegetables.
+
+Use images of:
+
+* harvesting
+* soil
+* hands
+* vegetables in baskets
+* leafy greens
+* carrots with soil
+* tomatoes on the vine
+* beetroot
+* herbs/catnip
+* vegetable beds
+* farmers markets
+* coastal/mountain agriculture
+
+Maintain consistency in lighting and image treatment.
+
+Use rounded corners sparingly.
+
+Do not apply excessive filters.
+
+---
+
+# 18. ILLUSTRATION / GRAPHIC LANGUAGE
+
+Introduce a subtle custom illustration language inspired by:
+
+* botanical line drawings
+* hand-drawn vegetable marks
+* mountain contours
+* leaves
+* seed shapes
+* simple sun motifs
+
+Illustrations should be understated and premium.
+
+They should support the photography rather than compete with it.
+
+A small hand-drawn vegetable or leaf mark could be used beside section headings.
+
+---
+
+# 19. UX PRINCIPLES
+
+The website must be extremely easy to understand.
+
+Within the first few seconds, a visitor should understand:
+
+**What is this?**
+Local seasonal vegetables from Mike in Noordhoek.
+
+**What can I buy?**
+A seasonal vegetable box.
+
+**How much?**
+R200.
+
+**How do I order?**
+WhatsApp or email.
+
+**Why should I care?**
+Fresh, local, seasonal, naturally grown produce from a real local farmer.
+
+Prioritize clarity over decorative UI.
+
+Use strong CTA repetition, but do not make every button visually identical.
+
+---
+
+# 20. RESPONSIVE DESIGN
+
+Design for:
+
+**Desktop:** approximately 1440px wide
+
+**Tablet:** approximately 768–1024px
+
+**Mobile:** approximately 390px wide
+
+Mobile is extremely important.
+
+Assume many people will discover the site on their phones and immediately want to WhatsApp Mike.
+
+Mobile design should therefore prioritize:
+
+* fast visual comprehension
+* large readable typography
+* comfortable touch targets
+* prominent WhatsApp ordering
+* simple navigation
+* stacked product cards
+* elegant image crops
+* no horizontal scrolling
+* minimal interaction complexity
+
+Consider a sticky mobile CTA:
+
+**ORDER A BOX — R200**
+
+Make sure it never blocks important content.
+
+---
+
+# 21. INTERACTION DETAILS
+
+Create subtle, polished interactions.
+
+Examples:
+
+* gentle hover effects on vegetable cards
+* buttons with tactile hover states
+* subtle image zoom on hover
+* smooth anchor scrolling
+* seasonal status badges
+* slight movement or reveal animations as sections enter the viewport
+
+Animations should feel natural and restrained.
+
+Do not create excessive motion.
+
+The design should feel alive but calm.
+
+---
+
+# 22. ACCESSIBILITY
+
+Use:
+
+* strong colour contrast
+* clear typography
+* semantic visual hierarchy
+* obvious buttons
+* large mobile touch targets
+* accessible image alt-text concepts
+* no information communicated by colour alone
+
+Ensure the earthy colour palette still provides sufficient contrast.
+
+---
+
+# 23. BRAND VOICE
+
+The copy should sound like **a real local farmer speaking**, not a marketing department.
+
+Voice:
+
+* warm
+* straightforward
+* slightly witty
+* confident
+* local
+* human
+* optimistic
+* unpretentious
+
+Avoid words like:
+
+"premium agricultural solutions"
+
+"farm-to-table ecosystem"
+
+"curated produce experience"
+
+"holistic agricultural journey"
+
+"luxury artisanal vegetables"
+
+Instead use language like:
+
+**What's ready in the garden this week?**
+
+**Picked when it's ready.**
+
+**Good vegetables don't need much explaining.**
+
+**Grown in Noordhoek.**
+
+**What's in the box changes with the seasons.**
+
+The website should have personality without trying too hard to be quirky.
+
+---
+
+# 24. IMPORTANT CONTENT RULES
+
+Do not invent:
+
+* Mike's surname
+* exact farm address
+* telephone number
+* email address
+* delivery prices
+* delivery radius
+* opening hours
+* farm certifications
+* claims of being certified organic
+* harvest quantities
+* customer testimonials
+* awards
+* restaurant clients
+* years in business
+* farm history
+* fake reviews
+* fake photographs of Mike presented as factual
+* fictional social media accounts
+
+Use clearly editable placeholders wherever real information is missing.
+
+Do not manufacture testimonials simply to fill space.
+
+---
+
+# 25. COMPONENT / DESIGN SYSTEM
+
+Create a coherent reusable visual system including:
+
+* logo / wordmark
+* primary CTA
+* secondary CTA
+* navigation
+* section heading
+* vegetable card
+* availability badge
+* seasonal box card
+* informational callout
+* principle/icon block
+* contact CTA
+* footer
+
+Use consistent spacing, radius, typography and image treatments.
+
+The overall design should feel deliberately art-directed rather than assembled from generic UI components.
+
+---
+
+# 26. DESIRED EMOTIONAL RESPONSE
+
+When someone lands on the website, they should think:
+
+**"This is local."**
+
+Then:
+
+**"This is fresh."**
+
+Then:
+
+**"This feels like a real person runs this."**
+
+Then:
+
+**"R200 for a seasonal box sounds good."**
+
+And finally:
+
+**"I'll WhatsApp Mike."**
+
+The site should sell the feeling of knowing where your vegetables came from without becoming preachy about sustainability.
+
+---
+
+# 27. FINAL DESIGN DIRECTION
+
+Think of the final product as:
+
+**A contemporary Noordhoek farm stand translated into a beautiful modern website.**
+
+It should feel somewhere between:
+
+* a local Cape Town food brand
+* a sophisticated farmers market stall
+* a small organic growing operation
+* an editorial lifestyle publication
+* a friendly neighbourhood business
+
+It must NOT feel like:
+
+* a large commercial farm
+* an ecommerce supermarket
+* a generic template
+* a corporate sustainability website
+* a rustic American farm website
+
+The result should be **distinctive enough that someone seeing the site would remember "Farmer Mike's Produce" rather than simply remembering "a vegetable website."**
+
+Generate the complete responsive single-page experience with realistic example imagery, polished typography, carefully written copy, coherent visual hierarchy, and production-minded responsive layouts.
+
+Prioritize the **weekly R200 seasonal box and WhatsApp ordering journey** above everything else.

@@ -1,0 +1,23 @@
+The single-page website for Farmer Mike's Produce and the bi-directional Google Doc inventory system are now built and active:
+1. Website & Brand Experience (Noordhoek, Cape Town)
+Visual Identity & Atmosphere: Designed with a "Modern Cape Farm" aesthetic—deep fynbos green, eucalyptus, soil brown, and warm parchment—paired with editorial serif typography (Fraunces) and clean UI typography (Plus Jakarta Sans).
+Core Conversion — The Seasonal Box (R200): Highlighted hero section communicating that what's in the box changes weekly with garden ripeness, with sample vegetable crops, harvest notes, and reassuring microcopy.
+Dynamic Farm Harvest Board ("Available This Week"): Live interactive status tags for all crops (Fresh today, Available today, Low inventory, Out of stock, Coming into season) with real soil and garden photography.
+Complete Narrative Flow:
+Hero: Noordhoek coastal landscape, dawn harvest imagery, core tagline, and direct CTAs.
+What Mike Grows: Categorized visual gallery (Leafy, Roots, Fruiting, Alliums, Herbs).
+Our Approach: "Grow with the seasons. Work with the soil." featuring the 4 core organic principles (Soil First, In Season, Harvest Fresh, Local).
+Meet Mike: Warm, personal story of Mike in Noordhoek with the "Grown Here. Eaten Here." sign-off.
+Catnip Section: Dedicated showcase for fresh bunches, dried catnip, pouches, and living plants.
+How to Order: 3-step WhatsApp and email ordering guide with local pickup and delivery notes.
+Interactive Order Builder: Allows customers to select their R200 box, extra bunches, and preferences, generating pre-filled WhatsApp and email messages without fake payment gateways.
+Mobile Experience: Includes a sticky bottom ordering bar for one-tap WhatsApp ordering.
+2. Mike's Admin Dashboard & Real-Time Bi-Directional Google Doc Sync
+Simplified Dashboard: Accessible via the "Farmer Admin" button in the header or footer.
+One-Click Tagging: Mike can tap any crop to instantly switch between Fresh today, Available today, Low inventory, Out of stock, and Coming into season, updating the live website in real time.
+Google Docs Integration:
+Official "Sign in with Google" button connecting directly with Mike's Google Drive and Docs.
+Automatically locates or creates a document titled "Farmer Mike's Produce — Harvest & Inventory" with a direct link to open and edit in Google Docs.
+Push to Google Doc: Updates the document with current crop statuses (with explicit user confirmation).
+Pull from Google Doc: Reads external changes Mike makes directly inside the Google Doc on his phone or computer and updates the website harvest board.
+Auto-Sync: Background polling option (every 30 seconds) to ensure changes made anywhere stay aligned.
