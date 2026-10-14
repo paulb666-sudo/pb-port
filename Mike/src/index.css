@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Fraunces', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    
+    /* Earthy Cape Palette */
+    --color-parchment: #F9F6F0;
+    --color-fynbos: #1E3A2B;
+    --color-eucalyptus: #4D685A;
+    --color-sage: #7E9788;
+    --color-soil: #654E38;
+    --color-clay: #C2593F;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: #FAF7F2;
+    color: #1C241F;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom scrollbar for admin and modals */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1ECE1;
+}
+::-webkit-scrollbar-thumb {
+  background: #B4C4B8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7E9788;
+}
+
+/* Subtle botanical pattern overlay */
+.bg-topo-subtle {
+  background-image: radial-gradient(rgba(30, 58, 43, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+}

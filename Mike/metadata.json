@@ -1,0 +1,6 @@
+{
+  "name": "Farmer Mike's Produce",
+  "description": "Fresh seasonal vegetable boxes and local produce grown in Noordhoek, Cape Town.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
