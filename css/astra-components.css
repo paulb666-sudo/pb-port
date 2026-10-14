@@ -574,8 +574,8 @@ dialog.sf-media-dialog>p {
 }
 
 .sf-component .judgement rect {
-   fill: var(--accent);
-   stroke: #aab6ff;
+   fill: #192b70;
+   stroke: #8295ed;
    stroke-width: 1.5;
    transition: filter .3s
 }
@@ -592,7 +592,7 @@ dialog.sf-media-dialog>p {
 
 .sf-component .judgement.is-current rect,
 .sf-component .judgement:hover rect {
-   filter: drop-shadow(0 0 10px #5269ed88)
+   filter: drop-shadow(0 0 12px rgba(228, 21, 221, 0.72))
 }
 
 .sf-component .judgement:focus-visible rect {
@@ -1062,7 +1062,7 @@ dialog.sf-media-dialog>p {
 .sf-component #reset-tree-view {
    background: transparent;
    color: #b8c7e2;
-   border: 1px solid #34445d;
+   border: none;
    padding: 7px 11px;
    min-height: 36px;
    font-size: 14px;

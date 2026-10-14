@@ -25,7 +25,7 @@ body {
 }
 
 ::selection {
-  background: rgba(160, 140, 255, 0.35);
+  background: red;
   color: #fff;
 }
 
@@ -563,11 +563,11 @@ nav {
 }
 
 .btn-primary {
-  background: rgb(220 219 223);
-  color: rgb(82 105 237);
-  font-weight: 600;
+    background: rgb(223 68 228);
+    color: rgb(82 105 237);
+    font-weight: 600;
+    color: #fff;
 }
-
 .btn-primary:hover {
   background: rgb(82 105 237);
   border-color: rgb(21 25 57);
@@ -1215,6 +1215,7 @@ video {
   color: #ffffffe6;
   border: 1px solid #3a4690;
   text-align: center;
+  text-decoration: none;
 }
 
 .practice_icon {
@@ -1280,7 +1281,12 @@ video {
   }
 }
 
-
+strong.bovey {
+    font-weight: 900;
+    font-size: 1.8em;
+    margin: 0;
+    padding: 0;
+}
 
 
 .cs-card-title {

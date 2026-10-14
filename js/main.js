@@ -139,26 +139,9 @@ navSections.forEach(({ id }) => {
   if (el) spyObs.observe(el);
 });
 
-// Set initial active state so nav id is set when the page loads
+
 setActiveNav('#hero');
 
-/* ─── THEME TOGGLE ─── */
-// const themeToggle = document.getElementById('theme-toggle');
-
-// // Restore saved preference on load
-// if (localStorage.getItem('theme') === 'dark') {
-//   document.body.classList.remove('light');
-//   document.documentElement.classList.remove('light');
-// } else if (!localStorage.getItem('theme')) {
-//   document.body.classList.add('light');
-//   document.documentElement.classList.add('light');
-// }
-
-// themeToggle.addEventListener('click', () => {
-//   document.body.classList.toggle('light');
-//   document.documentElement.classList.toggle('light');
-//   localStorage.setItem('theme', document.body.classList.contains('light') ? 'light' : 'dark');
-// });
 
 
 
