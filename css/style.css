@@ -29,7 +29,7 @@ body {
   color: #fff;
 }
 
-/* Width of the scroll bar */
+/* Width of the scroll bar */.
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -373,6 +373,14 @@ nav {
   color: rgba(232, 230, 240, 0.5);
 }
 
+.me {
+    float: right;
+}
+
+
+
+
+
 .nav-links a.active {
   color: rgb(255 255 255);
   background: #5269ed;
@@ -381,7 +389,9 @@ nav {
 .nav-links a.active::after {
   transform: scaleX(1);
 }
-
+.nav-links a:hover {
+    color: #fff!important;
+}
 /* hamburger */
 .hamburger {
   display: none;
@@ -649,10 +659,10 @@ shell.reveal.visible.is-open {
 }
 
 .about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5rem;
-  align-items: start;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    align-items: start;
 }
 
 .about-heading {
