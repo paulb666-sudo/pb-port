@@ -1,4 +1,13 @@
 (() => {
+  const scrollTop = document.querySelector('.case-study-page .scrollToTop');
+  if (scrollTop) {
+    const updateScrollButton = () => {
+      scrollTop.classList.toggle('is-visible', window.scrollY > 240);
+    };
+    window.addEventListener('scroll', updateScrollButton, { passive: true });
+    updateScrollButton();
+  }
+
   const explorer=document.querySelector('.sf-knowledge');
   if(!explorer)return;
   explorer.addEventListener('click',event=>{
