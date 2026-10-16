@@ -48,16 +48,16 @@
     window.ScrollTrigger?.refresh();
   });
   const dialog=$('#media-dialog'),video=dialog.querySelector('video');
-  $('#watch-prototype').addEventListener('click',()=>{
-    dialog.showModal();video.play().catch(()=>{});
-  });
+  // $('#watch-prototype').addEventListener('click',()=>{
+  //   dialog.showModal();video.play().catch(()=>{});
+  // });
   $('#close-media').addEventListener('click',()=>dialog.close());
   dialog.addEventListener('click',event=>{
     const r=dialog.getBoundingClientRect();
     if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();
   });
-  dialog.addEventListener('close',()=>{video.pause();$('#watch-prototype').focus();});
-  // Let the walkthrough handle Escape without closing a separate article underneath it.
+  // dialog.addEventListener('close',()=>{video.pause();$('#watch-prototype').focus();});
+  // // Let the walkthrough handle Escape without closing a separate article underneath it.
   dialog.addEventListener('keydown',event=>{if(event.key==='Escape')event.stopPropagation();});
   function updateMotion() {
     motionButton.textContent=paused?'Resume animations ▷':'Pause animations Ⅱ';

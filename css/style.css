@@ -1753,6 +1753,12 @@ p.modal-img.mi-photo.mi-darg-1.visible img {
   border: 1px dashed #ffffff8a;
 }
 
+p.modal-img.mi-photo.mi-darg-1.reveal.visible.float-left {
+    float: left;
+    max-width: 26vw;
+    margin: 3.2em 1.2em 0 0;
+}
+
 blockquote {
   margin: 1.5rem 0;
   padding: 1rem 1.5rem;
@@ -2129,6 +2135,16 @@ h2 {
     max-height: 170px;
   }
 }
+@media(max-width:850px) {
+  p.modal-img.mi-photo.mi-darg-1.reveal.visible.float-left {
+    float: none;
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+}
+
+
 
 @media(max-width:600px) {
   .blob {
