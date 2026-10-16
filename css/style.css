@@ -29,10 +29,7 @@ body {
   color: #fff;
 }
 
-/* Width of the scroll bar */.
-::-webkit-scrollbar {
-  width: 8px;
-}
+
 
 /* Background track */
 ::-webkit-scrollbar-track {
