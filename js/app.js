@@ -447,14 +447,10 @@ $(function () {
         to the next if you move your mouse very fast across the screen. That's
         also how I measure the mouse's velocity.
         */
-        w.addEventListener("mousedown", mouse_down_handler);
-        w.addEventListener("touchstart", mouse_down_handler);
-
-        w.addEventListener("mouseup", mouse_up_handler);
-        w.addEventListener("touchend", touch_end_handler);
-
-        canvas.addEventListener("mousemove", mouse_move_handler);
-        canvas.addEventListener("touchmove", touch_move_handler);
+        w.addEventListener("pointerdown", mouse_down_handler);
+        w.addEventListener("pointerup", mouse_up_handler);
+        w.addEventListener("pointercancel", mouse_up_handler);
+        w.addEventListener("pointermove", mouse_move_handler);
 
         //When the page is finished loading, run the draw() function.
         w.onload = draw;
@@ -787,7 +783,8 @@ $(function () {
     this function when it's called.
     */
     function mouse_down_handler(e) {
-        e.preventDefault(); //Prevents the default action from happening (e.g. navigation)
+        if (e.button !== undefined && e.button !== 0) return;
+        mouse_move_handler(e);
         mouse.down = true; //Sets the mouse object's "down" value to true
     }
 
@@ -813,9 +810,10 @@ $(function () {
         mouse.px = mouse.x;
         mouse.py = mouse.y;
 
-        //Sets the new coordinates
-        mouse.x = e.offsetX || e.layerX;
-        mouse.y = e.offsetY || e.layerY;
+        // Map viewport pointer coordinates into the canvas's drawing coordinates.
+        var rect = canvas.getBoundingClientRect();
+        mouse.x = (e.clientX - rect.left) * (canvas.width / rect.width);
+        mouse.y = (e.clientY - rect.top) * (canvas.height / rect.height);
     }
 
   

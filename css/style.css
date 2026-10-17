@@ -1113,14 +1113,19 @@ video {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
+  position: relative;
+  z-index: 1;
 }
 
 .cs-card {
+  display: block;
   border-radius: 18px;
   overflow: hidden;
   cursor: pointer;
+  color: inherit;
+  text-decoration: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
+
 }
 
 .cs-card:hover {
@@ -1634,16 +1639,12 @@ strong.bovey {
 
 }
 
-canvas {
+#c {
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0;
   margin: auto;
-
-
-
+  z-index: 0;
+  pointer-events: none;
 }
 
 /* ─── EDUCATION ─── */
@@ -2022,7 +2023,9 @@ select {
 .bonsai-view-controls{
   display:none;
 }
-
+button#watch-prototype {
+    display: none;
+}
 .sf-component .bonsai-viewport {
   
     display: none;
@@ -2031,7 +2034,9 @@ select {
     display: none;
 }
 
-
+.cs-card.glass.reveal.open-article.focus-card.visible {
+    z-index: 2;
+}
   .cs-card-mobile-btn {
     display: inline-flex;
     align-items: center;
@@ -2049,6 +2054,7 @@ select {
     background: rgba(140, 100, 255, 0.1);
     transition: 0.2s, color 0.2s, border-color 0.2s;
     cursor: pointer;
+    text-decoration: none;
   }
 
   .cs-card-mobile-btn:hover,

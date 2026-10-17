@@ -15,7 +15,7 @@
 </head>
 
 <body class="dark">
-	<!-- <canvas id="c"></canvas> -->
+	<canvas id="c" aria-hidden="true"></canvas>
 	<a href="#hero" id="scroll-reveal" class="scrollToTop" aria-label="Scroll to top">
 		<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
 			
@@ -81,6 +81,7 @@
 			</div>
 		</section>
 		<!-- ABOUT -->
+		 
 		<section id="about">
 
 			<div class="section-label">About</div>
@@ -132,7 +133,7 @@
 						AI-enhanced workflows, scalable design systems, and motion-driven experiences.</p>
 
 				</div>
-				<div class="cv-timeline-shell reveal visible ">
+				<div class="cv-timeline-shell reveal visible is-open">
 					<button class="cv-timeline-toggle" type="button" aria-expanded="true"
 						aria-controls="cv-timeline-content">
 						<span>Expand timeline</span>
@@ -370,14 +371,13 @@
 			</div>
 			<div class="cs-grid">
 				<!-- Design Operating System (DKOS) - AI Exploration -->
-				<div class="cs-card glass reveal open-article focus-card glass visible"
-					data-article="case-studies/dkos.html">
+				<a class="cs-card glass reveal open-article focus-card glass visible"
+					href="case-studies/dkos.html" aria-label="Open the Design Knowledge Operating System case study">
 					<div class="cs-card-thumb cs-thumb-photo">
 						<img src="images/dkos/dkos_1.png" alt="Design Operating System" loading="lazy">
 
 						<div class="cs-card-overlay">
-							<a class="cs-view-btn" href="case-studies/dkos.html">View case study
-							</a>
+							<span class="cs-view-btn" aria-hidden="true">View case study</span>
 						</div>
 					</div>
 					<div class="cs-card-body">
@@ -387,17 +387,16 @@
 							knowledge,
 							orchestration, design systems, code and telemetry into a continuous learning loop.
 						</p>
-						<a class="cs-card-mobile-btn" href="case-studies/dkos.html">View case study →</a>
+						<span class="cs-card-mobile-btn" aria-hidden="true">View case study →</span>
 					</div>
-				</div>
+				</a>
 				<!-- darg -->
-				<div class="cs-card glass reveal open-article focus-card glass visible"
-					data-article="case-studies/darg.html" data-case="1">
+				<a class="cs-card glass reveal open-article focus-card glass visible"
+					href="case-studies/darg.html" aria-label="Open the DARG Shelter Hub case study" data-case="1">
 					<div class="cs-card-thumb cs-thumb-photo">
 						<img src="images/darg/darg_article_img.png" alt="DARG Shelter Hub" loading="lazy">
 						<div class="cs-card-overlay">
-							<a class="cs-view-btn" href="case-studies/darg.html">View case study
-							</a>
+							<span class="cs-view-btn" aria-hidden="true">View case study</span>
 						</div>
 					</div>
 					<div class="cs-card-body">
@@ -406,17 +405,16 @@
 						<p class="cs-card-desc">A mobile-first volunteer scheduling platform that helps animal shelter
 							staff and dog
 							walkers coordinate exercise sessions, prioritising the dogs most in need of attention.</p>
-						<a class="cs-card-mobile-btn" href="case-studies/darg.html">View case study →</a>
+						<span class="cs-card-mobile-btn" aria-hidden="true">View case study →</span>
 					</div>
-				</div>
+				</a>
 				<!-- Rain chip in -->
-				<div class="cs-card glass reveal open-article focus-card glass visible"
-					data-article="case-studies/rain-chipin.html" data-case="2">
+				<a class="cs-card glass reveal open-article focus-card glass visible"
+					href="case-studies/rain-chipin.html" aria-label="Open the Rain Chip In case study" data-case="2">
 					<div class="cs-card-thumb cs-thumb-photo">
 						<img src="images/rain/chipin_main.png" alt="rain Chip In campaign" loading="lazy">
 						<div class="cs-card-overlay">
-							<a class="cs-view-btn" href="case-studies/rain-chipin.html">View case
-								study</a>
+							<span class="cs-view-btn" aria-hidden="true">View case study</span>
 						</div>
 					</div>
 					<div class="cs-card-body">
@@ -427,18 +425,17 @@
 							shared households. While one person typically owns the account, the cost is frequently
 							shared informally
 							through bank transfers or cash.</p>
-						<a class="cs-card-mobile-btn" href="case-studies/rain-chipin.html">View case study →</a>
+						<span class="cs-card-mobile-btn" aria-hidden="true">View case study →</span>
 					</div>
-				</div>
+				</a>
 				<!-- Go Cover -->
-				<div class="cs-card glass reveal open-article focus-card glass visible"
-					data-article="case-studies/sanlam-gocover.html" data-case="3">
+				<a class="cs-card glass reveal open-article focus-card glass visible"
+					href="case-studies/sanlam-gocover.html" aria-label="Open the Sanlam Go Cover case study" data-case="3">
 					<div class="cs-card-thumb cs-thumb-photo">
 
 						<img src="images/go_cover/go_cover_img1.png" alt="Go Cover Fintech App" loading="lazy">
 						<div class="cs-card-overlay">
-							<a class="cs-view-btn" href="case-studies/sanlam-gocover.html">View case
-								study</a>
+							<span class="cs-view-btn" aria-hidden="true">View case study</span>
 						</div>
 					</div>
 					<div class="cs-card-body">
@@ -448,9 +445,9 @@
 							design on Sanlam's Go Cover insurance app, taking the product from
 							early journeys and wireframes through to testing, final UI and front-end design, in
 							collaboration with developers.</p>
-						<a class="cs-card-mobile-btn" href="case-studies/sanlam-gocover.html">View case study →</a>
+						<span class="cs-card-mobile-btn" aria-hidden="true">View case study →</span>
 					</div>
-				</div> 
+				</a>
 
 				<!--E-Learning -->
 <!-- 				<div class="cs-card glass reveal open-article focus-card glass visible" data-case="4">
@@ -488,9 +485,9 @@
 			</canvas><div class="reel-content"><p class="eyebrow">Motion with purpose</p>
 				<h3 id="reel-title">A little less static.<br><em>A lot more feeling.</em></h3><p>A curated reel of motion, 
 					interaction and learning design is in production. </p>
-					<button class="button primary" id="watch-prototype">Watch prototype <span aria-hidden="true">▷</span>
+					<button class="button primary" id="watch-prototype">Loading <span aria-hidden="true">▷</span>
 					</button>
-				</div><span class="reel-label mono" aria-hidden="true">Surface / Flow / Repeat</span></div>
+				</div><span class="reel-label mono" aria-hidden="true">surface flow / 2026</span></div>
 		</section>
 
 		<!-- EDUCATION -->
