@@ -216,7 +216,7 @@ section#about {
   position: fixed;
   width: 52px;
   height: 52px;
-  bottom: 40px;
+  bottom: 60px;
   right: 20px;
   z-index: 200;
   border-radius: 50%;
@@ -376,10 +376,17 @@ nav {
 
 .me {
     float: right;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
 }
 
-
-
+.me img {
+    border-radius: 3vw;
+    corner-shape: superellipse(2);
+    margin: 0 auto;
+    text-align: center;
+    outline: 12px solid #ffffff0d;
+}
 
 
 .nav-links a.active {
@@ -803,13 +810,13 @@ h2.about-heading.heading {
 }
 
 .cv-timeline-shell {
-  border: 1px solid rgb(255 255 255 / 0%);
-  border-radius: 18px;
-  padding: 1.15rem 1.15rem 0.2rem;
-  background: rgba(255, 255, 255, 0.025);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
-  overflow: hidden;
-  transition: border-color 0.25s ease;
+    border: 1px solid rgb(255 255 255 / 0%);
+    border-radius: 18px;
+    padding: 1.15rem 1.15rem 0.2rem;
+    background: rgb(82 105 237 / 8%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    overflow: hidden;
+    transition: border-color 0.25s ease;
 }
 
 .cv-timeline-toggle {
@@ -900,13 +907,12 @@ h2.about-heading.heading {
 }
 
 .cv-period {
-  font-size: 0.68rem;
-  color: rgb(223 221 231 / 37%);
-  letter-spacing: 0.04em;
-  padding-top: 3px;
-  line-height: 1.4;
+    font-size: 0.68rem;
+    color: rgb(255 255 255 / 40%);
+    letter-spacing: 0.04em;
+    padding-top: 3px;
+    line-height: 1.4;
 }
-
 .cv-role {
   font-size: 0.95rem;
   font-weight: 500;
@@ -939,14 +945,14 @@ h2.about-heading.heading {
 }
 
 .cv-tag {
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: rgb(255 255 255 / 68%);
-  border: 1px solid rgb(255 255 255 / 10%);
-  padding: 0.18rem 0.55rem;
-  border-radius: 4px;
-  color: rgb(255 255 255 / 20%);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgb(255 255 255 / 68%);
+    border: 1px solid rgb(255 255 255 / 40%);
+    padding: 0.18rem 0.55rem;
+    border-radius: 4px;
+    color: rgb(255 255 255 / 40%);
 }
 
 /* ─── FOCUS ─── */
@@ -1119,7 +1125,7 @@ video {
 
 .cs-card {
   display: block;
-  border-radius: 18px;
+  corner-shape: super-ellipse(3);
   overflow: hidden;
   cursor: pointer;
   color: inherit;
@@ -2019,17 +2025,20 @@ select {
 }
 
 @media(max-width:1100px) {
+span.cs-view-btn {
+    display: none;
+}
 
+
+
+  
 .bonsai-view-controls{
   display:none;
 }
 button#watch-prototype {
     display: none;
 }
-.sf-component .bonsai-viewport {
-  
-    display: none;
-}
+
 .sf-bonsai .bonsai-view-controls {
     display: none;
 }
@@ -2195,6 +2204,20 @@ h2 {
     margin-bottom: 0;
   }
 }
+
+
+
+@media(max-width:600px) {
+    .me {
+        float: none;
+        /* margin-top: -2em; */
+        width: 100vw;
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+
 
 @media(prefers-reduced-motion:reduce) {
   * {

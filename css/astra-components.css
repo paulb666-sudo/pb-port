@@ -80,8 +80,9 @@
 }
 
 .sf-component .button.primary {
-   background: var(--accent);
-   color: #fff
+    background: var(--accent);
+    color: #fff;
+    visibility: hidden;
 }
 
 .sf-component .button.primary:hover {
@@ -654,7 +655,12 @@ dialog.sf-media-dialog>p {
    background: #293558;
    border-color: #5269ed;
    color: #d4d6df;
+   transition:0.3s;
 }
+
+
+
+
 
 .sf-component .bonsai-hint {
    font-size: 11px;
@@ -694,6 +700,9 @@ dialog.sf-media-dialog>p {
       background: var(--bg);
       padding: 15px 0;
       z-index: 3
+   }
+   .sf-component .bonsai-viewport {
+      display: block
    }
 
    .sf-bonsai figcaption {
@@ -893,7 +902,7 @@ dialog.sf-media-dialog>p {
     font-weight: 600;
     text-shadow: 0 1px 3px #000, 0 0 7px #020610;
     white-space: normal;
-    font-size: 16px;
+
 }
 
 .sf-component .tree-label-number {
@@ -1422,6 +1431,10 @@ dialog.sf-media-dialog video {
    #focus .sf-bonsai {
       padding: 12px 0;
       margin: 24px auto 36px
+   }
+
+   .sf-component .bonsai-viewport {
+      display: block
    }
 
    .sf-bonsai .bonsai-tree {
