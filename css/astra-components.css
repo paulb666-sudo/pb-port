@@ -6,11 +6,11 @@
    --blue: #a7b6ff;
    --accent: #5269ed;
    --line: #2a3046;
-   --font: 'Afacad Flux', sans-serif;
+   --font: 'Montserrat', sans-serif;
    font: 18px/1.6 var(--font);
    color: var(--white);
    box-sizing: border-box
-}
+}font-family: 
 
 .sf-component *,
 .sf-component *::before,
@@ -609,8 +609,9 @@ dialog.sf-media-dialog>p {
 }
 
 .sf-component .bonsai-caption .mono {
-   font-size: 12px;
-   color: #f0f1f8;
+    font-size: 2em;
+    color: #f0f1f8;
+    line-height: 1.6;
 }
 
 .sf-component .bonsai-caption p {
