@@ -1226,7 +1226,7 @@ dialog.sf-media-dialog>p {
    height: auto;
    margin: 32px auto 48px;
    padding: 20px 12px;
-   background: #06070ff5;
+   background: none;
    z-index: 3;
    opacity: 1;
    isolation: isolate
