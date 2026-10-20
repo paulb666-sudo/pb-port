@@ -252,15 +252,15 @@
 }
 
 .sf-reel {
-   position: relative;
-   isolation: isolate;
-   overflow: hidden;
-   min-height: 570px;
-   padding: 70px;
-   background: radial-gradient(ellipse at 75% 45%, #1b285d, #0c1021 60%);
-   border: 1px solid #354062;
-   display: flex;
-   align-items: center
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    min-height: 570px;
+    padding: 70px;
+    background: radial-gradient(ellipse at 75% 45%, #1b285d, #0c102100 60%);
+    border: 1px solid #354062;
+    display: flex;
+    align-items: center;
 }
 
 .sf-reel canvas {
