@@ -1,4 +1,12 @@
 
+  // Keep the strongest work immediately after the introduction. The script loads
+  // at the end of the document, before the visual components initialise.
+  (() => {
+    const hero = document.querySelector('#hero');
+    const selectedWork = document.querySelector('#case-studies');
+    if (hero && selectedWork) hero.insertAdjacentElement('afterend', selectedWork);
+  })();
+
   $(document).ready(function () {
     var animation = bodymovin.loadAnimation({
       container: $('#lottie-container')[0],
