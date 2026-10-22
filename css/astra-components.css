@@ -602,7 +602,7 @@ dialog.sf-media-dialog>p {
 }
 
 .sf-component .bonsai-caption {
-   border-top: 1px solid var(--line);
+   /* border-top: 1px solid var(--line); */
    padding: 12px 0 0;
    margin: 0 22px;
    min-height: 88px
@@ -867,25 +867,25 @@ dialog.sf-media-dialog>p {
 }
 
 .sf-component .tree-label {
-   position: absolute;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   width: calc(220px * var(--label-scale, 1));
-   min-height: calc(76px * var(--label-scale, 1));
-   padding: 4px 2px;
-   gap: 3px;
-   border: 0;
-   background: transparent;
-   color: #fff;
-   pointer-events: auto;
-   transform: translate(-50%, -50%);
-   transform-origin: center;
-   line-height: 1.15;
-   text-align: center;
-   touch-action: none;
-   isolation: isolate
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(220px * var(--label-scale, 1));
+    min-height: calc(76px * var(--label-scale, 1));
+    padding: 4px 2px;
+    gap: 3px;
+    border: 0;
+    background: #df44e400;
+    color: #fff;
+    pointer-events: auto;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    line-height: 1.15;
+    text-align: center;
+    touch-action: none;
+    isolation: isolate;
 }
 
 .sf-component .tree-label::before {
@@ -1019,10 +1019,11 @@ dialog.sf-media-dialog>p {
     margin: 0 0 12px;
     max-width: 570px;
     text-align: left;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: rgb(206 204 215);
     line-height: 1.4;
     font-weight: 300;
+    margin-left: -12px;
 }
 
 .sf-component .bonsai-caption p:last-child {
@@ -1039,16 +1040,18 @@ dialog.sf-media-dialog>p {
 }
 
 .sf-component .bonsai-stages button {
-   display: flex;
-   flex-direction: column-reverse;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   font-size: 14px;
-   min-height: 42px;
-   gap: 3px;
-   padding: 6px;
-   border-radius:0.6em;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.7em;
+    min-height: 42px;
+    gap: 3px;
+    padding: 6px;
+    border-radius: 15px;
+    font-weight: 400;
+    background: #00000040;
 }
 
 .sf-component .bonsai-stages button span {

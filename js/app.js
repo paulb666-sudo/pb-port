@@ -125,11 +125,10 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 /* ─── SCROLL SPY — active nav highlight ─── */
 const navSections = [
   { id: '#hero'         },
+  { id: '#case-studies' },
+  { id: '#focus'        },
   { id: '#about'        },
   { id: '#cv'           },
-  { id: '#case-studies' },
-  { id: '#showreel'     },
-  { id: '#education'    },
   { id: '#contact'      },
 ];
 
