@@ -1001,7 +1001,9 @@ dialog.sf-media-dialog>p {
     scrollbar-color: #5269ed transparent;
     padding: 8px 12px;
 }
-
+span#bonsai-step {
+    font-size: 31px;
+}
 .sf-component .tuft-growth use {
    fill: #180e35;
    stroke: #8970ca
@@ -1103,10 +1105,10 @@ dialog.sf-media-dialog>p {
       height: 146px
    }
 
-   .sf-component .bonsai-caption p {
-      font-size: 16px;
-      line-height: 1.4
-   }
+  .sf-component .bonsai-caption p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
 
    .sf-component .bonsai-stages button {
       min-height: 39px
