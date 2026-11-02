@@ -631,7 +631,7 @@ nav {
 div.hero-desc p {
     padding-top: 1.2em;
     line-height: 1.28;
-    margin-top: -4em;
+    margin-top: -3em;
 }
 
 .tag {
@@ -1317,19 +1317,19 @@ video {
 }
 
 .bovey {
-  background-image: linear-gradient(var(--gradient-angle), #e415dd, rgb(83 105 237));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  display: block;
-  font-weight: 800;
-  animation: spin-gradient 4s linear infinite;
-  line-height: 1.3;
-  padding-bottom: 0.2em;
-  margin-bottom: -0.2em;
-  padding-right: 0.1em;
-  margin-top: -0.2em;
+    background-image: linear-gradient(var(--gradient-angle), #e415dd, rgb(83 105 237));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: block;
+    font-weight: 800;
+    animation: spin-gradient 4s linear infinite;
+    line-height: 1.1;
+    padding-bottom: 0.2em;
+    margin-bottom: -0.2em;
+    padding-right: 0.1em;
+    margin-top: -0.2em;
 }
 
 @keyframes spin-gradient {
