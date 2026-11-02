@@ -1105,9 +1105,9 @@ span#bonsai-step {
       height: 146px
    }
 
-  .sf-component .bonsai-caption p {
-        font-size: 13px;
-        line-height: 1.4;
+     .sf-component .bonsai-caption p {
+        font-size: 14px;
+        line-height: 1.58;
     }
 
    .sf-component .bonsai-stages button {
