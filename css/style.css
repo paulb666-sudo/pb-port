@@ -515,6 +515,16 @@ nav {
     padding-left: max(3rem, 8vw);
     padding-right: max(3rem, 8vw);
     backdrop-filter: blur(1px) saturate(1);
+    background-color: transparent;
+    animation: fadeToTransparent 1s ease-out forwards;
+}
+@keyframes fadeToTransparent {
+  from {
+    background-color: #fff; 
+  }
+  to {
+    background-color: transparent;
+  }
 }
 
 .hero-eyebrow {
