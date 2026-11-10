@@ -847,10 +847,7 @@ h2.about-heading.heading {
   backdrop-filter: blur(3px) saturate();
 }
 
-section {
 
-  backdrop-filter: blur(3px) saturate();
-}
 
 .cv-timeline-toggle {
   appearance: none;

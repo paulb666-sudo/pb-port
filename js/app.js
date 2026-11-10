@@ -64,14 +64,14 @@ $(document).ready(function () {
 });
 
 
-// ─── LOTTIE LOGO ─── */
-lottie.loadAnimation({
-  container: document.getElementById('lottie-logo'),
-  renderer: 'svg',
-  loop: true,
-  autoplay: true,
-  path: 'https://paulb666-sudo.github.io/pb-port/images/bouncing-circles.svg'
-});
+// // ─── LOTTIE LOGO ─── */
+// lottie.loadAnimation({
+//   container: document.getElementById('lottie-logo'),
+//   renderer: 'svg',
+//   loop: true,
+//   autoplay: true,
+//   path: 'https://paulb666-sudo.github.io/pb-port/images/bouncing-circles.svg'
+// });
 
 /* ─── HAMBURGER ─── */
 const hamburger = document.getElementById('hamburger');
